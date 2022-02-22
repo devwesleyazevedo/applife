@@ -165,6 +165,10 @@ input[type="radio"]::before {
     position: relative;
 }
 
+.max-vh {
+    max-height: 90vh;
+}
+
 /* input radio LIFE */
 input[type="radio"] {
     -webkit-appearance: none;
