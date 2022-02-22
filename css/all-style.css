@@ -190,6 +190,19 @@ input[type=number]:focus,
     max-height: 90vh;
 }
 
+.passos h1 {
+    color: var(--cor-violeta);
+    font-size: 34px;
+}
+
+.passos h4 {
+    color: var(--cor-violeta);
+}
+
+.passos p {
+    font-size: 13px;
+}
+
 /* input radio LIFE */
 input[type="radio"] {
     -webkit-appearance: none;
