@@ -17,7 +17,7 @@
         <div class="row vh-100 justify-content-center align-items-center">
             <div class="col">
                 <h4 class="mb-5 mt-5 text-center"><span class="title-gradient">Cadastro</span></h4>
-                <form action="" method="post" class="text-white pt-10 needs-validation" novalidate>
+                <form action="" method="post" class="pt-10 needs-validation" novalidate>
                         <!-- Primeiro passo -->
                         <div id="step_1" class="step">
                             <!-- Nome de Usuário -->     
@@ -29,7 +29,7 @@
                                     <p class="sub-text">O nome de usuário deve conter de 3 a 15 caracteres</p>
                                     <div class="d-flex">
                                         <p class="resultado-characters sub-text" class="text-white">0</p>
-                                        <p class="text-white sub-text">/15</p>
+                                        <p class="sub-text">/15</p>
                                     </div>
                                 </div>
                             </div>
@@ -38,7 +38,8 @@
                                 <p class="form-label">Documento de Identificação</p>
                                 <input type="radio" id="cpf" checked name="tipodoc" value="CPF" required>
                                 <label for="cpf" class="form-label">CPF</label>
-                                <input type="radio" id="int" name="tipodoc" value="Documento Internacional" required>
+                                
+                                <input type="radio" id="int" name="tipodoc" class="ms-4" value="Documento Internacional" required>
                                 <label for="int" class="form-label">Documento Internacional</label>
                                 <input type="text" class="form-control input-life mt-1" id="documento" required name="documento" placeholder="Número do documento" required>
                                 <div class="invalid-feedback" style="margin-bottom: 10px; margin-top: -10px;">Por favor, digite o número da Identificação.</div>
