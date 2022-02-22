@@ -41,6 +41,78 @@ $(document).ready(function() {
 });
 
 ///////////////////////////////////////////////////////////////////////////////////
+//Passo a Passo //////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+$(document).ready(function() {
+    //Esconde todos os passos e exibe o primeiro ao carregar a página 
+    $('.passos').hide();
+    $('.passos').first().show();
+    //Exibe no topo em qual passo estamos pela ordem da div que esta visivel
+    var passoexibido = function() {
+        var index = parseInt($(".passos:visible").index());
+        if (index == 0) {
+            //Se for o primeiro passo desabilita o botão de voltar e habilita o botão de cancelar
+            $("#proximo_passo").show();
+            $("#voltar_passo").hide();
+            $("#cancelar_passo").show();
+            $("#viver").hide();
+        } else if (index == 1) {
+            //Se for o ultimo passo desabilita o botão de avançar e habilita o botão de voltar
+            $("#proximo_passo").show();
+            $("#voltar_passo").show();
+            $("#cancelar_passo").hide();
+        } else if (index == 2) {
+            //Se for o ultimo passo desabilita o botão de avançar e habilita o botão de voltar
+            $("#proximo_passo").show();
+            $("#voltar_passo").show();
+            $("#cancelar_passo").hide();
+        } else if (index == 3) {
+            //Se for o ultimo passo desabilita o botão de avançar e habilita o botão de voltar
+            $("#proximo_passo").show();
+            $("#voltar_passo").show();
+            $("#cancelar_passo").hide();
+        } else if (index == 4) {
+            //Se for o ultimo passo desabilita o botão de avançar e habilita o botão de voltar
+            $("#proximo_passo").show();
+            $("#voltar_passo").show();
+            $("#cancelar_passo").hide();
+            $("#viver").hide();
+        } else if (index == 5) {
+            //Se for o ultimo passo desabilita o botão de avançar e habilita o botão de voltar
+            $("#proximo_passo").hide();
+            $("#voltar_passo").hide();
+            $("#cancelar_passo").hide();
+            $("#viver").show();
+        } else {
+            //Em outras situações todos serão habilitados
+            $("#proximo_passo").show();
+            $("#cancelar_passo").show();
+            $("#voltar_passo").show();
+            $("#viver").show();
+        }
+        $("#passo").html(index + 1);
+    };
+    //Executa a função ao carregar a página
+    passoexibido();
+    //avança para o próximo passo
+    $("#proximo_passo").click(function() {
+        $(".passos:visible").hide().next().show();
+        passoexibido();
+    });
+    //retrocede para o passo anterior
+    $("#voltar_passo").click(function() {
+        $(".passos:visible").hide().prev().show();
+        passoexibido();
+    });
+});
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////
 //Conta a quantidade de characters no input //////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
 $(document).ready(function() {
