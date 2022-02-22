@@ -1,27 +1,40 @@
 body{
     font-family :'Artegra Sans', Arial, Helvetica, sans-serif!important;
-    background-color: #000;
+    background-color: #1d1d1d;
+    color: var(--cor-cinza);
 }
 
+:root {
+    --cor-violeta: #9E65EF;
+    --cor-azul: #4443F0;
+    --cor-verde: #00E584;
+    --cor-cinza: #969696;
+    --cor-branco: #FFF;
+    --cor-preto: #000;
+}
+
+input[type="radio"]::before {
+    box-shadow: inset 1em 1em #08d291 !important;
+}
 
 /* COLORS */
 .gradient-life{
-    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
 }
 
 .txt-gray{
-    color: #969696;
+    color: var(--cor-cinza);
 }
 .bg-gray{
-    background-color: #969696;
+    background-color: var(--cor-cinza);
 }
 
 .txt-light{
-    color: #FFF;
+    color: var(--cor-branco);
 }
 
 .txt-gradient-life{
-    color: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    color: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
 }
 
 /* STRUCTURE */
@@ -38,40 +51,40 @@ body{
 }
 
 .btn-gradiente-life{
-    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
     border: 0;
     padding: 10px 20px;
-    color: #FFF;
+    color: var(--cor-branco);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 12px;
 }
 .btn-gradiente-life:hover{
-    color: #FFF;
+    color: var(--cor-branco);
 }
 
 .btn-outline-life{
     background: transparent;
-    border: 1px solid #969696;
+    border: 1px solid var(--cor-cinza);
     padding: 10px 20px;
-    color: #969696;
+    color: var(--cor-cinza);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 12px;
 }
 .btn-outline-life:hover{
-    color: #969696;
+    color: var(--cor-cinza);
 }
 
 .title-gradient{
     font-weight: bold;
     margin: 25px 0px;
-    background: #9E65EF;
-    background: -webkit-linear-gradient(to right, #9E65EF 0%, #4443F0 50%, #00E584 100%);
-    background: -moz-linear-gradient(to right, #9E65EF 0%, #4443F0 50%, #00E584 100%);
-    background: linear-gradient(to right, #9E65EF 0%, #4443F0 50%, #00E584 100%);
+    background: var(--cor-violeta);
+    background: -webkit-linear-gradient(to right, var(--cor-violeta) 0%, var(--cor-azul) 50%, var(--cor-verde) 100%);
+    background: -moz-linear-gradient(to right, var(--cor-violeta) 0%, var(--cor-azul) 50%, var(--cor-verde) 100%);
+    background: linear-gradient(to right, var(--cor-violeta) 0%, var(--cor-azul) 50%, var(--cor-verde) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -79,20 +92,27 @@ body{
 
 .input-life{
     background-color: transparent;
-    color: #969696;
-    border: 1px solid #969696;
+    color: var(--cor-cinza);
+    border: 1px solid var(--cor-cinza);
     margin-bottom: 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding: 12px 8px 8px 8px;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+    letter-spacing: 0.205em;
     text-align: center;
-    font-size: 14px;
-    letter-spacing: 2px;
 }
 
 .form-label{
     font-size: 13px;
+    color: var(--cor-cinza);
 }
 
 .checkbox-life {
-    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
     position: relative;
 }
 
@@ -101,7 +121,7 @@ body{
     position: absolute;
     width: 90%;
     height: 90%;
-    background: #000;
+    background: var(--cor-preto);
     left: 0;
     top: 0;
     bottom: 0;
@@ -135,13 +155,13 @@ body{
 }
 
 .checkbox-life:checked {
-    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
     border: none;
 }
 
 .checkbox-life:checked[type=checkbox] {
     background-image: none;
-    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
     position: relative;
 }
 
@@ -149,13 +169,13 @@ body{
 input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
-    background-color: #000;
+    background-color: var(--cor-preto);
     margin: 0;
     font: inherit;
-    color: #fff;
+    color: var(--cor-branco);
     width: 1.15em;
     height: 1.15em;
-    border: 0.15em solid #9E65EF;
+    border: 0.15em solid var(--cor-violeta);
     border-radius: 50%;
     transform: translateY(-0.075em);
     display: inline-grid;
@@ -169,19 +189,18 @@ input[type="radio"]::before {
     border-radius: 50%;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em #FFF;
+    box-shadow: inset 1em 1em var(--cor-branco);
     background-color: CanvasText;
 }
 /* input radio LIFE */
 input[type="radio"]:checked::before {
     transform: scale(1);
 }
-  
 
 .form-control:focus {
-    color: #969696;
+    color: var(--cor-cinza);
     background-color: transparent;
-    border-color: #969696;
+    border-color: var(--cor-cinza);
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(58, 58, 58, 0.25);
 }
@@ -203,9 +222,6 @@ input[type="radio"]:checked::before {
     text-align: center;
 }
 
-
-
-
 /* Página - Apresentação */
 #img-logo-slogan{
     width: 250px;
@@ -221,21 +237,17 @@ input[type="radio"]:checked::before {
     width: 100%;
 }
 
-
-
 /* Página - Cadastro */
     #termos p {
         font-size: 12px;
         line-height: 13px;
         text-align: justify;
-        color: #969696;
+        color: var(--cor-cinza);
     }
 
-    .sub-text{
+.sub-text{
         font-size: 10px;
-    }
-
-
+}
 
 /* Página - Login */
 
@@ -252,10 +264,6 @@ input[type="radio"]:checked::before {
     max-width: 80%;
 }
 
-
-
-
-
 /* Página - Autenticação SMS */
 
 #resend-cod{
@@ -266,13 +274,13 @@ input[type="radio"]:checked::before {
 }
 
 #resend-cod:hover{
-    color: #969696;
+    color: var(--cor-cinza);
 }
 
 
 .input-resend-cod{
     border: 0;
-    border-bottom: 1px solid #969696;
+    border-bottom: 1px solid var(--cor-cinza);
     border-radius: 0!important;
     font-size: 30px;
     font-weight: bold;
@@ -296,10 +304,6 @@ input[type="radio"]:checked::before {
 #timer{
     height: 20px;
 }
-
-
-
-
 
 /* MEDIA QUERY */
 
