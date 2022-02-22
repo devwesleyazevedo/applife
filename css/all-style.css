@@ -1,0 +1,329 @@
+body{
+    font-family :'Artegra Sans', Arial, Helvetica, sans-serif!important;
+    background-color: #000;
+}
+
+
+/* COLORS */
+.gradient-life{
+    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+}
+
+.txt-gray{
+    color: #969696;
+}
+.bg-gray{
+    background-color: #969696;
+}
+
+.txt-light{
+    color: #FFF;
+}
+
+.txt-gradient-life{
+    color: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+}
+
+/* STRUCTURE */
+
+.va-middle {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
+.btn-gradiente-life{
+    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    border: 0;
+    padding: 10px 20px;
+    color: #FFF;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.btn-gradiente-life:hover{
+    color: #FFF;
+}
+
+.btn-outline-life{
+    background: transparent;
+    border: 1px solid #969696;
+    padding: 10px 20px;
+    color: #969696;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.btn-outline-life:hover{
+    color: #969696;
+}
+
+.title-gradient{
+    font-weight: bold;
+    margin: 25px 0px;
+    background: #9E65EF;
+    background: -webkit-linear-gradient(to right, #9E65EF 0%, #4443F0 50%, #00E584 100%);
+    background: -moz-linear-gradient(to right, #9E65EF 0%, #4443F0 50%, #00E584 100%);
+    background: linear-gradient(to right, #9E65EF 0%, #4443F0 50%, #00E584 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.input-life{
+    background-color: transparent;
+    color: #969696;
+    border: 1px solid #969696;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.form-label{
+    font-size: 13px;
+}
+
+.checkbox-life {
+    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    position: relative;
+}
+
+.checkbox-life:after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: #000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+.checkbox-life:checked:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-image:url('../images/checked.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.checkbox-life:checked {
+    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    border: none;
+}
+
+.checkbox-life:checked[type=checkbox] {
+    background-image: none;
+    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    position: relative;
+}
+
+/* input radio LIFE */
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #000;
+    margin: 0;
+    font: inherit;
+    color: #fff;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #9E65EF;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: inline-grid;
+    place-content: center;
+}
+/* input radio LIFE */
+input[type="radio"]::before {
+    content: "";
+    width: 0.52em;
+    height: 0.5em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #FFF;
+    background-color: CanvasText;
+}
+/* input radio LIFE */
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+  
+
+.form-control:focus {
+    color: #969696;
+    background-color: transparent;
+    border-color: #969696;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(58, 58, 58, 0.25);
+}
+
+.cont-middle {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
+.cont {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+
+
+
+/* Página - Apresentação */
+#img-logo-slogan{
+    width: 250px;
+    max-width: 90%;
+    margin-bottom: 50px;
+}
+
+#btns-bottom{
+    position: absolute; 
+    bottom: 10%; 
+    left: 0; 
+    text-align: center; 
+    width: 100%;
+}
+
+
+
+/* Página - Cadastro */
+    #termos p {
+        font-size: 12px;
+        line-height: 13px;
+        text-align: justify;
+        color: #969696;
+    }
+
+    .sub-text{
+        font-size: 10px;
+    }
+
+
+
+/* Página - Login */
+
+#logo-bottom{
+    position: absolute; 
+    bottom: 10%; 
+    left: 0; 
+    text-align: center; 
+    width: 100%;
+}
+
+#logo-bottom > img{
+    width: 100px;
+    max-width: 80%;
+}
+
+
+
+
+
+/* Página - Autenticação SMS */
+
+#resend-cod{
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    opacity: 0.2;
+}
+
+#resend-cod:hover{
+    color: #969696;
+}
+
+
+.input-resend-cod{
+    border: 0;
+    border-bottom: 1px solid #969696;
+    border-radius: 0!important;
+    font-size: 30px;
+    font-weight: bold;
+}
+.input-resend-cod::placeholder{
+    font-size: 13px;
+    font-weight: 400;
+}
+.input-resend-cod:focus{
+   box-shadow: 0 0 0 0.25rem rgb(58 58 58 / 0%)!important;
+}
+
+.input-resend-cod::-webkit-inner-spin-button, 
+.input-resend-cod::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+#timer{
+    height: 20px;
+}
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-image: url(/images/bg-black-life-token.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bg-simbolo{
+        height: 100vh;
+        background-image: url(/images/bg-icone-life-token.png);
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat; 
+        position: absolute;
+        width: 100%;
+    }
+
+    .container{
+        width: 90%;
+        max-width: 90%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

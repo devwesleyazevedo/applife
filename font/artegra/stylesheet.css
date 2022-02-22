@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-Medium.eot');
+    src: local('Artegra Sans Medium'), local('ArtegraSans-Medium'),
+        url('ArtegraSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-Medium.woff2') format('woff2'),
+        url('ArtegraSans-Medium.woff') format('woff'),
+        url('ArtegraSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-ExtraBold.eot');
+    src: local('Artegra Sans ExtraBold'), local('ArtegraSans-ExtraBold'),
+        url('ArtegraSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-ExtraBold.woff2') format('woff2'),
+        url('ArtegraSans-ExtraBold.woff') format('woff'),
+        url('ArtegraSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-ExtraLightItalic.eot');
+    src: local('Artegra Sans ExtraLight Italic'), local('ArtegraSans-ExtraLightItalic'),
+        url('ArtegraSans-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-ExtraLightItalic.woff2') format('woff2'),
+        url('ArtegraSans-ExtraLightItalic.woff') format('woff'),
+        url('ArtegraSans-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-LightItalic.eot');
+    src: local('Artegra Sans Light Italic'), local('ArtegraSans-LightItalic'),
+        url('ArtegraSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-LightItalic.woff2') format('woff2'),
+        url('ArtegraSans-LightItalic.woff') format('woff'),
+        url('ArtegraSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-Thin.eot');
+    src: local('Artegra Sans Thin'), local('ArtegraSans-Thin'),
+        url('ArtegraSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-Thin.woff2') format('woff2'),
+        url('ArtegraSans-Thin.woff') format('woff'),
+        url('ArtegraSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-SemiBoldItalic.eot');
+    src: local('Artegra Sans SemiBold Italic'), local('ArtegraSans-SemiBoldItalic'),
+        url('ArtegraSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-SemiBoldItalic.woff2') format('woff2'),
+        url('ArtegraSans-SemiBoldItalic.woff') format('woff'),
+        url('ArtegraSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-Black.eot');
+    src: local('Artegra Sans Black'), local('ArtegraSans-Black'),
+        url('ArtegraSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-Black.woff2') format('woff2'),
+        url('ArtegraSans-Black.woff') format('woff'),
+        url('ArtegraSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-Bold.eot');
+    src: local('Artegra Sans Bold'), local('ArtegraSans-Bold'),
+        url('ArtegraSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-Bold.woff2') format('woff2'),
+        url('ArtegraSans-Bold.woff') format('woff'),
+        url('ArtegraSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-BlackItalic.eot');
+    src: local('Artegra Sans Black Italic'), local('ArtegraSans-BlackItalic'),
+        url('ArtegraSans-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-BlackItalic.woff2') format('woff2'),
+        url('ArtegraSans-BlackItalic.woff') format('woff'),
+        url('ArtegraSans-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-BoldItalic.eot');
+    src: local('Artegra Sans Bold Italic'), local('ArtegraSans-BoldItalic'),
+        url('ArtegraSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-BoldItalic.woff2') format('woff2'),
+        url('ArtegraSans-BoldItalic.woff') format('woff'),
+        url('ArtegraSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-MediumItalic.eot');
+    src: local('Artegra Sans Medium Italic'), local('ArtegraSans-MediumItalic'),
+        url('ArtegraSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-MediumItalic.woff2') format('woff2'),
+        url('ArtegraSans-MediumItalic.woff') format('woff'),
+        url('ArtegraSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-Light.eot');
+    src: local('Artegra Sans Light'), local('ArtegraSans-Light'),
+        url('ArtegraSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-Light.woff2') format('woff2'),
+        url('ArtegraSans-Light.woff') format('woff'),
+        url('ArtegraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-ExtraBoldItalic.eot');
+    src: local('Artegra Sans ExtraBold Italic'), local('ArtegraSans-ExtraBoldItalic'),
+        url('ArtegraSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('ArtegraSans-ExtraBoldItalic.woff') format('woff'),
+        url('ArtegraSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-SemiBold.eot');
+    src: local('Artegra Sans SemiBold'), local('ArtegraSans-SemiBold'),
+        url('ArtegraSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-SemiBold.woff2') format('woff2'),
+        url('ArtegraSans-SemiBold.woff') format('woff'),
+        url('ArtegraSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-ThinItalic.eot');
+    src: local('Artegra Sans Thin Italic'), local('ArtegraSans-ThinItalic'),
+        url('ArtegraSans-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-ThinItalic.woff2') format('woff2'),
+        url('ArtegraSans-ThinItalic.woff') format('woff'),
+        url('ArtegraSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-Italic.eot');
+    src: local('Artegra Sans Italic'), local('ArtegraSans-Italic'),
+        url('ArtegraSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-Italic.woff2') format('woff2'),
+        url('ArtegraSans-Italic.woff') format('woff'),
+        url('ArtegraSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-ExtraLight.eot');
+    src: local('Artegra Sans ExtraLight'), local('ArtegraSans-ExtraLight'),
+        url('ArtegraSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-ExtraLight.woff2') format('woff2'),
+        url('ArtegraSans-ExtraLight.woff') format('woff'),
+        url('ArtegraSans-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Sans';
+    src: url('ArtegraSans-Regular.eot');
+    src: local('Artegra Sans Regular'), local('ArtegraSans-Regular'),
+        url('ArtegraSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ArtegraSans-Regular.woff2') format('woff2'),
+        url('ArtegraSans-Regular.woff') format('woff'),
+        url('ArtegraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
