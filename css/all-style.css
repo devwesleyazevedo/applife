@@ -7,6 +7,7 @@ body{
 :root {
     --cor-violeta: #9E65EF;
     --cor-azul: #4443F0;
+    --cor-azulclaro: #02C2F4;
     --cor-verde: #00E584;
     --cor-cinza: #969696;
     --cor-branco: #FFF;
@@ -15,6 +16,30 @@ body{
 
 input[type="radio"]::before {
     box-shadow: inset 1em 1em #08d291 !important;
+}
+
+h5.toptitulo {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+}
+
+h1.titulo {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: -0.005em;
+}
+
+h6.subtitulo {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: -0.005em;
 }
 
 textarea:focus, 
@@ -190,18 +215,6 @@ input[type=number]:focus,
     max-height: 90vh;
 }
 
-.passos h1 {
-    color: var(--cor-violeta);
-    font-size: 34px;
-}
-
-.passos h4 {
-    color: var(--cor-violeta);
-}
-
-.passos p {
-    font-size: 13px;
-}
 
 /* input radio LIFE */
 input[type="radio"] {
@@ -259,6 +272,44 @@ input[type="radio"]:checked::before {
     width: 90%;
     text-align: center;
 }
+
+
+#tabs button{
+    padding: 13px 14px;
+    background-color: transparent;
+    border: 1px solid var(--cor-cinza);
+    border-radius: 5px;
+}
+
+#tabs button {
+    font-size: 13px;
+}
+
+
+#tabs button.active {
+    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
+    border-color: transparent;
+}
+
+
+#tabs input {
+    background-color: var(--cor-preto);
+    color: var(--cor-cinza);
+}
+
+#tabs .tab-pane p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    color: var(--cor-cinza);
+    margin: 0;
+    padding: 0;
+}
+
+
 
 /* Página - Apresentação */
 #img-logo-slogan{
