@@ -53,36 +53,35 @@ $(document).ready(function() {
         if (index == 0) {
             //Se for o primeiro passo desabilita o botão de voltar e habilita o botão de cancelar
             $("#proximo_passo").show();
+            $("#passo_final").hide();
             $("#voltar_passo").hide();
             $("#cancelar_passo").show();
             $("#viver").hide();
         } else if (index == 1) {
             //Se for o ultimo passo desabilita o botão de avançar e habilita o botão de voltar
             $("#proximo_passo").show();
+            $("#passo_final").hide();
             $("#voltar_passo").show();
             $("#cancelar_passo").hide();
         } else if (index == 2) {
             //Se for o ultimo passo desabilita o botão de avançar e habilita o botão de voltar
             $("#proximo_passo").show();
+            $("#passo_final").hide();
             $("#voltar_passo").show();
             $("#cancelar_passo").hide();
         } else if (index == 3) {
             //Se for o ultimo passo desabilita o botão de avançar e habilita o botão de voltar
             $("#proximo_passo").show();
+            $("#passo_final").hide();
             $("#voltar_passo").show();
             $("#cancelar_passo").hide();
         } else if (index == 4) {
             //Se for o ultimo passo desabilita o botão de avançar e habilita o botão de voltar
-            $("#proximo_passo").show();
+            $("#proximo_passo").hide();
+            $("#passo_final").show();
             $("#voltar_passo").show();
             $("#cancelar_passo").hide();
             $("#viver").hide();
-        } else if (index == 5) {
-            //Se for o ultimo passo desabilita o botão de avançar e habilita o botão de voltar
-            $("#proximo_passo").hide();
-            $("#voltar_passo").hide();
-            $("#cancelar_passo").hide();
-            $("#viver").show();
         } else {
             //Em outras situações todos serão habilitados
             $("#proximo_passo").show();
