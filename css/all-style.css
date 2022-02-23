@@ -211,11 +211,6 @@ input[type=number]:focus,
     position: relative;
 }
 
-.max-vh {
-    max-height: 90vh;
-}
-
-
 /* input radio LIFE */
 input[type="radio"] {
     -webkit-appearance: none;
@@ -273,6 +268,33 @@ input[type="radio"]:checked::before {
     text-align: center;
 }
 
+#tabs .interaction .BtnIcon_favorite {
+    width: 21px;
+    height: 19px;
+    background-image: url('../images/icon_coracao.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#tabs .interaction .BtnIcon_notification {
+    width: 21px;
+    height: 19px;
+    background-image: url('../images/icon_sino.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#tabs .interaction .BtnIcon_notification.active {
+    background-image: url('../images/icon_sino_active.png');
+}
+
+#tabs .interaction .BtnIcon_favorite.active {
+    background-image: url('../images/icon_coracao_active.png');
+}
 
 #tabs button{
     padding: 13px 14px;
@@ -329,12 +351,19 @@ input[type="radio"]:checked::before {
 }
 
 /* Página - Cadastro */
-    #termos p {
-        font-size: 12px;
-        line-height: 13px;
-        text-align: justify;
-        color: var(--cor-cinza);
-    }
+#termos p {
+    color: var(--cor-cinza);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: -0.005em;
+    margin-left: 20px !important;
+}
+
+#termos p span {
+    font-weight: normal;
+}
 
 .sub-text{
         font-size: 10px;

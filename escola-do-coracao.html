@@ -15,12 +15,13 @@
 
 <div class="container">
     <div class="row">
-        <div class="w-100 d-flex justify-content-end"><a class="pular" href="">Pular</a></div>
-        <div class="col-md-4 mx-auto d-flex flex-column align-items-center justify-content-center">
-            <img src="./images/coracao.png" alt="" class="mb-4">
-            <h1 class="text-center titulo text-white">Entretenimento <br> do coração</h1>
-            <h6 class="text-center subtitulo">Tenha tudo sobre seu favorito em primeira mão. Saiba primeiro sobre enquetes, vantagens e recompensas.</h6>
-            
+        <div class="col-md-4 mx-auto">
+            <div class="w-100 d-flex justify-content-end"><a class="pular" href="">Pular</a></div>
+            <div class="col">
+                <img class="mx-auto d-block" src="./images/coracao.png" alt="" class="mb-4">
+                <h1 class="text-center titulo text-white mt-4">Entretenimento <br> do coração</h1>
+                <h6 class="text-center subtitulo">Tenha tudo sobre seu favorito em primeira mão. Saiba primeiro sobre enquetes, vantagens e recompensas.</h6>
+            </div>
             <!-- Tabs -->
             <div class="mt-5 w-100" id="tabs">
                 <ul class="mb-4 nav d-flex gap-2 align-items-center justify-content-center" id="myTab" role="tablist">
@@ -29,7 +30,7 @@
                     <li class="nav-item" role="presentation"> <button class="nav-link text-white" id="messages-tab" data-bs-toggle="tab" data-bs-target="#teatro" type="button" role="tab" aria-controls="teatro" aria-selected="false">Teatro</button> </li>
                     <li class="nav-item" role="presentation"> <button class="nav-link text-white" id="settings-tab" data-bs-toggle="tab" data-bs-target="#cinema" type="button" role="tab" aria-controls="cinema" aria-selected="false">Cinema</button> </li>
                 </ul>
-                <div class="p-3 tab-content">
+                <div class="tab-content">
                     <!-- Tab1 -->
                     <div class="tab-pane active" id="carnaval" role="tabpanel" aria-labelledby="first-tab">
                         <div><input type="text" class="form-control mb-5" placeholder="Pesquisar..."></div>
@@ -38,9 +39,9 @@
                                 <img src="./images/1° da Cidade Lider.png" alt="">
                             </div>
                             <p class="w-100">1° da Cidade Lider</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -49,9 +50,9 @@
                                 <img src="./images/Acadêmicos do Tatuapé.png" alt="">
                             </div>
                             <p class="w-100">Acadêmicos do Tatuapé</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -60,9 +61,9 @@
                                 <img src="./images/Acadêmicos do Tucuruvi.png" alt="">
                             </div>
                             <p class="w-100">Acadêmicos do Tucuruvi</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -71,9 +72,9 @@
                                 <img src="./images/Águia de Ouro.png" alt="">
                             </div>
                             <p class="w-100">Águia de Ouro</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <a href="" class="btn btn-gradiente-life w-100 mt-4">Pronto</a>
@@ -86,9 +87,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Henrique e Juliano</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -97,9 +98,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Maiara e Maraisa</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -108,9 +109,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Simone e Simaria</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -119,9 +120,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Ivete Sangalo</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <a href="" class="btn btn-gradiente-life w-100 mt-4">Pronto</a>
@@ -134,9 +135,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Teatro 1</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -145,9 +146,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Teatro 2</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -156,9 +157,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Teatro 3</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -167,9 +168,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Teatro 4</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <a href="" class="btn btn-gradiente-life w-100 mt-4">Pronto</a>
@@ -182,9 +183,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Cinema 1</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -193,9 +194,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Cinema 2</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -204,9 +205,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Cinema 3</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <hr>
@@ -215,9 +216,9 @@
                                 <img src="./images/default_img.png" alt="">
                             </div>
                             <p class="w-100">Cinema 4</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="w-100"><img src="./images/icon_coracao.png" alt=""></div>
-                                <div class="w-100"><img src="./images/icon_sino.png" alt=""></div>
+                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                                <buttom class="BtnIcon_favorite active"></buttom >
+                                <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
                         <a href="" class="btn btn-gradiente-life w-100 mt-4">Pronto</a>

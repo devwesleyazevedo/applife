@@ -14,21 +14,25 @@
 <!-- ------------------------------------ -->
 
 <div class="container">
-    <div class="row">
-        <div class="cont">
-            <h4 class="mb-4 text-center"><span class="title-gradient">Cadastro</span></h4>
-            <p class="txt-gray px-2">Para concluir a autenticação, insira o código de 6 dígitos que enviamos para o telefone final <span id="final-number">XXXX</span> por mensagem SMS.</p>
-            <form action="#">
-                <input type="number" placeholder="ESCREVA O CÓDIGO" maxlength="6" class="form-control input-life input-resend-cod my-5">
-                <a href="login.html" class="btn btn-gradiente-life mb-3" style="width: 100%;">Validar</a>
-                <!-- <button class="btn btn-gradiente-life  mb-3" style="width: 100%;" type="submit">Validar</button> -->
-                <div>
-                    <button onclick="startTimer(59);" class="txt-gray" id="resend-cod"><u>Reenviar código</u></button>
-                    <div class="txt-gray" id="timer">59s</div>
+    <div class="row"> 
+        <div class="va-middle"> 
+            <div class="col-md-4 mx-auto">
+                <div class="cont">
+                    <h4 class="mb-4 text-center"><span class="title-gradient">Verificação de telefone</span></h4>
+                    <p class="txt-gray px-2">Para concluir a autenticação, insira o código de 6 dígitos que enviamos para o telefone final <span id="final-number">XXXX</span> por mensagem SMS.</p>
+                    <form action="#">
+                        <input type="number" placeholder="ESCREVA O CÓDIGO" maxlength="6" class="form-control input-life input-resend-cod my-5">
+                        <a href="login.html" class="btn btn-gradiente-life mb-3" style="width: 100%;">Validar</a>
+                        <!-- <button class="btn btn-gradiente-life  mb-3" style="width: 100%;" type="submit">Validar</button> -->
+                        <div>
+                            <button onclick="startTimer(59);" class="txt-gray" id="resend-cod"><u>Reenviar código</u></button>
+                            <div class="txt-gray" id="timer">59s</div>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
-   </div>
+    </div>
 </div>
 
 <!-- ------------------------------------ -->

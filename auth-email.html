@@ -14,17 +14,23 @@
 <!-- ------------------------------------ -->
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-4 mx-auto d-flex flex-column align-items-center justify-content-center vh-100 max-vh">
-            <h4 class="mb-5 mt-5 text-center"><span class="title-gradient">Verificação de e-mail</span></h4>
-            <p class="text-center">Insira o código de 6 dígitos que enviamos para o email usu****@gmail.com para concluir a configuração de autenticação de dois fatores</p>
-            <div class="d-flex flex-row mt-5 gap-3">
-                <input type="text" class="form-control bg-transparent input-validation">
-                <input type="text" class="form-control bg-transparent input-validation">
-                <input type="text" class="form-control bg-transparent input-validation">
-                <input type="text" class="form-control bg-transparent input-validation">
+    <div class="row"> 
+        <div class="va-middle"> 
+            <div class="col-md-4 mx-auto">
+                <div class="cont">
+                    <h4 class="mb-4 text-center"><span class="title-gradient">Verificação de e-mail</span></h4>
+                    <p class="txt-gray px-2">Insira o código de 6 dígitos que enviamos para o email usu****@gmail.com para concluir a configuração de autenticação de dois fatores</p>
+                    <form action="#">
+                        <input type="number" placeholder="ESCREVA O CÓDIGO" maxlength="6" class="form-control input-life input-resend-cod my-5">
+                        <a href="login.html" class="btn btn-gradiente-life mb-3" style="width: 100%;">Validar</a>
+                        <!-- <button class="btn btn-gradiente-life  mb-3" style="width: 100%;" type="submit">Validar</button> -->
+                        <div>
+                            <button onclick="startTimer(59);" class="txt-gray" id="resend-cod"><u>Reenviar código</u></button>
+                            <div class="txt-gray" id="timer">59s</div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <a href="" class="btn btn-gradiente-life w-100 mt-4">Reenviar código</a>
         </div>
     </div>
 </div>
