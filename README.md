@@ -13,8 +13,3 @@
   <br>
   <br>
 </p>
-
-
-## Bootstrap 5
-
-Nossa ramificação padrão é para o desenvolvimento de nossa versão Bootstrap 5. Vá para o [`v4-dev` branch](https://github.com/twbs/bootstrap/tree/v4-dev) para ver o readme, a documentação e o código-fonte do Bootstrap 4.
