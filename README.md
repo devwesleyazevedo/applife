@@ -7,7 +7,7 @@
 <h3 align="center">App Life - Bootstrap 5</h3>
 
 <p align="center">
-  App Life usa a estrutura de front-end elegante, intuitiva e poderosa para desenvolvimento web mais rápido e fácil.
+  App Life usa a estrutura de front-end elegante, <br> intuitiva e poderosa para desenvolvimento web mais rápido e fácil.
   <br>
   <a href="https://getbootstrap.com/docs/5.1/"><strong>Explore os documentos do Bootstrap »</strong></a>
   <br>
