@@ -497,63 +497,6 @@ input[type="radio"]:checked::before {
 
 
 
-/* Menu Left */
-
-#menu_left .menu {
-    flex: 1;
-    height: 100%;
-    background-color: black;
-    transition: 0.5s;
-}
-
-#menu_left .menu_button {
-    width: 6px;
-    height: 812px;
-    background: linear-gradient(360deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
-}
-
-#menu_left .menu_button .btn_corpo{
-    width: 32px;
-    height: 100px;
-    background-image: url(../images/side-navbar-menu_button.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 4vh;
-    right: -26px;
-}
-
-.btn_corpo  a {
-    cursor: pointer;
-}
-
-.side-navbar {
-  width: 40vh;
-  height: 100%;
-  position: fixed;
-  margin-left: -40vh;
-  background-color: #100901;
-  transition: 0.5s;
-}
-
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
-  background-color: #ffffff26;
-}
-
-.my-container {
-  transition: 0.4s;
-}
-
-.active-nav {
-  margin-left: 0;
-}
-
-.active-cont {
-  margin-left: 180px;
-}
 
 
 
