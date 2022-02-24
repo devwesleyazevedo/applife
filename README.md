@@ -12,13 +12,6 @@
   <a href="https://getbootstrap.com/docs/5.1/"><strong>Explore os documentos do Bootstrap »</strong></a>
   <br>
   <br>
-  <a href="https://github.com/twbs/bootstrap/issues/new?assignees=-&labels=bug&template=bug_report.yml">Relatar bug</a>
-  ·
-  <a href="https://github.com/twbs/bootstrap/issues/new?assignees=&labels=feature&template=feature_request.yml">Recurso de solicitação</a>
-  ·
-  <a href="https://themes.getbootstrap.com/">Temas</a>
-  ·
-  <a href="https://blog.getbootstrap.com/">Blog</a>
 </p>
 
 
