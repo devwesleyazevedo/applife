@@ -12,6 +12,8 @@ body{
     --cor-cinza: #969696;
     --cor-branco: #FFF;
     --cor-preto: #000;
+    --linear-gradient: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
+    --modal-over: #4343ef42;
 }
 
 input[type="radio"]::before {
@@ -59,7 +61,7 @@ input[type=number]:focus,
 
 /* COLORS */
 .gradient-life{
-    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
+    background: var(--linear-gradient);
 }
 
 .txt-gray{
@@ -74,7 +76,7 @@ input[type=number]:focus,
 }
 
 .txt-gradient-life{
-    color: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
+    color: var(--linear-gradient);
 }
 
 /* STRUCTURE */
@@ -91,7 +93,7 @@ input[type=number]:focus,
 }
 
 .btn-gradiente-life{
-    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
+    background: var(--linear-gradient);
     border: 0;
     padding: 10px 20px;
     color: var(--cor-branco);
@@ -158,7 +160,7 @@ input[type=number]:focus,
 }
 
 .checkbox-life {
-    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
+    background: var(--linear-gradient);
     position: relative;
 }
 
@@ -201,13 +203,13 @@ input[type=number]:focus,
 }
 
 .checkbox-life:checked {
-    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
+    background: var(--linear-gradient);
     border: none;
 }
 
 .checkbox-life:checked[type=checkbox] {
     background-image: none;
-    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
+    background: var(--linear-gradient);
     position: relative;
 }
 
@@ -309,7 +311,7 @@ input[type="radio"]:checked::before {
 
 
 #tabs button.active {
-    background: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
+    background: var(--linear-gradient);
     border-color: transparent;
 }
 
@@ -425,6 +427,141 @@ input[type="radio"]:checked::before {
     height: 20px;
 }
 
+/* Modal - Default */
+.modal-backdrop {
+    background-color: var(--modal-over) !important;
+}
+
+/* Modal - Notificações Gerais */
+
+#ModalNotificacoes .modal-header, #ModalNotificacoes .modal-footer {
+    border: none;
+}
+
+#ModalNotificacoes .modal-content {
+    background-color: var(--cor-preto);
+    border: 2px solid;
+    border-image: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%) 1;
+}
+
+#ModalNotificacoes .modal-footer {
+    background-color: var(--cor-preto);
+    margin-bottom: -1px;
+}
+
+/* Modal - Recompensa */
+
+#ModalRecompensa .modal-header, #ModalRecompensa .modal-footer {
+    border: none;
+}
+
+#ModalRecompensa .modal-content {
+    background-image: url(../images/notificacoes_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+#ModalRecompensa .modal-footer {
+    background-color: var(--cor-preto);
+    margin-bottom: -1px;
+}
+
+/* Modal - Termos e Condições / Política de Privacidade*/
+
+#ModalTermosePolitica .modal-header, #ModalTermosePolitica .modal-footer {
+    border: none;
+}
+
+#ModalTermosePolitica .modal-content {
+    background-image: url(../images/termos_politica_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+#ModalTermosePolitica .modal-body {
+    max-height: 50vh;
+}
+
+#ModalTermosePolitica .modal-footer {
+    background-color: var(--cor-preto);
+    margin-bottom: -1px;
+}
+
+
+
+
+
+/* Menu Left */
+
+#menu_left .menu {
+    flex: 1;
+    height: 100%;
+    background-color: black;
+    transition: 0.5s;
+}
+
+#menu_left .menu_button {
+    width: 6px;
+    height: 812px;
+    background: linear-gradient(360deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+}
+
+#menu_left .menu_button .btn_corpo{
+    width: 32px;
+    height: 100px;
+    background-image: url(../images/side-navbar-menu_button.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 4vh;
+    right: -26px;
+}
+
+.btn_corpo  a {
+    cursor: pointer;
+}
+
+.side-navbar {
+  width: 40vh;
+  height: 100%;
+  position: fixed;
+  margin-left: -40vh;
+  background-color: #100901;
+  transition: 0.5s;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #ffffff26;
+}
+
+.my-container {
+  transition: 0.4s;
+}
+
+.active-nav {
+  margin-left: 0;
+}
+
+.active-cont {
+  margin-left: 180px;
+}
+
+
+
+
+
+
+
+
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 768px) {
@@ -463,4 +600,11 @@ input[type="radio"]:checked::before {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
+    
+    .modal-dialog {
+        width: 100vh;
+        max-width: 85%;
+    }
+
 }
