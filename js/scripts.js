@@ -145,41 +145,41 @@ function check_pass() {
         
 
         if (no == 1) {
-            Nv1.classList.add("PasswordlengthBG");
-            Nv2.classList.remove("PasswordlengthBG");
-            Nv3.classList.remove("PasswordlengthBG");
-            Nv4.classList.remove("PasswordlengthBG");
+            Nv1.classList.add("active");
+            Nv2.classList.remove("active");
+            Nv3.classList.remove("active");
+            Nv4.classList.remove("active");
             document.getElementById("texto_forca").innerHTML = "Muito fraca";
         }
 
         if (no == 2) {
-            Nv1.classList.add("PasswordlengthBG");
-            Nv2.classList.add("PasswordlengthBG");
-            Nv3.classList.remove("PasswordlengthBG");
-            Nv4.classList.remove("PasswordlengthBG");
+            Nv1.classList.add("active");
+            Nv2.classList.add("active");
+            Nv3.classList.remove("active");
+            Nv4.classList.remove("active");
             document.getElementById("texto_forca").innerHTML = "Fraca";
         }
 
         if (no == 3) {
-            Nv1.classList.add("PasswordlengthBG");
-            Nv2.classList.add("PasswordlengthBG");
-            Nv3.classList.add("PasswordlengthBG");
-            Nv4.classList.remove("PasswordlengthBG");
+            Nv1.classList.add("active");
+            Nv2.classList.add("active");
+            Nv3.classList.add("active");
+            Nv4.classList.remove("active");
             document.getElementById("texto_forca").innerHTML = "Boa";
         }
 
         if (no == 4) {
-            Nv1.classList.add("PasswordlengthBG");
-            Nv2.classList.add("PasswordlengthBG");
-            Nv3.classList.add("PasswordlengthBG");
-            Nv4.classList.add("PasswordlengthBG");
+            Nv1.classList.add("active");
+            Nv2.classList.add("active");
+            Nv3.classList.add("active");
+            Nv4.classList.add("active");
             document.getElementById("texto_forca").innerHTML = "Forte";
         }
     } else {
-        Nv1.classList.remove("PasswordlengthBG");
-        Nv2.classList.remove("PasswordlengthBG");
-        Nv3.classList.remove("PasswordlengthBG");
-        Nv4.classList.remove("PasswordlengthBG");
+        Nv1.classList.remove("active");
+        Nv2.classList.remove("active");
+        Nv3.classList.remove("active");
+        Nv4.classList.remove("active");
         document.getElementById("texto_forca").innerHTML = "";
     }
 }
