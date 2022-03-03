@@ -374,6 +374,11 @@ input[type="radio"]:checked::before {
         font-size: 10px;
 }
 
+.PasswordlengthBG {
+    background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%) !important;
+}
+
+
 /* Página - Login */
 
 #logo-bottom{
