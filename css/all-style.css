@@ -90,6 +90,7 @@ input[type=number]:focus,
     -webkit-transform: translateY( -50% );
     -moz-transform: translateY( -50% );
     transform: translateY( -50% );
+    z-index: 2;
 }
 
 .btn-gradiente-life{
@@ -379,6 +380,7 @@ input[type="radio"]:checked::before {
     left: 0; 
     text-align: center; 
     width: 100%;
+    z-index: 2;
 }
 
 #logo-bottom > img{
@@ -624,16 +626,19 @@ input[type="radio"]:checked::before {
         background-repeat: no-repeat;
 }
 
-    .bg-simbolo{
+    .bg-simbolo:after {
+        content:"";
+        position: absolute;
+        width: 100%;
         max-height: 500px;
         height: 100vh;
         background-image: url('/images/bg-icone-life-token.png');
-        background-size: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
         background-position: bottom;
-        background-repeat: no-repeat; 
-        position: absolute;
-        width: 100%;
         bottom: 0;
+        left: 0;
+        z-index: 1;
     }
 
     .container{
