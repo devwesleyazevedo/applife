@@ -456,7 +456,7 @@ input[type="radio"]:checked::before {
 }
 
 #ModalRecompensa .modal-content {
-    background-image: url(../images/notificacoes_bg.png);
+    background-image: url('../images/notificacoes_bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -476,7 +476,7 @@ input[type="radio"]:checked::before {
 }
 
 #ModalTermosePolitica .modal-content {
-    background-image: url(../images/termos_politica_bg.png);
+    background-image: url('../images/termos_politica_bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -557,7 +557,7 @@ input[type="radio"]:checked::before {
     top: 0;
     left: 0;
     background-color: #111;
-    background-image: url(../images/bg-black-life-token.png);
+    background-image: url('../images/bg-black-life-token.png');
     transition: 0.5s;
     margin-left: 0px;
 }
@@ -619,7 +619,7 @@ input[type="radio"]:checked::before {
         margin-left: auto;
         margin-right: auto;
         z-index: -1;
-        background-image: url(/images/bg-black-life-token.png);
+        background-image: url('/images/bg-black-life-token.png');
         background-size: cover;
         background-repeat: no-repeat;
 }
@@ -627,7 +627,7 @@ input[type="radio"]:checked::before {
     .bg-simbolo{
         max-height: 500px;
         height: 100vh;
-        background-image: url(/images/bg-icone-life-token.png);
+        background-image: url('/images/bg-icone-life-token.png');
         background-size: 100%;
         background-position: bottom;
         background-repeat: no-repeat; 
