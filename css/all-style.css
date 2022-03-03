@@ -497,25 +497,70 @@ input[type="radio"]:checked::before {
     margin-bottom: -1px;
 }
 
+/* Modal - Agradecimento */
+
+#ModalAgradecimento .bgmodal {
+    background-image: url('../images/modal_agradecimento.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+#ModalAgradecimento .modal-header, #ModalAgradecimento .modal-footer {
+    border: none;
+}
+
+#ModalAgradecimento .modal-content {
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#ModalAgradecimento .modal-footer {
+    background-color: var(--cor-preto);
+    margin-bottom: -1px;
+}
+
+
 /* Modal - Recompensa */
+
+#ModalRecompensa h2 {
+    font-size: 79px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 86px;
+    letter-spacing: -0.005em;
+    text-align: center;
+}
+
+#ModalRecompensa .bgmodal {
+    background-image: url('../images/modal_recompensa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
 
 #ModalRecompensa .modal-header, #ModalRecompensa .modal-footer {
     border: none;
 }
 
 #ModalRecompensa .modal-content {
-    background-image: url('../images/notificacoes_bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 8px;
+    border: none;
     background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 #ModalRecompensa .modal-footer {
     background-color: var(--cor-preto);
     margin-bottom: -1px;
 }
+
+
+
 
 /* Modal - Termos e Condições / Política de Privacidade*/
 
