@@ -645,6 +645,30 @@ input[type="radio"]:checked::before {
 }
 
 
+/* MENU FOOTER */
+
+#MenuFooter {
+    padding: 18px 15px;
+    background-color: var(--cor-preto);
+    border-top: 1px solid #ffffff25;
+    bottom: 0;
+}
+
+#MenuFooter ul li a {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-cinza);
+}
+
+#MenuFooter .icon img {
+    max-height: 24px;
+    height: 100vh;
+}
 
 
 /* MEDIA QUERY */
