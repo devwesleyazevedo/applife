@@ -12,38 +12,29 @@
     <link href="./css/all-style.css" rel="stylesheet"/>
     <!-- Font Artegra -->
     <link href = "./font/artegra/stylesheet.css" rel = "stylesheet" type = "text/css" />
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
 	 <header></header>
 <!-- ------------------------------------ -->
 
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav" style="height: 100px;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark z-index3" id="mainNav" style="height: 100px;">
   <div class="container">
-    <div class="sidenav" id="mySidenav">
-      
-      <!-- Header User -->
+    <!-- Header content-->
+    <p>Header</p>
+    <!-- Header content-->
+    <div class="sidenav" id="mySidenav" style="margin-left: -325px;">
+      <!-- Header Open menu -->
       <div class="HeaderUser w-100 vh-100 d-flex align-items-center justify-content-center p-4 mb-3">
         <div class="w-100 d-flex align-items-start justify-content-center gap-3" style="margin-bottom: -110px;">
-          
-          
-          
           <div class="AvatarCircle" class="d-flex align-items-start justify-content-center">
             <div class="useravatar w-100 h-100 d-flex align-items-center justify-content-center"></div>
           </div>
-          
-          
-          
-          
           <div class="text-white pt-2" style="flex: 1;">
             <p><span>Olá</span>, <br> Usuário</p>
           </div>
         </div>
       </div>
-      <!-- Menu -->
-
+      <!-- Nav menu -->
       <ul class="nav flex-column gap-4 p-5">
         <li class="nav-item d-flex align-items-start justify-content-center">
           <div class=""><img src="./images/user_seguranca.png" alt=""></div>
@@ -74,45 +65,27 @@
           <a class="nav-link text-white" href="#">Sair</a>
         </li>
       </ul>
-
- 
+      <!-- Copy-->
       <p class="beta m-0 p-0 text-white text-center w-100">Versão BETA</p>
-
-  
-
-
+      <!-- Botão -->
       <div onclick="OpenCloseNav()" class="closebtn d-flex  align-items-center justify-content-center" id="main" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </div>
       <div class="border_menu"></div>
+      <!-- Botão -->
+    </div>
   </div>
-</div>
-
-
-
-
-
 </nav>
 
-
 <div class="container">
-  Container
+  <div class="row">
+      <div class="va-middle">
+         Conteúdo
+      </div>
+  </div>
 </div>
-
-
-<script>
-function OpenCloseNav() {
-    var dropDown = document.getElementById("mySidenav");
-    if (dropDown.style.marginLeft === '-325px') {
-        dropDown.style.marginLeft = "0px";
-    } else {
-      document.getElementById("mySidenav").style.marginLeft = "-325px";
-    }
-}
-</script>
-
-
-
+<!-- Abrir/Fechar o menu lateral JS -->
+<script src="./js/nav.js"></script>
 
 <!-- ------------------------------------ -->
 <footer></footer>
