@@ -142,46 +142,44 @@ function check_pass() {
         if (val.length > 6 && (val.match(/[a-z]/) || val.match(/\d+/) || val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/))) no = 2;
         if (val.length > 6 && ((val.match(/[a-z]/) && val.match(/\d+/)) || (val.match(/\d+/) && val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/)) || (val.match(/[a-z]/) && val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/)))) no = 3;
         if (val.length > 6 && val.match(/[a-z]/) && val.match(/\d+/) && val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/)) no = 4;
+        
 
         if (no == 1) {
-            $("#Nv1").animate({
-                width: '121px'
-            }, 300);
-            Nv1.style.background = "linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%)";
+            Nv1.classList.add("PasswordlengthBG");
+            Nv2.classList.remove("PasswordlengthBG");
+            Nv3.classList.remove("PasswordlengthBG");
+            Nv4.classList.remove("PasswordlengthBG");
             document.getElementById("texto_forca").innerHTML = "Muito fraca";
         }
 
         if (no == 2) {
-            $("#Nv2").animate({
-                backgroundColor: 'red'
-            }, 300);
-            Nv1.style.background = "linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%)";
-            Nv2.style.background = "linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%)";
+            Nv1.classList.add("PasswordlengthBG");
+            Nv2.classList.add("PasswordlengthBG");
+            Nv3.classList.remove("PasswordlengthBG");
+            Nv4.classList.remove("PasswordlengthBG");
             document.getElementById("texto_forca").innerHTML = "Fraca";
         }
 
         if (no == 3) {
-            $("#Nv3").animate({
-                backgroundColor: 'red'
-            }, 300);
-            Nv1.style.background = "linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%)";
-            Nv2.style.background = "linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%)";
-            Nv3.style.background = "linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%)";
+            Nv1.classList.add("PasswordlengthBG");
+            Nv2.classList.add("PasswordlengthBG");
+            Nv3.classList.add("PasswordlengthBG");
+            Nv4.classList.remove("PasswordlengthBG");
             document.getElementById("texto_forca").innerHTML = "Boa";
         }
 
         if (no == 4) {
-            $("#Nv4").animate({
-                backgroundColor: 'red'
-            }, 300);
-            Nv1.style.background = "linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%)";
-            Nv2.style.background = "linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%)";
-            Nv3.style.background = "linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%)";
-            Nv4.style.background = "linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%)";
+            Nv1.classList.add("PasswordlengthBG");
+            Nv2.classList.add("PasswordlengthBG");
+            Nv3.classList.add("PasswordlengthBG");
+            Nv4.classList.add("PasswordlengthBG");
             document.getElementById("texto_forca").innerHTML = "Forte";
         }
     } else {
-        meter.style.backgroundColor = "white";
+        Nv1.classList.remove("PasswordlengthBG");
+        Nv2.classList.remove("PasswordlengthBG");
+        Nv3.classList.remove("PasswordlengthBG");
+        Nv4.classList.remove("PasswordlengthBG");
         document.getElementById("texto_forca").innerHTML = "";
     }
 }
