@@ -478,8 +478,18 @@ input[type="radio"]:checked::before {
 
 #ModalNotificacoes .modal-content {
     background-color: var(--cor-preto);
-    border: 2px solid;
-    border-image: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%) 1;
+}
+
+.RadiusBorderGradient {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    border: double 2px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(var(--cor-preto), var(--cor-preto)), radial-gradient(circle at top left, var(--cor-violeta), var(--cor-azul), var(--cor-verde));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    overflow: hidden;
 }
 
 #ModalNotificacoes .modal-footer {
