@@ -375,7 +375,22 @@ input[type="radio"]:checked::before {
 }
 
 .PasswordlengthBG {
+    opacity: 0.3;
+    -webkit-transition: opacity 2s ease;
+    -moz-transition: opacity 2s ease;
+    -ms-transition: opacity 2s ease;
+    -o-transition: opacity 2s ease;
+    transition: opacity 2s ease;
+}
+
+.PasswordlengthBG.active {
     background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%) !important;
+    opacity: 1;
+    -webkit-transition: opacity 2s ease;
+    -moz-transition: opacity 2s ease;
+    -ms-transition: opacity 2s ease;
+    -o-transition: opacity 2s ease;
+    transition: opacity 2s ease;
 }
 
 
