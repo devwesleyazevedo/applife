@@ -559,9 +559,6 @@ input[type="radio"]:checked::before {
     margin-bottom: -1px;
 }
 
-
-
-
 /* Modal - Termos e Condições / Política de Privacidade*/
 
 #ModalTermosePolitica .modal-header, #ModalTermosePolitica .modal-footer {
@@ -586,6 +583,127 @@ input[type="radio"]:checked::before {
     margin-bottom: -1px;
 }
 
+
+/* Modal Congelamento */
+
+#ModalCongelamento .bgmodal {
+    background-image: url('../images/modal_congelamento.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+#ModalCongelamento .modal-header, #ModalCongelamento .modal-footer {
+    border: none;
+}
+
+#ModalCongelamento .modal-content {
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#ModalCongelamento .modal-footer {
+    background-color: var(--cor-preto);
+    margin-bottom: -1px;
+}
+
+
+#ModalCongelamento h1 {
+    font-size: 79px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.8;
+    letter-spacing: -0.005em; 
+}
+
+#ModalCongelamento h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.005em;
+}
+
+#ModalCongelamento p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    text-align: center;
+}
+
+/* Modal Congelado */
+
+#ModalCongelado .bgmodal {
+    background-image: url('../images/modal_congelado.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+#ModalCongelado .modal-header, #ModalCongelado .modal-footer {
+    border: none;
+}
+
+#ModalCongelado .modal-content {
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#ModalCongelado .modal-footer {
+    background-color: var(--cor-preto);
+    margin-bottom: -1px;
+}
+
+#ModalCongelado h1 {
+    font-size: 79px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.8;
+    letter-spacing: -0.005em; 
+}
+
+#ModalCongelado h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.005em;
+}
+
+#ModalCongelado p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    text-align: center;
+}
+
+/* Modal NFT */
+
+#ModalNFT .modal-content {
+    border: none;
+    background-color: var(--cor-preto);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#ModalNFT .modal-header, #ModalNFT .modal-footer {
+    border: none;
+}
+
+#ModalNFT .modal-header a {
+    color: var(--cor-cinza);
+    text-decoration: none;
+}
 
 /* MENU LEFT */
 
