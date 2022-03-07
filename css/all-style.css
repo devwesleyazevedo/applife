@@ -338,6 +338,13 @@ input[type="radio"]:checked::before {
 
 .pular {
     color: var(--cor-cinza);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    text-align: center;
+
 }
 
 /* Página - Apresentação */
