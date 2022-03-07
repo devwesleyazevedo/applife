@@ -10,6 +10,7 @@ body{
     --cor-azulclaro: #02C2F4;
     --cor-verde: #00E584;
     --cor-cinza: #969696;
+    --cor-cinza-escuro: #161616;
     --cor-branco: #FFF;
     --cor-preto: #000;
     --linear-gradient: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
@@ -893,6 +894,180 @@ input[type="radio"]:checked::before {
     max-height: 24px;
     height: 100vh;
 }
+
+
+/* Dashboard */
+
+.dashboard {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px;
+}
+
+.dashboard .TokensDisponiveis h1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.005em;
+    text-align: left;
+}
+
+
+.dashboard .TokensDisponiveis h1 span {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    margin: 0;
+}
+
+
+.dashboard .TokensDisponiveis h2 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    margin: 0;
+}
+
+.dashboard .TokensDisponiveis h2 span {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: -0.005em;
+    text-align: left;
+}
+
+.dashboard .TokensDisponiveis h6 {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    margin: 0;
+}
+
+.dashboard .TokensDisponiveis button {
+    border: 1px solid var(--cor-branco);
+    border-radius: 5px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    color: var(--cor-branco);
+    padding-top: 8px;
+
+}
+
+.dashboard .ondequeromedivertir {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.dashboard .ondequeromedivertir .avatar img {
+    margin-bottom: -20px;
+    max-width: 70px;
+}
+
+.dashboard .ondequeromedivertir p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    margin: 0;
+    color: var(--cor-cinza);
+}
+
+.dashboard #OndeQuandoTabs {
+
+}
+
+.dashboard #OndeQuandoTabs .nav {
+    flex-wrap: initial;
+}
+
+.dashboard #OndeQuandoTabs ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.dashboard #OndeQuandoTabs ul li {
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+
+.dashboard #OndeQuandoTabs ul li button {
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: transparent;
+    position: relative;
+}
+
+.dashboard #OndeQuandoTabs ul li button p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    z-index: 3;
+    position: relative;
+}
+
+.dashboard #OndeQuandoTabs ul li button:before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: url('../images/tab_check.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+    right: 10px;
+}
+
+.dashboard #OndeQuandoTabs #Onde-tab {
+    background-image: url('../images/tab_onde_bg.png');
+}
+.dashboard #OndeQuandoTabs #Como-tab {
+    background-image: url('../images/tab_como_bg.png');
+}
+
+.dashboard #OndeQuandoTabs .tab-content {
+    background-color: var(--cor-cinza-escuro);
+}
+
+.dashboard #OndeQuandoTabs button.active:after {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background-color: var(--cor-cinza-escuro);
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+
 
 
 /* MEDIA QUERY */
