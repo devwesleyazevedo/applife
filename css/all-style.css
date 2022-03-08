@@ -1043,6 +1043,7 @@ input[type="radio"]:checked::before {
     background-position: center;
     z-index: 3;
     right: 10px;
+    top: 30px;
 }
 
 .dashboard #OndeQuandoTabs #Onde-tab {
@@ -1054,6 +1055,22 @@ input[type="radio"]:checked::before {
 
 .dashboard #OndeQuandoTabs .tab-content {
     background-color: var(--cor-cinza-escuro);
+}
+
+.dashboard #OndeQuandoTabs .tab-content p {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    text-align: center;
+}
+
+.dashboard #OndeQuandoTabs .tab-content input {
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.005em;
+    color: var(--cor-cinza);
+    outline: 0;
 }
 
 .dashboard #OndeQuandoTabs button.active:after {
