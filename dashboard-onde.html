@@ -21,12 +21,13 @@
 
 header {
    background-color: black;
+   padding: 21px 15px;
 }
 
 header .LoginAvatarCircle{
     background-image: var(--linear-gradient);
-    width: 38px;
-    height: 38px;
+    width: 58px;
+    height: 58px;
     border-radius: 200px;
 }
 
@@ -38,7 +39,7 @@ header .LoginAvatar {
 }
 
 header p {
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 13px;
@@ -54,15 +55,15 @@ header .col-2 {
 </style>
 
 	<header>
-    <div class="container">
+    <div class="container p-0">
       <div class="row">
-        <div class="d-flex align-items-center">
-          <div class="col-2">
-            <div class="LoginAvatarCircle">
+        <div class="d-flex align-items-center px-2">
+          <div class="col-3">
+            <div class="LoginAvatarCircle mx-auto">
               <div class="LoginAvatar"></div>
             </div>
           </div>
-          <p class="col-9">Olá, Usuário</p>
+          <p class="col-8">Olá, Usuário</p>
           <div class="col-1">
             <a href=""><img src="./images/search.png" class="img-fluid" alt=""></a>
           </div>
@@ -142,7 +143,7 @@ header .col-2 {
   <div class="row">
 
   <!-- Dashboard -->
-  <div class="dashboard">
+  <div class="dashboard mt-2">
 
       <!-- Tokens Disponíveis -->
       <div class="TokensDisponiveis">
@@ -173,16 +174,72 @@ header .col-2 {
       <!-- Tokens Disponíveis -->
 
 
+
+
+      <div class="d-flex align-items-center justify-content-between gap-2 py-3">
+        <div>Categorias</div>
+        <div class="d-flex align-items-center justify-content-start gap-2">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+
+      <!-- Categorias --> 
+      <div id="OwlCategorias" class="owl-carousel  mt-1">
+        <!-- Item 01 --> 
+        <div class="item">
+          <div class="rounded-circle overflow-hidden">
+            <img class="img-fluid" src="./images/carnaval.png" alt="">
+          </div>
+          <p class="text-center mt-2">Carnaval</p>
+        </div>
+        <!-- Item 02 --> 
+        <div class="item">
+          <div class="rounded-circle overflow-hidden">
+            <img class="img-fluid" src="./images/Musica.png" alt="">
+            <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
+          </div>
+          <p class="text-center mt-2">Música</p>
+        </div>
+        <!-- Item 03 --> 
+        <div class="item">
+          <div class="rounded-circle overflow-hidden">
+            <img class="img-fluid" src="./images/Teatro.png" alt="">
+            <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
+          </div>
+          <p class="text-center mt-2">Teatro</p>
+        </div>
+        <!-- Item 04 --> 
+        <div class="item">
+          <div class="rounded-circle overflow-hidden">
+            <img class="img-fluid" src="./images/Cinema.png" alt="">
+            <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
+          </div>
+          <p class="text-center mt-2">Cinema</p>
+        </div>
+        <!-- Item 05 --> 
+        <div class="item">
+          <div class="rounded-circle overflow-hidden">
+            <img class="img-fluid" src="./images/carnaval.png" alt="">
+            <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
+          </div>
+          <p class="text-center mt-2">Carnaval</p>
+        </div>
+      </div>
+      <!-- Categorias --> 
+
+
             <!-- Tabs -->
-            <div class="mt-5 w-100" id="OndeQuandoTabs">
+            <div class="mt-1 w-100" id="OndeQuandoTabs">
               <ul class="nav d-flex gap-3 align-items-center justify-content-center" role="tablist">
                   <li class="nav-item w-100" role="presentation">
-                    <button class="active text-white px-2 py-3" id="Onde-tab" data-bs-toggle="tab" data-bs-target="#OndeBTN" type="button" role="tab" aria-controls="OndeBTN" aria-selected="true">
+                    <button class="w-100 active text-white px-2 py-3" id="Onde-tab" data-bs-toggle="tab" data-bs-target="#OndeBTN" type="button" role="tab" aria-controls="OndeBTN" aria-selected="true">
                       <p class="mt-2"> Onde quero me divertir</p>
                     </button>
                   </li>
                   <li class="nav-item w-100" role="presentation">
-                    <button class="text-white px-2 py-3" id="Como-tab" data-bs-toggle="tab" data-bs-target="#ComoBTN" type="button" role="tab" aria-controls="ComoBTN" aria-selected="false">
+                    <button class="w-100 text-white px-2 py-3" id="Como-tab" data-bs-toggle="tab" data-bs-target="#ComoBTN" type="button" role="tab" aria-controls="ComoBTN" aria-selected="false">
                      <p class="mt-2">Como quero me divertir</p>
                     </button>
                   </li>
@@ -525,7 +582,179 @@ header .col-2 {
 
                   <!-- Tab2 -->
                   <div class="tab-pane" id="ComoBTN" role="tabpanel" aria-labelledby="Como-tab">
-                     aaa
+
+                      <!-- Enquetes Owl -->
+                      <div class="owl-slider p-0">
+                        <div class="mt-5 px-1 d-flex gap-3  align-items-center justify-content-between">
+                          <p>Enquetes</p>
+                          <p>Ver todas</p>
+                        </div>
+                        <div id="OwlEnquetes" class="owl-carousel">
+                          <!-- Item 01 -->
+                          <div class="item rounded overflow-hidden">
+                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                              <div class="d-flex align-items-center justify-content-between  p-3 h-100">
+                                <h1>Quem deverá ser a Rainha de Bateria no desfile em 2022?</h1>
+                                <div><img src="./images/1° da Cidade Lider.png" alt=""></div>
+                              </div>
+                              <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
+                                <div class="col-5 d-flex align-items-center justify-content-center gap-2">
+                                  <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
+                                  <p class="m-0 class text-white">20 votos</p>
+                                </div>
+                                <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
+                                  <div class="w-25">
+                                    <img class="img-fluid" src="./images/calendario.png" alt="">
+                                  </div>
+                                  <span>
+                                    Encerra:<br> 26/12/2021
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Item 02 -->
+                          <div class="item rounded overflow-hidden">
+                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                              <div class="d-flex align-items-center justify-content-between  p-3 h-100">
+                                <h1>Vote para definir o samba-enredo da escola para o desfile em 2022!</h1>
+                                <div><img src="./images/Brinco da Marquesa.png" alt=""></div>
+                              </div>
+                              <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
+                                <div class="col-5 d-flex align-items-center justify-content-center gap-2">
+                                  <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
+                                  <p class="m-0 class text-white">40 votos</p>
+                                </div>
+                                <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
+                                  <div class="w-25">
+                                    <img class="img-fluid" src="./images/calendario.png" alt="">
+                                  </div>
+                                  <span>
+                                    Encerrado:<br> 26/12/2021
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Enquetes Owl -->
+
+
+                      <!-- Vantagens Owl -->
+                      <div class="owl-slider p-0">
+                        <div class="mt-2 d-flex gap-3  align-items-center justify-content-between">
+                          <p>Enquetes</p>
+                          <p>Ver todas</p>
+                        </div>
+                        <div id="OwlVantagens" class="owl-carousel">
+                          <!-- Item 01 -->
+                          <div class="item rounded overflow-hidden">
+                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                              <div class="d-flex align-items-center justify-content-between  p-3 h-100">
+                                <h1>Quem deverá ser a Rainha de Bateria no desfile em 2022?</h1>
+                                <div><img src="./images/1° da Cidade Lider.png" alt=""></div>
+                              </div>
+                              <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
+                                <div class="col-5 d-flex align-items-center justify-content-center gap-2">
+                                  <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
+                                  <p class="m-0 class text-white">20 votos</p>
+                                </div>
+                                <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
+                                  <div class="w-25">
+                                    <img class="img-fluid" src="./images/calendario.png" alt="">
+                                  </div>
+                                  <span>
+                                    Encerra:<br> 26/12/2021
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Item 02 -->
+                          <div class="item rounded overflow-hidden">
+                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                              <div class="d-flex align-items-center justify-content-between  p-3 h-100">
+                                <h1>Vote para definir o samba-enredo da escola para o desfile em 2022!</h1>
+                                <div><img src="./images/Brinco da Marquesa.png" alt=""></div>
+                              </div>
+                              <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
+                                <div class="col-5 d-flex align-items-center justify-content-center gap-2">
+                                  <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
+                                  <p class="m-0 class text-white">40 votos</p>
+                                </div>
+                                <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
+                                  <div class="w-25">
+                                    <img class="img-fluid" src="./images/calendario.png" alt="">
+                                  </div>
+                                  <span>
+                                    Encerrado:<br> 26/12/2021
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Vantagens Owl -->
+
+                     <!-- Recompensas Owl -->
+                     <div class="owl-slider p-0">
+                      <div class="mt-2 d-flex gap-3  align-items-center justify-content-between">
+                        <p>Enquetes</p>
+                        <p>Ver todas</p>
+                      </div>
+                      <div id="OwlRecompensas" class="owl-carousel">
+                        <!-- Item 01 -->
+                        <div class="item rounded overflow-hidden">
+                          <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                            <div class="d-flex align-items-center justify-content-between  p-3 h-100">
+                              <h1>Quem deverá ser a Rainha de Bateria no desfile em 2022?</h1>
+                              <div><img src="./images/1° da Cidade Lider.png" alt=""></div>
+                            </div>
+                            <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
+                              <div class="col-5 d-flex align-items-center justify-content-center gap-2">
+                                <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
+                                <p class="m-0 class text-white">20 votos</p>
+                              </div>
+                              <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
+                                <div class="w-25">
+                                  <img class="img-fluid" src="./images/calendario.png" alt="">
+                                </div>
+                                <span>
+                                  Encerra:<br> 26/12/2021
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Item 02 -->
+                        <div class="item rounded overflow-hidden">
+                          <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                            <div class="d-flex align-items-center justify-content-between  p-3 h-100">
+                              <h1>Vote para definir o samba-enredo da escola para o desfile em 2022!</h1>
+                              <div><img src="./images/Brinco da Marquesa.png" alt=""></div>
+                            </div>
+                            <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
+                              <div class="col-5 d-flex align-items-center justify-content-center gap-2">
+                                <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
+                                <p class="m-0 class text-white">40 votos</p>
+                              </div>
+                              <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
+                                <div class="w-25">
+                                  <img class="img-fluid" src="./images/calendario.png" alt="">
+                                </div>
+                                <span>
+                                  Encerrado:<br> 26/12/2021
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Recompensas Owl -->
+
                   </div>
                   <!-- Tab2 -->
               </div>
@@ -537,18 +766,12 @@ header .col-2 {
 
 
 
+<style>
+  .dashboard #OndeQuandoTabs button.active:after {
+    display: none;
+  }
+</style>
 
-
-
-
-
-
-
-
-
-
-
-      
       
 
 
@@ -557,8 +780,109 @@ header .col-2 {
 
   </div>
 </div>
+
 <!-- Abrir/Fechar o menu lateral JS -->
 <script src="./js/nav.js"></script>
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+<!-- Owl Carousel -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script>
+  jQuery("#OwlCategorias").owlCarousel({
+  margin: 20,
+  responsiveClass: true,
+  nav: false,
+  autoplay: false,
+  responsive: {
+    0: {
+      items: 4
+    },
+    600: {
+      items: 3
+    },
+    1024: {
+      items: 4
+    },
+    1366: {
+      items: 4
+    }
+  }
+});
+</script>
+<script>
+  jQuery("#OwlEnquetes").owlCarousel({
+  margin: 20,
+  responsiveClass: true,
+  nav: false,
+  autoplay: false,
+  responsive: {
+    0: {
+      items: 1.25
+    },
+    600: {
+      items: 3
+    },
+    1024: {
+      items: 4
+    },
+    1366: {
+      items: 4
+    }
+  }
+});
+</script>
+<script>
+  jQuery("#OwlVantagens").owlCarousel({
+  margin: 20,
+  responsiveClass: true,
+  nav: false,
+  autoplay: false,
+  responsive: {
+    0: {
+      items: 1.25
+    },
+    600: {
+      items: 3
+    },
+    1024: {
+      items: 4
+    },
+    1366: {
+      items: 4
+    }
+  }
+});
+</script>
+<script>
+  jQuery("#OwlRecompensas").owlCarousel({
+  margin: 20,
+  responsiveClass: true,
+  nav: false,
+  autoplay: false,
+  responsive: {
+    0: {
+      items: 1.25
+    },
+    600: {
+      items: 3
+    },
+    1024: {
+      items: 4
+    },
+    1366: {
+      items: 4
+    }
+  }
+});
+</script>
+
+
+
+
+
+
+
 
 <!-- ------------------------------------ -->
 <footer>

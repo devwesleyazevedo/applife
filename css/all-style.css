@@ -1087,6 +1087,81 @@ input[type="radio"]:checked::before {
 
 
 
+#OwlEnquetes h1, #OwlRecompensas h1, #OwlVantagens h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: -0.005em; 
+    color: var(--cor-branco);
+}
+
+#OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 11px;
+    letter-spacing: -0.005em;
+    color: #C4C4C4;
+}
+
+
+#OwlEnquetes span, #OwlRecompensas span, #OwlVantagens span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: -0.005em;
+    color: #C4C4C4;
+}
+
+
+#OwlEnquetes .Info, #OwlRecompensas .Info, #OwlVantagens .Info {
+    position: absolute;
+    bottom: 0;
+}
+
+#OwlCategorias p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 11px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+#OwlCategorias .rounded-circle {
+    position: relative;
+}
+
+#OwlCategorias .item .ItemOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-preto);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+
+#OwlCategorias .item .ItemOverlay span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 9px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: var(--cor-cinza);
+}
+
+
+
+
+
+
+
+
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 768px) {
