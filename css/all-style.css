@@ -1011,14 +1011,40 @@ input[type="radio"]:checked::before {
     overflow: hidden;
 }
 
-.dashboard #OndeQuandoTabs ul li button {
+.dashboard #OndeQuandoTabs ul li {
     border: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     background-color: transparent;
     position: relative;
+    max-height: 54px;
+    overflow: hidden;
 }
+
+.dashboard #OndeQuandoTabs li.tab1 {
+    background-image: url('../images/tab_onde_bg.png');
+}
+.dashboard #OndeQuandoTabs li.tab2 {
+    background-image: url('../images/tab_como_bg.png');
+}
+
+
+.dashboard #OndeQuandoTabs button {
+    background: transparent;
+    border: none;
+}
+
+.dashboard #OndeQuandoTabs button.active  {
+    background-color: var(--cor-cinza-escuro);
+    margin-top: 10px;
+    max-height: 70px;
+}
+
+.dashboard #OndeQuandoTabs ul li button.active p {
+    margin-top: 0 !important;
+}
+
 
 .dashboard #OndeQuandoTabs ul li button p {
     margin: 0;
@@ -1044,14 +1070,10 @@ input[type="radio"]:checked::before {
     background-position: center;
     z-index: 3;
     right: 10px;
-    top: 30px;
-}
-
-.dashboard #OndeQuandoTabs #Onde-tab {
-    background-image: url('../images/tab_onde_bg.png');
-}
-.dashboard #OndeQuandoTabs #Como-tab {
-    background-image: url('../images/tab_como_bg.png');
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .dashboard #OndeQuandoTabs .tab-content {
