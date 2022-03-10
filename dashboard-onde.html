@@ -176,8 +176,8 @@ header .col-2 {
 
 
 
-      <div class="mt-2 d-flex align-items-center justify-content-between gap-2 py-3">
-        <div>Categorias</div>
+      <div id="Cat" class="mt-2 d-flex align-items-center justify-content-between gap-2 py-3">
+        <h2>Categorias</h2>
         <div class="d-flex align-items-center justify-content-start gap-4">
           <div><img src="./images/search.png" alt=""></div>
           <div><img src="./images/arrow_left.png" alt=""></div>
@@ -247,7 +247,7 @@ header .col-2 {
               <div class="tab-content w-100 pt-3 p-2">
 
                   <!-- Escolha onde quer se divertir -->
-                  <p class="text-center text-white mb-2 mt-2">Escolha onde quer se divertir</p>
+                  <p class="textescolha text-center text-white mb-2 mt-2">Escolha onde quer se divertir</p>
                   <!-- Escolha onde quer se divertir -->
 
                   <!-- Tab1 -->
@@ -586,29 +586,27 @@ header .col-2 {
                       <!-- Enquetes Owl -->
                       <div class="owl-slider p-0">
                         <div class="mt-5 px-1 d-flex gap-3  align-items-center justify-content-between">
-                          <p>Enquetes</p>
-                          <p class="title-gradient p-0 m-0">Ver todas</p>
+                          <h3>Enquetes</h3>
+                          <p class="title-gradient p-0 m-0"><a href="#">Ver todas</a></p>
                         </div>
                         <div id="OwlEnquetes" class="owl-carousel">
                           <!-- Item 01 -->
                           <div class="item rounded overflow-hidden">
                             <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
-                              <div class="d-flex align-items-center justify-content-between  p-3 h-100">
+                              <div class="d-flex align-items-center justify-content-between gap-4 p-3 h-100">
                                 <h1>Quem deverá ser a Rainha de Bateria no desfile em 2022?</h1>
                                 <div><img src="./images/1° da Cidade Lider.png" alt=""></div>
                               </div>
                               <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
-                                <div class="col-5 d-flex align-items-center justify-content-center gap-2">
+                                <div class="col-4 d-flex align-items-center justify-content-center gap-2">
                                   <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
-                                  <p class="m-0 class text-white">20 votos</p>
+                                  <span>20 votos</span>
                                 </div>
-                                <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
-                                  <div class="w-25">
+                                <div class="col-8 bg-red d-flex align-items-center justify-content-start" style="background-color: #4443F0;">
+                                  <div class="w-100 calendario">
                                     <img class="img-fluid" src="./images/calendario.png" alt="">
                                   </div>
-                                  <span>
-                                    Encerra:<br> 26/12/2021
-                                  </span>
+                                  <span class="text-center w-100">Encerra: 26/12/2021</span>
                                 </div>
                               </div>
                             </div>
@@ -616,22 +614,20 @@ header .col-2 {
                           <!-- Item 02 -->
                           <div class="item rounded overflow-hidden">
                             <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
-                              <div class="d-flex align-items-center justify-content-between  p-3 h-100">
+                              <div class="d-flex align-items-center justify-content-between gap-4 p-3 h-100">
                                 <h1>Vote para definir o samba-enredo da escola para o desfile em 2022!</h1>
                                 <div><img src="./images/Brinco da Marquesa.png" alt=""></div>
                               </div>
                               <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
-                                <div class="col-5 d-flex align-items-center justify-content-center gap-2">
-                                  <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
-                                  <p class="m-0 class text-white">40 votos</p>
+                                <div class="col-4 d-flex align-items-center justify-content-center gap-2">
+                                  <div> <img class="img-fluid" src="./images/persons_white.png" alt=""></div>
+                                  <span>40 votos</span>
                                 </div>
-                                <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
-                                  <div class="w-25">
+                                <div class="col-8 bg-red d-flex align-items-center justify-content-start" style="background-color: #C4C4C4;">
+                                  <div class="w-100 calendario">
                                     <img class="img-fluid" src="./images/calendario.png" alt="">
                                   </div>
-                                  <span>
-                                    Encerrado:<br> 26/12/2021
-                                  </span>
+                                  <span class="text-center w-100">Encerrado: 26/12/2021</span>
                                 </div>
                               </div>
                             </div>
@@ -644,52 +640,44 @@ header .col-2 {
                       <!-- Vantagens Owl -->
                       <div class="owl-slider p-0">
                         <div class="mt-2 d-flex gap-3  align-items-center justify-content-between">
-                          <p>Vantagens</p>
-                          <p class="title-gradient p-0 m-0">Ver todas</p>
+                          <h3>Vantagens</h3>
+                          <p class="title-gradient p-0 m-0"><a href="#">Ver todas</a></p>
                         </div>
                         <div id="OwlVantagens" class="owl-carousel">
                           <!-- Item 01 -->
                           <div class="item rounded overflow-hidden">
-                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
-                              <div class="d-flex align-items-center justify-content-between  p-3 h-100">
-                                <h1>Quem deverá ser a Rainha de Bateria no desfile em 2022?</h1>
+                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/setorH.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                              <div class="d-flex align-items-center justify-content-between gap-4 p-3 h-100">
+                                <h1>10% desconto  ingresso na Arquibancada Setor H</h1>
                                 <div><img src="./images/1° da Cidade Lider.png" alt=""></div>
                               </div>
-                              <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
-                                <div class="col-5 d-flex align-items-center justify-content-center gap-2">
-                                  <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
-                                  <p class="m-0 class text-white">20 votos</p>
+                              <div class="Info rounded-bottom d-flex align-items-center justify-content-between w-100 absolute" style="background-image: url('./images/SetorH_footer.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                                <div class="quanty">
+                                  <span class="title-gradient p-0 m-0">10 <br> $LIFE</span>
+                                  <div class="circle"></div>
                                 </div>
-                                <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
-                                  <div class="w-25">
-                                    <img class="img-fluid" src="./images/calendario.png" alt="">
-                                  </div>
-                                  <span>
-                                    Encerra:<br> 26/12/2021
-                                  </span>
+                                <div class="d-flex align-items-center justify-content-between gap-2 px-2">
+                                  <span class="text-black"></span>
+                                  <div class="col-1"></div>
                                 </div>
                               </div>
                             </div>
                           </div>
                           <!-- Item 02 -->
                           <div class="item rounded overflow-hidden">
-                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
-                              <div class="d-flex align-items-center justify-content-between  p-3 h-100">
-                                <h1>Vote para definir o samba-enredo da escola para o desfile em 2022!</h1>
-                                <div><img src="./images/Brinco da Marquesa.png" alt=""></div>
+                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/setor11.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                              <div class="d-flex align-items-center justify-content-between gap-4 p-3 h-100">
+                                <h1>Ganhe 1 ingresso na Arquibancada Especial Setor 11</h1>
+                                <div><img src="./images/Imperador do Ipiranga.png" alt=""></div>
                               </div>
-                              <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
-                                <div class="col-5 d-flex align-items-center justify-content-center gap-2">
-                                  <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
-                                  <p class="m-0 class text-white">40 votos</p>
+                              <div class="Info rounded-bottom d-flex align-items-center justify-content-between w-100 absolute" style="background-color: #C4C4C4">
+                                <div class="quanty">
+                                  <span class="congelado p-0 m-0">10 <br> $LIFE</span>
+                                  <div class="circle"></div>
                                 </div>
-                                <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
-                                  <div class="w-25">
-                                    <img class="img-fluid" src="./images/calendario.png" alt="">
-                                  </div>
-                                  <span>
-                                    Encerrado:<br> 26/12/2021
-                                  </span>
+                                <div class="d-flex align-items-center justify-content-between gap-2 px-2">
+                                  <span class="text-black">Desbloqueio em 10 dias</span>
+                                  <div class="col-1"><img class="img-fluid" src="./images/icon_tokens_disponiveis_black.png" alt=""></div>
                                 </div>
                               </div>
                             </div>
@@ -698,62 +686,57 @@ header .col-2 {
                       </div>
                       <!-- Vantagens Owl -->
 
-                     <!-- Recompensas Owl -->
-                     <div class="owl-slider p-0">
-                      <div class="mt-2 d-flex gap-3  align-items-center justify-content-between">
-                        <p>Recompensas</p>
-                        <p class="title-gradient p-0 m-0">Ver todas</p>
-                      </div>
-                      <div id="OwlRecompensas" class="owl-carousel">
-                        <!-- Item 01 -->
-                        <div class="item rounded overflow-hidden">
-                          <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
-                            <div class="d-flex align-items-center justify-content-between  p-3 h-100">
-                              <h1>Quem deverá ser a Rainha de Bateria no desfile em 2022?</h1>
-                              <div><img src="./images/1° da Cidade Lider.png" alt=""></div>
-                            </div>
-                            <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
-                              <div class="col-5 d-flex align-items-center justify-content-center gap-2">
-                                <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
-                                <p class="m-0 class text-white">20 votos</p>
+
+
+                      <!-- Recompensas Owl -->
+                      <div class="owl-slider p-0">
+                        <div class="mt-2 d-flex gap-3  align-items-center justify-content-between">
+                          <h3>Recompensas</h3>
+                          <p class="title-gradient p-0 m-0"><a href="#">Ver todas</a></p>
+                        </div>
+                        <div id="OwlRecompensas" class="owl-carousel">
+                          <!-- Item 01 -->
+                          <div class="item rounded overflow-hidden">
+                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/RainhadeBateria.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                              <div class="d-flex align-items-center justify-content-between gap-4 p-3 h-100">
+                                <h1>Ganhe 1 foto com a Rainha de Bateria Amanda Martins</h1>
+                                <div><img src="./images/1° da Cidade Lider.png" alt=""></div>
                               </div>
-                              <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
-                                <div class="w-25">
-                                  <img class="img-fluid" src="./images/calendario.png" alt="">
+                              <div class="Info rounded-bottom d-flex align-items-center justify-content-between w-100 absolute" style="background-image: url('./images/SetorH_footer.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                                <div class="quanty">
+                                  <span class="title-gradient p-0 m-0">50 <br> $LIFE</span>
+                                  <div class="circle"></div>
                                 </div>
-                                <span>
-                                  Encerra:<br> 26/12/2021
-                                </span>
+                                <div class="w-100 d-flex px-4">
+                                  <span class="text-white">+ Ranking</span>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <!-- Item 02 -->
-                        <div class="item rounded overflow-hidden">
-                          <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
-                            <div class="d-flex align-items-center justify-content-between  p-3 h-100">
-                              <h1>Vote para definir o samba-enredo da escola para o desfile em 2022!</h1>
-                              <div><img src="./images/Brinco da Marquesa.png" alt=""></div>
-                            </div>
-                            <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
-                              <div class="col-5 d-flex align-items-center justify-content-center gap-2">
-                                <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
-                                <p class="m-0 class text-white">40 votos</p>
+                          <!-- Item 02 -->
+                          <div class="item rounded overflow-hidden">
+                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                              <div class="d-flex align-items-center justify-content-between gap-4 p-3 h-100">
+                                <h1>Vivencie o carnaval 2022 no camarote</h1>
+                                <div><img src="./images/Dragões da Real.png" alt=""></div>
                               </div>
-                              <div class="col-7 bg-red d-flex align-items-center justify-content-start gap-2" style="background-color: #4443F0;">
-                                <div class="w-25">
-                                  <img class="img-fluid" src="./images/calendario.png" alt="">
+                              <div class="Info rounded-bottom d-flex align-items-center justify-content-between w-100 absolute" style="background-image: url('./images/FooterRed.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                                <div class="quanty">
+                                  <span class="title-gradient p-0 m-0">50 <br> $LIFE</span>
+                                  <div class="circle"></div>
                                 </div>
-                                <span>
-                                  Encerrado:<br> 26/12/2021
-                                </span>
+                                <div class="w-100 d-flex px-4">
+                                  <span class="text-white">+ Ranking</span>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <!-- Recompensas Owl -->
+                      <!-- Recompensas Owl -->
+
+
+
 
                   </div>
                   <!-- Tab2 -->
@@ -791,6 +774,7 @@ header .col-2 {
 <script>
   jQuery("#OwlCategorias").owlCarousel({
   margin: 20,
+  loop: true,
   responsiveClass: true,
   nav: false,
   autoplay: false,
@@ -813,12 +797,13 @@ header .col-2 {
 <script>
   jQuery("#OwlEnquetes").owlCarousel({
   margin: 20,
+  loop: true,
   responsiveClass: true,
   nav: false,
   autoplay: false,
   responsive: {
     0: {
-      items: 1.25
+      items: 1.15
     },
     600: {
       items: 3
@@ -835,12 +820,13 @@ header .col-2 {
 <script>
   jQuery("#OwlVantagens").owlCarousel({
   margin: 20,
+  loop: true,
   responsiveClass: true,
   nav: false,
   autoplay: false,
   responsive: {
     0: {
-      items: 1.25
+      items: 1.15
     },
     600: {
       items: 3
@@ -857,12 +843,13 @@ header .col-2 {
 <script>
   jQuery("#OwlRecompensas").owlCarousel({
   margin: 20,
+  loop: true,
   responsiveClass: true,
   nav: false,
   autoplay: false,
   responsive: {
     0: {
-      items: 1.25
+      items: 1.15
     },
     600: {
       items: 3

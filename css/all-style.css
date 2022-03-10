@@ -877,6 +877,7 @@ input[type="radio"]:checked::before {
     background-color: var(--cor-preto);
     border-top: 1px solid #ffffff25;
     bottom: 0;
+    z-index: 9999;
 }
 
 #MenuFooter ul li a {
@@ -1084,7 +1085,9 @@ input[type="radio"]:checked::before {
     z-index: 2;
 }
 
-
+#OwlEnquetes .calendario{
+    max-width: 32px;
+}
 
 
 #OwlEnquetes h1, #OwlRecompensas h1, #OwlVantagens h1 {
@@ -1099,7 +1102,7 @@ input[type="radio"]:checked::before {
 #OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p {
     font-style: normal;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 11px;
     letter-spacing: -0.005em;
     color: #C4C4C4;
@@ -1108,11 +1111,12 @@ input[type="radio"]:checked::before {
 
 #OwlEnquetes span, #OwlRecompensas span, #OwlVantagens span {
     font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 11px;
     line-height: 12px;
     letter-spacing: -0.005em;
-    color: #C4C4C4;
+    color: var(--cor-branco);
+    padding-top: 5px;
 }
 
 
@@ -1154,6 +1158,85 @@ input[type="radio"]:checked::before {
     letter-spacing: -0.005em;
     color: var(--cor-cinza);
 }
+
+
+.owl-slider h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    color: var(--cor-cinza);
+}
+
+.owl-slider .textescolha {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    color: var(--cor-cinza);   
+}
+
+#OwlVantagens .Info .quanty span, #OwlRecompensas .Info .quanty span{
+    z-index: 1;
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    display: block;
+}
+
+#OwlVantagens .Info .quanty span.congelado, #OwlRecompensas .Info .quanty span.congelado{
+    color: var(--cor-cinza);
+    opacity: 0.5;
+}
+
+#OwlVantagens .Info .circle, #OwlRecompensas .Info .circle{
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    background-color: var(--cor-branco);
+    border-radius: 200px;
+    bottom: -8px;
+    left: -8px;
+}
+
+#OwlEnquetes .owl-item, #OwlRecompensas .owl-item, #OwlVantagens .owl-item {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+#OwlVantagens .quanty, #OwlRecompensas .quanty{
+    padding-bottom: 10px;
+    padding-left: 6px;    
+}
+
+
+#OwlVantagens span.text-black, #OwlRecompensas span.text-black{
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: -0.005em;
+    padding-top: 2px;
+}
+
+#Cat h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    color: #969696;
+}
+
 
 
 
