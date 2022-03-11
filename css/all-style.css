@@ -1119,6 +1119,10 @@ input[type="radio"]:checked::before {
     line-height: 17px;
     letter-spacing: -0.005em; 
     color: var(--cor-branco);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 #OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p {
