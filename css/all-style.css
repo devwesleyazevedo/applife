@@ -1265,10 +1265,90 @@ input[type="radio"]:checked::before {
 
 
 
+/* User Menu Header */
+
+#EditUserMenu .headerBGUsers {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 170px;
+    left: 0;
+    top: 0;
+}
+
+/* Editar nome de usuário */
+
+#editarnome p.text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.005em;
+    color: #969696;
+}
+
+/* Editar Perfil */
+
+
+.editarperfil a {
+    text-decoration: none;
+    color: var(--cor-cinza);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: -0.005em;
+}
+
+.editarperfil .mais  {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+/* Configurações */
+
+.configuracoes a {
+    text-decoration: none;
+    color: var(--cor-cinza);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: -0.005em;
+}
+
+.configuracoes .mais  {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.configuracoes .idioma {
+    font-size: 13px;
+    text-align: right;
+    flex: 1;
+}
 
 
 
+/* Fale Conosco */
 
+.faleconosco .input {
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 4px 8px;
+}
 
 
 /* MEDIA QUERY */
