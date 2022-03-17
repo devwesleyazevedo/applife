@@ -10,7 +10,9 @@ body{
     --cor-azulclaro: #02C2F4;
     --cor-verde: #00E584;
     --cor-cinza: #969696;
+    --cor-cinza-medio: #303030;
     --cor-cinza-escuro: #161616;
+    --cor-vermelho: red;
     --cor-branco: #FFF;
     --cor-preto: #000;
     --linear-gradient: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
@@ -58,6 +60,7 @@ input[type=number]:focus,
 [type=tel].form-control:focus, 
 [contenteditable].form-control:focus {
   box-shadow: inset 0 0px 0 #ddd;
+  outline: 0;
 }
 
 /* COLORS */
@@ -1341,7 +1344,6 @@ input[type="radio"]:checked::before {
 }
 
 
-
 /* Fale Conosco */
 
 .faleconosco .input {
@@ -1349,6 +1351,115 @@ input[type="radio"]:checked::before {
     overflow: hidden;
     padding: 4px 8px;
 }
+
+.faleconosco .concluido {
+    background-color: var(--cor-verde);
+}
+
+.faleconosco .andamento {
+    background-color:var(--cor-azul);
+}
+
+.faleconosco .cancelado {
+    background-color:var(--cor-vermelho);
+}
+
+.faleconosco .box {
+    background-color: var(--cor-cinza-medio);
+}
+
+.faleconosco p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.8942px;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    margin: 2px 0;
+}
+
+.faleconosco .InfoStatus .data{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.2263px;
+    line-height: 13px;
+    letter-spacing: -0.005em;
+}
+
+.faleconosco .InfoStatus .status {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.4489px;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+
+
+
+
+/* Chamado */
+
+.chamado .input {
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 4px 8px;
+}
+
+.chamado .concluido {
+    background-color: var(--cor-verde);
+}
+
+.chamado .andamento {
+    background-color:var(--cor-azul);
+}
+
+.chamado .cancelado {
+    background-color:var(--cor-vermelho);
+}
+
+.chamado .box {
+    background-color: var(--cor-cinza-medio);
+}
+
+
+.chamado .InfoStatus .data{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.2263px;
+    line-height: 13px;
+    letter-spacing: -0.005em;
+}
+
+.chamado .InfoStatus .status {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.4489px;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+
+
+.chamado textarea {
+    padding-top: 10px;
+    text-align: left;
+    border: none;
+    color: var(--cor-cinza);
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERY */
