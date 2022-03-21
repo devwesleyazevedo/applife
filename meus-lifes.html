@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+ <html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>Life Token</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet"href="./bootstrap/css/bootstrap.css">
+    <!-- JS Bootstrap -->
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <!-- Custom CSS -->
+    <link href="./css/all-style.css" rel="stylesheet"/>
+    <!-- Font Artegra -->
+    <link href = "./font/artegra/stylesheet.css" rel = "stylesheet" type = "text/css" />
+</head>
+<body>
+
+
+<style>
+  /* Dashboard  */
+
+header {
+   background-color: black;
+   padding: 21px 15px;
+}
+
+header .LoginAvatarCircle{
+    background-image: var(--linear-gradient);
+    width: 58px;
+    height: 58px;
+    border-radius: 200px;
+}
+
+header .LoginAvatar {
+    background-color: #fff;
+    border-radius: 200px;
+    height: 100%;
+    border: none;
+}
+
+header p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  margin: 0;
+}
+
+header .col-2 {
+  padding-left: 10px;
+}
+
+</style>
+
+	<header>
+    <div class="container p-0">
+      <div class="row">
+        <div class="d-flex align-items-center px-2">
+          <div class="col-3">
+            <div class="LoginAvatarCircle mx-auto">
+              <div class="LoginAvatar"></div>
+            </div>
+          </div>
+          <p class="col-8">Olá, Usuário</p>
+          <div class="col-1">
+            <a href=""><img src="./images/search.png" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- ------------------------------------ -->
+
+<nav class="navbar navbar-expand-lg z-index3 dashboard" id="mainNav" style="height: 100px;">
+  <div class="container">
+     <div class="sidenav" id="mySidenav" style="margin-left: -325px;">
+        <!-- Header Open menu -->
+        <div class="HeaderUser w-100 vh-100 d-flex align-items-center justify-content-center p-4 mb-3">
+           <div class="w-100 d-flex align-items-start justify-content-center gap-3" style="margin-bottom: -110px;">
+              <div class="AvatarCircle" class="d-flex align-items-start justify-content-center">
+                 <div class="useravatar w-100 h-100 d-flex align-items-center justify-content-center"></div>
+              </div>
+              <div class="text-white pt-2" style="flex: 1;">
+                 <p><span>Olá</span>, <br> Usuário</p>
+              </div>
+           </div>
+        </div>
+        <!-- Nav menu -->
+        <ul class="nav flex-column gap-4 p-5">
+           <li class="nav-item d-flex align-items-start justify-content-center">
+              <div class=""><img src="./images/user_seguranca.png" alt=""></div>
+              <a class="nav-link text-white" href="#">Segurança</a>
+           </li>
+           <li class="nav-item d-flex align-items-start justify-content-center">
+              <div class=""><img src="./images/user_configuracoes.png" alt=""></div>
+              <a class="nav-link text-white" href="#">Configurações</a>
+           </li>
+           <li class="nav-item d-flex align-items-start justify-content-center">
+              <div class=""><img src="./images/user_fale_conosco.png" alt=""></div>
+              <a class="nav-link text-white" href="#">Fale Conosco</a>
+           </li>
+           <li class="nav-item d-flex align-items-start justify-content-center">
+              <div class=""><img src="./images/user_perguntas_frequentes.png" alt=""></div>
+              <a class="nav-link text-white" href="#">Perguntas Frequentes</a>
+           </li>
+           <li class="nav-item d-flex align-items-start justify-content-center">
+              <div class=""><img src="./images/user_politicas_de_privacidade.png" alt=""></div>
+              <a class="nav-link text-white" href="#">Política de Privacidade</a>
+           </li>
+           <li class="nav-item d-flex align-items-start justify-content-center">
+              <div class=""><img src="./images/user_termos_condicoes.png" alt=""></div>
+              <a class="nav-link text-white" href="#">Termos e Condições</a>
+           </li>
+           <li class="nav-item d-flex align-items-start justify-content-center">
+              <div class=""><img src="./images/user_sair.png" alt=""></div>
+              <a class="nav-link text-white" href="#">Sair</a>
+           </li>
+        </ul>
+        <!-- Copy-->
+        <p class="beta m-0 p-0 text-white text-center w-100">Versão BETA</p>
+        <!-- Botão -->
+        <div onclick="OpenCloseNav()" class="closebtn d-flex  align-items-center justify-content-center" id="main" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+           <button class="BtnMenu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                 <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                 <path class="line line2" d="M 20,50 H 80" />
+                 <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+              </svg>
+           </button>
+        </div>
+        <div class="border_menu"></div>
+        <!-- Botão -->
+     </div>
+  </div>
+</nav>
+<!-- Conteúdo -->
+<div class="container">
+  <div class="row">
+     <!-- Dashboard -->
+     <div class="dashboard meuslifes mt-2">
+
+
+        
+
+
+        <!-- Tokens Disponíveis -->
+        <div class="TokensDisponiveis">
+            <h3 class="title">Meus Lifes</h3>
+           <div class="w-100 d-flex align-items-center justify-content-between gap-3 p-3 text-white rounded-top" style="background-color: #4343EF;">
+              <div class="d-flex flex-column gap-3">
+                 <div class="d-flex align-items-center justify-content-between gap-2">
+                    <h6 class="col">Tokens Disponíveis</h6>
+                    <div class="col-2">
+                       <img class="img-fluid" src="./images/olho_icon.png" alt="">
+                    </div>
+                 </div>
+                 <h1 class="titulo"><span>$LIFE</span> 10</h1>
+              </div>
+              <div>
+                 <img class="img-fluid" src="./images/life_bg_tokens.png" alt="">
+              </div>
+           </div>
+           <div class="d-flex align-items-center justify-content-between gap-2 text-white p-3 rounded-bottom"  style="background-color: #969696;">
+              <h2 class="col-6"><span>Congelados $LIFE</span> 40</h2>
+           </div>
+        </div>
+
+       
+
+
+                      
+
+
+
+
+
+
+
+                        <!-- Vantagens Owl -->
+                        <div class="owl-slider p-0 mt-5">
+                            <div class="mt-2 d-flex gap-3  align-items-center justify-content-between">
+                            <h3>Vantagens</h3>
+                            <p class="title-gradient p-0 m-0"><a href="#">Ver todas</a></p>
+                            </div>
+                            <div id="OwlHistorico" class="owl-carousel">
+                            <!-- Item 01 -->
+                            <div class="item rounded overflow-hidden">
+                                <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/setor11.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                                    <div class="d-flex align-items-center justify-content-between gap-1 p-3 h-100">
+                                        <h1 class="col-9">10% ingresso Arquibancada Setor B</h1>
+                                        <div class="col-3"><img src="./images/Amizade Zona Leste.png" alt=""></div>
+                                    </div>
+                                    <div class="Info rounded-bottom d-flex align-items-center justify-content-between w-100 absolute encerrado">
+                                        <div class="quanty">
+                                        <span class="congelado p-0 m-0">10 <br> $LIFE</span>
+                                        <div class="circle"></div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between gap-2 px-2">
+                                        <span class="text-black">Desbloqueio em 10 dias</span>
+                                        <div class="col-1"><img class="img-fluid" src="./images/icon_tokens_disponiveis_black.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 02 -->
+                            <div class="item rounded overflow-hidden">
+                                <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/setor11.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                                    <div class="d-flex align-items-center justify-content-between gap-1 p-3 h-100">
+                                        <h1 class="col-9">Receba 1 dedicatória no samba-enredo</h1>
+                                        <div class="col-3"><img src="./images/Imperador do Ipiranga.png" alt=""></div>
+                                    </div>
+                                    <div class="Info rounded-bottom d-flex align-items-center justify-content-between w-100 absolute encerrado">
+                                        <div class="quanty">
+                                        <span class="congelado p-0 m-0">10 <br> $LIFE</span>
+                                        <div class="circle"></div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between gap-2 px-2">
+                                        <span class="text-black">Desbloqueio em 10 dias</span>
+                                        <div class="col-1"><img class="img-fluid" src="./images/icon_tokens_disponiveis_black.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Vantagens Owl -->
+
+
+
+
+
+
+
+
+
+
+                         <div class="lifesmoeda">
+                            <img src="./images/lifes.png" alt="">
+                         </div>
+
+
+     </div>
+     <!-- Dashboard -->
+  </div>
+</div>
+<!-- Abrir/Fechar o menu lateral JS -->
+<script src="./js/nav.js"></script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+<!-- Owl Carousel -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script>
+  jQuery("#OwlHistorico").owlCarousel({
+  margin: 20,
+  loop: true,
+  responsiveClass: true,
+  nav: false,
+  autoplay: false,
+  responsive: {
+    0: {
+      items: 1.15
+    },
+    600: {
+      items: 3
+    },
+    1024: {
+      items: 4
+    },
+    1366: {
+      items: 4
+    }
+  }
+  });
+</script>
+
+
+<!-- ------------------------------------ -->
+<footer>
+    <!-- menu-rodape.html -->
+    <div class="bg-red w-100 position-fixed" id="MenuFooter">
+        <ul class="navbar-nav bd-navbar-nav flex-row d-flex align-items-center justify-content-center text-center">
+            <li class="w-100">
+                <a href="#" class="d-flex  flex-column align-items-center justify-content-center text-center gap-2">
+                    <span class="icon"><img src="./images/icon_home.png" class="img-fluid" alt=""></span>
+                    <span>Início</span>
+                </a>
+            </li>
+            <li class="w-100">
+                <a href="#" class="d-flex  flex-column align-items-center justify-content-center text-center gap-2">
+                    <span class="icon"><img src="./images/icon_meus_lifes.png" class="img-fluid" alt=""></span>
+                    <span>Meus Lifes</span>
+                </a>
+            </li>
+            <li class="w-100">
+                <a href="#" class="d-flex  flex-column align-items-center justify-content-center text-center gap-2">
+                    <span class="icon"><img src="./images/icon_favoritos.png" class="img-fluid" alt=""></span>
+                    <span>Favoritos</span>
+                </a>
+            </li>
+            <li class="w-100">
+                <a href="#" class="d-flex  flex-column align-items-center justify-content-center text-center gap-2">
+                    <span class="icon"><img src="./images/icon_notificacoes.png" class="img-fluid" alt=""></span>
+                    <span>Notificações</span>
+                </a>
+            </li>
+            <li class="w-100">
+                <a href="#" class="d-flex  flex-column align-items-center justify-content-center text-center gap-2">
+                    <span class="icon"><img src="./images/icon_colecionaveis.png" class="img-fluid" alt=""></span>
+                    <span>Colecionáveis</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- menu-rodape.html -->
+</footer>
+<!-- JS Bootstrap -->
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- JS jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<!-- JS Passwordstrengthmeter -->
+<script type="text/javascript" src="./js/jquery-strengthmeter.js"></script>
+<!-- JS Custom Main -->
+<script src="./js/scripts.js"></script>
+</body>
+</html>

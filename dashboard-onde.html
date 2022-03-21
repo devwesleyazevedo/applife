@@ -74,802 +74,757 @@ header .col-2 {
 <!-- ------------------------------------ -->
 
 <nav class="navbar navbar-expand-lg z-index3 dashboard" id="mainNav" style="height: 100px;">
-  <div class="container">
-    <div class="sidenav" id="mySidenav" style="margin-left: -325px;">
-      <!-- Header Open menu -->
-      <div class="HeaderUser w-100 vh-100 d-flex align-items-center justify-content-center p-4 mb-3">
-        <div class="w-100 d-flex align-items-start justify-content-center gap-3" style="margin-bottom: -110px;">
-          <div class="AvatarCircle" class="d-flex align-items-start justify-content-center">
-            <div class="useravatar w-100 h-100 d-flex align-items-center justify-content-center"></div>
-          </div>
-          <div class="text-white pt-2" style="flex: 1;">
-            <p><span>Olá</span>, <br> Usuário</p>
-          </div>
-        </div>
+   <div class="container">
+      <div class="sidenav" id="mySidenav" style="margin-left: -325px;">
+         <!-- Header Open menu -->
+         <div class="HeaderUser w-100 vh-100 d-flex align-items-center justify-content-center p-4 mb-3">
+            <div class="w-100 d-flex align-items-start justify-content-center gap-3" style="margin-bottom: -110px;">
+               <div class="AvatarCircle" class="d-flex align-items-start justify-content-center">
+                  <div class="useravatar w-100 h-100 d-flex align-items-center justify-content-center"></div>
+               </div>
+               <div class="text-white pt-2" style="flex: 1;">
+                  <p><span>Olá</span>, <br> Usuário</p>
+               </div>
+            </div>
+         </div>
+         <!-- Nav menu -->
+         <ul class="nav flex-column gap-4 p-5">
+            <li class="nav-item d-flex align-items-start justify-content-center">
+               <div class=""><img src="./images/user_seguranca.png" alt=""></div>
+               <a class="nav-link text-white" href="#">Segurança</a>
+            </li>
+            <li class="nav-item d-flex align-items-start justify-content-center">
+               <div class=""><img src="./images/user_configuracoes.png" alt=""></div>
+               <a class="nav-link text-white" href="#">Configurações</a>
+            </li>
+            <li class="nav-item d-flex align-items-start justify-content-center">
+               <div class=""><img src="./images/user_fale_conosco.png" alt=""></div>
+               <a class="nav-link text-white" href="#">Fale Conosco</a>
+            </li>
+            <li class="nav-item d-flex align-items-start justify-content-center">
+               <div class=""><img src="./images/user_perguntas_frequentes.png" alt=""></div>
+               <a class="nav-link text-white" href="#">Perguntas Frequentes</a>
+            </li>
+            <li class="nav-item d-flex align-items-start justify-content-center">
+               <div class=""><img src="./images/user_politicas_de_privacidade.png" alt=""></div>
+               <a class="nav-link text-white" href="#">Política de Privacidade</a>
+            </li>
+            <li class="nav-item d-flex align-items-start justify-content-center">
+               <div class=""><img src="./images/user_termos_condicoes.png" alt=""></div>
+               <a class="nav-link text-white" href="#">Termos e Condições</a>
+            </li>
+            <li class="nav-item d-flex align-items-start justify-content-center">
+               <div class=""><img src="./images/user_sair.png" alt=""></div>
+               <a class="nav-link text-white" href="#">Sair</a>
+            </li>
+         </ul>
+         <!-- Copy-->
+         <p class="beta m-0 p-0 text-white text-center w-100">Versão BETA</p>
+         <!-- Botão -->
+         <div onclick="OpenCloseNav()" class="closebtn d-flex  align-items-center justify-content-center" id="main" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="BtnMenu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+               <svg width="100" height="100" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+               </svg>
+            </button>
+         </div>
+         <div class="border_menu"></div>
+         <!-- Botão -->
       </div>
-      <!-- Nav menu -->
-      <ul class="nav flex-column gap-4 p-5">
-        <li class="nav-item d-flex align-items-start justify-content-center">
-          <div class=""><img src="./images/user_seguranca.png" alt=""></div>
-          <a class="nav-link text-white" href="#">Segurança</a>
-        </li>
-        <li class="nav-item d-flex align-items-start justify-content-center">
-          <div class=""><img src="./images/user_configuracoes.png" alt=""></div>
-          <a class="nav-link text-white" href="#">Configurações</a>
-        </li>
-        <li class="nav-item d-flex align-items-start justify-content-center">
-          <div class=""><img src="./images/user_fale_conosco.png" alt=""></div>
-          <a class="nav-link text-white" href="#">Fale Conosco</a>
-        </li>
-        <li class="nav-item d-flex align-items-start justify-content-center">
-          <div class=""><img src="./images/user_perguntas_frequentes.png" alt=""></div>
-          <a class="nav-link text-white" href="#">Perguntas Frequentes</a>
-        </li>
-        <li class="nav-item d-flex align-items-start justify-content-center">
-          <div class=""><img src="./images/user_politicas_de_privacidade.png" alt=""></div>
-          <a class="nav-link text-white" href="#">Política de Privacidade</a>
-        </li>
-        <li class="nav-item d-flex align-items-start justify-content-center">
-          <div class=""><img src="./images/user_termos_condicoes.png" alt=""></div>
-          <a class="nav-link text-white" href="#">Termos e Condições</a>
-        </li>
-        <li class="nav-item d-flex align-items-start justify-content-center">
-          <div class=""><img src="./images/user_sair.png" alt=""></div>
-          <a class="nav-link text-white" href="#">Sair</a>
-        </li>
-      </ul>
-      <!-- Copy-->
-      <p class="beta m-0 p-0 text-white text-center w-100">Versão BETA</p>
-
-      <!-- Botão -->
-      <div onclick="OpenCloseNav()" class="closebtn d-flex  align-items-center justify-content-center" id="main" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <button class="BtnMenu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-            <svg width="100" height="100" viewBox="0 0 100 100">
-              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-              <path class="line line2" d="M 20,50 H 80" />
-              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-            </svg>
-        </button>
-      </div>
-      <div class="border_menu"></div>
-      <!-- Botão -->
-
-    </div>
-  </div>
+   </div>
 </nav>
-
 <!-- Conteúdo -->
 <div class="container">
-  <div class="row">
-
-  <!-- Dashboard -->
-  <div class="dashboard mt-2">
-
-      <!-- Tokens Disponíveis -->
-      <div class="TokensDisponiveis">
-        <div class="w-100 d-flex align-items-center justify-content-between gap-3 p-3 text-white rounded-top" style="background-color: #4343EF;">
-          <div class="d-flex flex-column gap-3">
-            <div class="d-flex align-items-center justify-content-between gap-2">
-              <h6 class="col">Tokens Disponíveis</h6>
-              <div class="col-2">
-                <img class="img-fluid" src="./images/olho_icon.png" alt="">
-              </div>
-            </div>
-            <h1 class="titulo"><span>$LIFE</span> 10</h1>
-          </div>
-          <div>
-            <img class="img-fluid" src="./images/life_bg_tokens.png" alt="">
-          </div>
-        </div>
-        <div class="d-flex align-items-center justify-content-between gap-2 text-white p-3 rounded-bottom"  style="background-color: #969696;">
-          <h2 class="col-6"><span>Congelados $LIFE</span> 40</h2>
-          <div class="d-flex align-items-center gap-2 justify-content-between col-6 px-2">
-            <button class="btn col">Histórico</button>
-            <a class="d-flex align-items-center justify-content-center">
-              <img class="img-fluid" src="./images/icon_tokens_disponiveis.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Tokens Disponíveis -->
-
-
-
-
-      <div id="Cat" class="mt-2 d-flex align-items-center justify-content-between gap-2 py-3">
-        <h2>Categorias</h2>
-        <div class="d-flex align-items-center justify-content-start gap-4">
-          <div><img src="./images/search.png" alt=""></div>
-          <div><img src="./images/arrow_left.png" alt=""></div>
-          <div class="title-gradient p-0 m-0">Limpar</div>
-        </div>
-      </div>
-
-      <!-- Categorias --> 
-      <div id="OwlCategorias" class="owl-carousel  mt-1">
-        <!-- Item 01 --> 
-        <div class="item">
-          <div class="rounded-circle overflow-hidden">
-            <img class="img-fluid" src="./images/carnaval.png" alt="">
-          </div>
-          <p class="text-center mt-2">Carnaval</p>
-        </div>
-        <!-- Item 02 --> 
-        <div class="item">
-          <div class="rounded-circle overflow-hidden">
-            <img class="img-fluid" src="./images/Musica.png" alt="">
-            <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
-          </div>
-          <p class="text-center mt-2">Música</p>
-        </div>
-        <!-- Item 03 --> 
-        <div class="item">
-          <div class="rounded-circle overflow-hidden">
-            <img class="img-fluid" src="./images/Teatro.png" alt="">
-            <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
-          </div>
-          <p class="text-center mt-2">Teatro</p>
-        </div>
-        <!-- Item 04 --> 
-        <div class="item">
-          <div class="rounded-circle overflow-hidden">
-            <img class="img-fluid" src="./images/Cinema.png" alt="">
-            <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
-          </div>
-          <p class="text-center mt-2">Cinema</p>
-        </div>
-        <!-- Item 05 --> 
-        <div class="item">
-          <div class="rounded-circle overflow-hidden">
-            <img class="img-fluid" src="./images/carnaval.png" alt="">
-            <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
-          </div>
-          <p class="text-center mt-2">Carnaval</p>
-        </div>
-      </div>
-      <!-- Categorias --> 
-
-
-            <!-- Tabs -->
-            <div class="mt-1 w-100" id="OndeQuandoTabs">
-              <ul class="nav d-flex gap-3 align-items-center justify-content-center" role="tablist">
-                  <li class="nav-item w-100 tab1" role="presentation">
-                    <button class="w-100 active text-white px-2 py-2" id="Onde-tab" data-bs-toggle="tab" data-bs-target="#OndeBTN" type="button" role="tab" aria-controls="OndeBTN" aria-selected="true">
-                      <p class="mt-2"> Onde quero me divertir</p>
-                    </button>
-                  </li>
-                  <li class="nav-item w-100 tab2" role="presentation">
-                    <button class="w-100 text-white px-2 py-2" id="Como-tab" data-bs-toggle="tab" data-bs-target="#ComoBTN" type="button" role="tab" aria-controls="ComoBTN" aria-selected="false">
-                     <p class="mt-2">Como quero me divertir</p>
-                    </button>
-                  </li>
-              </ul>
-              <div class="tab-content w-100 pt-3 p-2">
-
-                  <!-- Escolha onde quer se divertir -->
-                  <p class="textescolha text-center text-white mb-2 mt-2">Escolha onde quer se divertir</p>
-                  <!-- Escolha onde quer se divertir -->
-
-                  <!-- Tab1 -->
-                  <div class="tab-pane active" id="OndeBTN" role="tabpanel" aria-labelledby="Onde-tab">
-                    <div class="mb-3 py-2 px-2 rounded  d-flex align-items-center justify-content-between gap-3 bg-black">
-                      <div>
-                        <img class="img-fluid opacity-50" src="./images/search.png" alt="">
-                      </div>
-                      <input class="w-100 border-0 bg-black" type="text" placeholder="Pesquisar">
-                    </div>
-                    <!-- Onde quero me divertir -->
-                      <div class="ondequeromedivertir align-items-center justify-content-between">
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #FBB12F;">
-                              <img class="img-fluid" src="./images/1° da Cidade Lider.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">1° da Cidade Lider</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #004A9C;">
-                              <img class="img-fluid" src="./images/Acadêmicos do Tatuapé.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Acadêmicos do Tatuapé</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #56ACDE;">
-                              <img class="img-fluid" src="./images/Acadêmicos do Tucuruvi.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Acadêmicos do Tucuruvi</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #666666;">
-                              <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Águia de Ouro</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #14A958;">
-                              <img class="img-fluid" src="./images/Amizade Zona Leste.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Amizade Zona Leste</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #FF0089;">
-                              <img class="img-fluid" src="./images/Barroca Zona Sul.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Barroca Zona Sul</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #E21116;">
-                              <img class="img-fluid" src="./images/Brinco da Marquesa.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Brinco da Marquesa</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #030303;">
-                              <img class="img-fluid" src="./images/Camisa 12.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Camisa 12</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #007744;">
-                              <img class="img-fluid" src="./images/Camisa Verde e Branco.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Camisa Verde e Branco</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #ED3237;">
-                              <img class="img-fluid" src="./images/Colorado do Brás.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Colorado do Brás</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #10AFD7;">
-                              <img class="img-fluid" src="./images/Dom Bosco de Itaquera.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Dom Bosco de Itaquera</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #FF0000;">
-                              <img class="img-fluid" src="./images/Dragões da Real.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Dragões da Real</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #EA0E15;">
-                              <img class="img-fluid" src="./images/Estrela do 3° Milênio.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Estrela do 3° Milênio</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #000000;">
-                              <img class="img-fluid" src="./images/Gaviões da Fiel.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Gaviões da Fiel</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #007CC2;">
-                              <img class="img-fluid" src="./images/Imperador do Ipiranga.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Imperador do Ipiranga</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #194085;">
-                              <img class="img-fluid" src="./images/Império de Casa Verde.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Império de Casa Verde</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #F62522;">
-                              <img class="img-fluid" src="./images/Independente Tricolor.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Independente Tricolor</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #E49715;">
-                              <img class="img-fluid" src="./images/Leandro de Itaquera.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Leandro de Itaquera</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #EB1C27;">
-                              <img class="img-fluid" src="./images/LIGA SP.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">LIGA SP</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #004018;">
-                              <img class="img-fluid" src="./images/Mancha Verde.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Mancha Verde</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #EE0000;">
-                              <img class="img-fluid" src="./images/Mocidade Alegre.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Mocidade Alegre</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #ED3237;">
-                              <img class="img-fluid" src="./images/Mocidade Unida da Mooca.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Mocidade Unida da Mooca</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #FF0A7E;">
-                              <img class="img-fluid" src="./images/Morro da Casa Verde.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Morro da Casa Verde</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #0261B1;">
-                              <img class="img-fluid" src="./images/Nenê de Vila Matilde.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Nenê de Vila Matilde</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #E21116;">
-                              <img class="img-fluid" src="./images/Pérola Negra.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Pérola Negra</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #0098DA;">
-                              <img class="img-fluid" src="./images/Rosas de Ouro.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Pérola Negra</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #FFF212;">
-                              <img class="img-fluid" src="./images/Tom Maior.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Tom Maior</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #090B09;">
-                              <img class="img-fluid" src="./images/Torcida Jovem.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Torcida Jovem</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #057D06;">
-                              <img class="img-fluid" src="./images/Tradição Albertinense.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Tradição Albertinense</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #EDAA52;">
-                              <img class="img-fluid" src="./images/Uirapuru da Mooca.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Uirapuru da Mooca</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #E21116;">
-                              <img class="img-fluid" src="./images/Unidos de Santa Bárbara.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Unidos de Santa Bárbara.png</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #00A859;">
-                              <img class="img-fluid" src="./images/Unidos de Vila Maria.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Unidos de Vila Maria</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #3259A3;">
-                              <img class="img-fluid" src="./images/Unidos do Peruche.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Unidos do Peruche</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #1F191A;">
-                              <img class="img-fluid" src="./images/Vai-vai.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">Vai-vai</p>
-                          </div>
-                        </div>
-                        <!-- col -->
-                        <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
-                          <div class="avatar w-100 pt-3" style="background-color: #005221;">
-                              <img class="img-fluid" src="./images/X-9 Paulistana.png" alt="">
-                          </div>
-                          <div class="pt-4 pb-2">
-                              <p class="py-3 px-2 text-truncate">X-9 Paulistana</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Onde quero me divertir -->
+   <div class="row">
+      <!-- Dashboard -->
+      <div class="dashboard mt-2">
+         <!-- Tokens Disponíveis -->
+         <div class="TokensDisponiveis">
+            <div class="w-100 d-flex align-items-center justify-content-between gap-3 p-3 text-white rounded-top" style="background-color: #4343EF;">
+               <div class="d-flex flex-column gap-3">
+                  <div class="d-flex align-items-center justify-content-between gap-2">
+                     <h6 class="col">Tokens Disponíveis</h6>
+                     <div class="col-2">
+                        <img class="img-fluid" src="./images/olho_icon.png" alt="">
+                     </div>
                   </div>
-                  <!-- Tab1 -->
-
-                  <!-- Tab2 -->
-                  <div class="tab-pane" id="ComoBTN" role="tabpanel" aria-labelledby="Como-tab">
-
-                      <!-- Enquetes Owl -->
-                      <div class="owl-slider p-0">
-                        <div class="mt-5 px-1 d-flex gap-3  align-items-center justify-content-between">
-                          <h3>Enquetes</h3>
-                          <p class="title-gradient p-0 m-0"><a href="#">Ver todas</a></p>
+                  <h1 class="titulo"><span>$LIFE</span> 10</h1>
+               </div>
+               <div>
+                  <img class="img-fluid" src="./images/life_bg_tokens.png" alt="">
+               </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between gap-2 text-white p-3 rounded-bottom"  style="background-color: #969696;">
+               <h2 class="col-6"><span>Congelados $LIFE</span> 40</h2>
+               <div class="d-flex align-items-center gap-2 justify-content-between col-6 px-2">
+                  <button class="btn col">Histórico</button>
+                  <a class="d-flex align-items-center justify-content-center">
+                  <img class="img-fluid" src="./images/icon_tokens_disponiveis.png" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- Tokens Disponíveis -->
+         <div id="Cat" class="mt-2 d-flex align-items-center justify-content-between gap-2 py-3">
+            <h2>Categorias</h2>
+            <div class="d-flex align-items-center justify-content-start gap-4">
+               <div><img src="./images/search.png" alt=""></div>
+               <div><img src="./images/arrow_left.png" alt=""></div>
+               <div class="title-gradient p-0 m-0">Limpar</div>
+            </div>
+         </div>
+         <!-- Categorias --> 
+         <div id="OwlCategorias" class="owl-carousel  mt-1">
+            <!-- Item 01 --> 
+            <div class="item">
+               <div class="rounded-circle overflow-hidden">
+                  <img class="img-fluid" src="./images/carnaval.png" alt="">
+               </div>
+               <p class="text-center mt-2">Carnaval</p>
+            </div>
+            <!-- Item 02 --> 
+            <div class="item">
+               <div class="rounded-circle overflow-hidden">
+                  <img class="img-fluid" src="./images/Musica.png" alt="">
+                  <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
+               </div>
+               <p class="text-center mt-2">Música</p>
+            </div>
+            <!-- Item 03 --> 
+            <div class="item">
+               <div class="rounded-circle overflow-hidden">
+                  <img class="img-fluid" src="./images/Teatro.png" alt="">
+                  <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
+               </div>
+               <p class="text-center mt-2">Teatro</p>
+            </div>
+            <!-- Item 04 --> 
+            <div class="item">
+               <div class="rounded-circle overflow-hidden">
+                  <img class="img-fluid" src="./images/Cinema.png" alt="">
+                  <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
+               </div>
+               <p class="text-center mt-2">Cinema</p>
+            </div>
+            <!-- Item 05 --> 
+            <div class="item">
+               <div class="rounded-circle overflow-hidden">
+                  <img class="img-fluid" src="./images/carnaval.png" alt="">
+                  <div class="ItemOverlay d-flex  align-items-center justify-content-center"><span>Em breve</span></div>
+               </div>
+               <p class="text-center mt-2">Carnaval</p>
+            </div>
+         </div>
+         <!-- Categorias --> 
+         <!-- Tabs -->
+         <div class="mt-1 w-100" id="OndeQuandoTabs">
+            <ul class="nav d-flex gap-3 align-items-center justify-content-center" role="tablist">
+               <li class="nav-item w-100 tab1" role="presentation">
+                  <button class="w-100 active text-white px-2 py-2" id="Onde-tab" data-bs-toggle="tab" data-bs-target="#OndeBTN" type="button" role="tab" aria-controls="OndeBTN" aria-selected="true">
+                     <p class="mt-2"> Onde quero me divertir</p>
+                  </button>
+               </li>
+               <li class="nav-item w-100 tab2" role="presentation">
+                  <button class="w-100 text-white px-2 py-2" id="Como-tab" data-bs-toggle="tab" data-bs-target="#ComoBTN" type="button" role="tab" aria-controls="ComoBTN" aria-selected="false">
+                     <p class="mt-2">Como quero me divertir</p>
+                  </button>
+               </li>
+            </ul>
+            <div class="tab-content w-100 pt-3 p-2">
+               <!-- Escolha onde quer se divertir -->
+               <p class="textescolha text-center text-white mb-2 mt-2">Escolha onde quer se divertir</p>
+               <!-- Escolha onde quer se divertir -->
+               <!-- Tab1 -->
+               <div class="tab-pane active" id="OndeBTN" role="tabpanel" aria-labelledby="Onde-tab">
+                  <div class="mb-3 py-2 px-2 rounded  d-flex align-items-center justify-content-between gap-3 bg-black">
+                     <div>
+                        <img class="img-fluid opacity-50" src="./images/search.png" alt="">
+                     </div>
+                     <input class="w-100 border-0 bg-black" type="text" placeholder="Pesquisar">
+                  </div>
+                  <!-- Onde quero me divertir -->
+                  <div class="ondequeromedivertir align-items-center justify-content-between">
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #FBB12F;">
+                           <img class="img-fluid" src="./images/1° da Cidade Lider.png" alt="">
                         </div>
-                        <div id="OwlEnquetes" class="owl-carousel">
-                          <!-- Item 01 -->
-                          <div class="item rounded overflow-hidden">
-                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">1° da Cidade Lider</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #004A9C;">
+                           <img class="img-fluid" src="./images/Acadêmicos do Tatuapé.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Acadêmicos do Tatuapé</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #56ACDE;">
+                           <img class="img-fluid" src="./images/Acadêmicos do Tucuruvi.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Acadêmicos do Tucuruvi</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #666666;">
+                           <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Águia de Ouro</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #14A958;">
+                           <img class="img-fluid" src="./images/Amizade Zona Leste.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Amizade Zona Leste</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #FF0089;">
+                           <img class="img-fluid" src="./images/Barroca Zona Sul.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Barroca Zona Sul</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #E21116;">
+                           <img class="img-fluid" src="./images/Brinco da Marquesa.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Brinco da Marquesa</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #030303;">
+                           <img class="img-fluid" src="./images/Camisa 12.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Camisa 12</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #007744;">
+                           <img class="img-fluid" src="./images/Camisa Verde e Branco.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Camisa Verde e Branco</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #ED3237;">
+                           <img class="img-fluid" src="./images/Colorado do Brás.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Colorado do Brás</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #10AFD7;">
+                           <img class="img-fluid" src="./images/Dom Bosco de Itaquera.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Dom Bosco de Itaquera</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #FF0000;">
+                           <img class="img-fluid" src="./images/Dragões da Real.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Dragões da Real</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #EA0E15;">
+                           <img class="img-fluid" src="./images/Estrela do 3° Milênio.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Estrela do 3° Milênio</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #000000;">
+                           <img class="img-fluid" src="./images/Gaviões da Fiel.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Gaviões da Fiel</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #007CC2;">
+                           <img class="img-fluid" src="./images/Imperador do Ipiranga.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Imperador do Ipiranga</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #194085;">
+                           <img class="img-fluid" src="./images/Império de Casa Verde.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Império de Casa Verde</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #F62522;">
+                           <img class="img-fluid" src="./images/Independente Tricolor.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Independente Tricolor</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #E49715;">
+                           <img class="img-fluid" src="./images/Leandro de Itaquera.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Leandro de Itaquera</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #EB1C27;">
+                           <img class="img-fluid" src="./images/LIGA SP.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">LIGA SP</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #004018;">
+                           <img class="img-fluid" src="./images/Mancha Verde.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Mancha Verde</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #EE0000;">
+                           <img class="img-fluid" src="./images/Mocidade Alegre.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Mocidade Alegre</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #ED3237;">
+                           <img class="img-fluid" src="./images/Mocidade Unida da Mooca.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Mocidade Unida da Mooca</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #FF0A7E;">
+                           <img class="img-fluid" src="./images/Morro da Casa Verde.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Morro da Casa Verde</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #0261B1;">
+                           <img class="img-fluid" src="./images/Nenê de Vila Matilde.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Nenê de Vila Matilde</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #E21116;">
+                           <img class="img-fluid" src="./images/Pérola Negra.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Pérola Negra</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #0098DA;">
+                           <img class="img-fluid" src="./images/Rosas de Ouro.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Pérola Negra</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #FFF212;">
+                           <img class="img-fluid" src="./images/Tom Maior.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Tom Maior</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #090B09;">
+                           <img class="img-fluid" src="./images/Torcida Jovem.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Torcida Jovem</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #057D06;">
+                           <img class="img-fluid" src="./images/Tradição Albertinense.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Tradição Albertinense</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #EDAA52;">
+                           <img class="img-fluid" src="./images/Uirapuru da Mooca.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Uirapuru da Mooca</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #E21116;">
+                           <img class="img-fluid" src="./images/Unidos de Santa Bárbara.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Unidos de Santa Bárbara.png</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #00A859;">
+                           <img class="img-fluid" src="./images/Unidos de Vila Maria.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Unidos de Vila Maria</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #3259A3;">
+                           <img class="img-fluid" src="./images/Unidos do Peruche.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Unidos do Peruche</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #1F191A;">
+                           <img class="img-fluid" src="./images/Vai-vai.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">Vai-vai</p>
+                        </div>
+                     </div>
+                     <!-- col -->
+                     <div class="text-center w-100 h-100 rounded overflow-hidden" style="background-color: #303030;">
+                        <div class="avatar w-100 pt-3" style="background-color: #005221;">
+                           <img class="img-fluid" src="./images/X-9 Paulistana.png" alt="">
+                        </div>
+                        <div class="pt-4 pb-2">
+                           <p class="py-3 px-2 text-truncate">X-9 Paulistana</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Onde quero me divertir -->
+               </div>
+               <!-- Tab1 -->
+               <!-- Tab2 -->
+               <div class="tab-pane" id="ComoBTN" role="tabpanel" aria-labelledby="Como-tab">
+                  <!-- Enquetes Owl -->
+                  <div class="owl-slider p-0">
+                     <div class="mt-5 px-1 d-flex gap-3  align-items-center justify-content-between">
+                        <h3>Enquetes</h3>
+                        <p class="title-gradient p-0 m-0"><a href="#">Ver todas</a></p>
+                     </div>
+                     <div id="OwlEnquetes" class="owl-carousel">
+                        <!-- Item 01 -->
+                        <div class="item rounded overflow-hidden">
+                           <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
                               <div class="d-flex align-items-center justify-content-between gap-1 p-3 h-100">
-                                <h1 class="col-9">Quem deverá ser a Rainha de Bateria no desfile em 2022?</h1>
-                                <div class="col-3"><img src="./images/1° da Cidade Lider.png" alt=""></div>
+                                 <h1 class="col-9">Quem deverá ser a Rainha de Bateria no desfile em 2022?</h1>
+                                 <div class="col-3"><img src="./images/1° da Cidade Lider.png" alt=""></div>
                               </div>
                               <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
-                                <div class="col-4 d-flex align-items-center justify-content-center gap-2">
-                                  <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
-                                  <span>20 votos</span>
-                                </div>
-                                <div class="col-8 bg-red d-flex align-items-center justify-content-start" style="background-color: #4443F0;">
-                                  <div class="w-100 calendario">
-                                    <img class="img-fluid" src="./images/calendario.png" alt="">
-                                  </div>
-                                  <span class="text-center w-100">Encerra: 26/12/2021</span>
-                                </div>
+                                 <div class="col-4 d-flex align-items-center justify-content-center gap-2">
+                                    <div> <img class="img-fluid" src="./images/persons.png" alt=""></div>
+                                    <span>20 votos</span>
+                                 </div>
+                                 <div class="col-8 bg-red d-flex align-items-center justify-content-start" style="background-color: #4443F0;">
+                                    <div class="w-100 calendario">
+                                       <img class="img-fluid" src="./images/calendario.png" alt="">
+                                    </div>
+                                    <span class="text-center w-100">Encerra: 26/12/2021</span>
+                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <!-- Item 02 -->
-                          <div class="item rounded overflow-hidden">
-                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                           </div>
+                        </div>
+                        <!-- Item 02 -->
+                        <div class="item rounded overflow-hidden">
+                           <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
                               <div class="d-flex align-items-center justify-content-between gap-1 p-3 h-100">
-                                <h1 class="col-9">Vote para definir o samba-enredo da escola para o desfile em 2022!</h1>
-                                <div class="col-3"><img src="./images/Brinco da Marquesa.png" alt=""></div>
+                                 <h1 class="col-9">Vote para definir o samba-enredo da escola para o desfile em 2022!</h1>
+                                 <div class="col-3"><img src="./images/Brinco da Marquesa.png" alt=""></div>
                               </div>
                               <div class="Info rounded-bottom overflow-hidden d-flex align-items-center justify-content-between bg-black w-100 absolute">
-                                <div class="col-4 d-flex align-items-center justify-content-center gap-2">
-                                  <div> <img class="img-fluid" src="./images/persons_white.png" alt=""></div>
-                                  <span>40 votos</span>
-                                </div>
-                                <div class="col-8 bg-red d-flex align-items-center justify-content-start" style="background-color: #C4C4C4;">
-                                  <div class="w-100 calendario">
-                                    <img class="img-fluid" src="./images/calendario.png" alt="">
-                                  </div>
-                                  <span class="text-center w-100">Encerrado: 26/12/2021</span>
-                                </div>
+                                 <div class="col-4 d-flex align-items-center justify-content-center gap-2">
+                                    <div> <img class="img-fluid" src="./images/persons_white.png" alt=""></div>
+                                    <span>40 votos</span>
+                                 </div>
+                                 <div class="col-8 bg-red d-flex align-items-center justify-content-start encerrado">
+                                    <div class="w-100 calendario">
+                                       <img class="img-fluid" src="./images/calendario.png" alt="">
+                                    </div>
+                                    <span class="text-center w-100">Encerrado: 26/12/2021</span>
+                                 </div>
                               </div>
-                            </div>
-                          </div>
+                           </div>
                         </div>
-                      </div>
-                      <!-- Enquetes Owl -->
-
-
-                      <!-- Vantagens Owl -->
-                      <div class="owl-slider p-0">
-                        <div class="mt-2 d-flex gap-3  align-items-center justify-content-between">
-                          <h3>Vantagens</h3>
-                          <p class="title-gradient p-0 m-0"><a href="#">Ver todas</a></p>
-                        </div>
-                        <div id="OwlVantagens" class="owl-carousel">
-                          <!-- Item 01 -->
-                          <div class="item rounded overflow-hidden">
-                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/setorH.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                     </div>
+                  </div>
+                  <!-- Enquetes Owl -->
+                  <!-- Vantagens Owl -->
+                  <div class="owl-slider p-0">
+                     <div class="mt-2 d-flex gap-3  align-items-center justify-content-between">
+                        <h3>Vantagens</h3>
+                        <p class="title-gradient p-0 m-0"><a href="#">Ver todas</a></p>
+                     </div>
+                     <div id="OwlVantagens" class="owl-carousel">
+                        <!-- Item 01 -->
+                        <div class="item rounded overflow-hidden">
+                           <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/setorH.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
                               <div class="d-flex align-items-center justify-content-between gap-1 p-3 h-100">
-                                <h1 class="col-9">10% desconto  ingresso na Arquibancada Setor H</h1>
-                                <div class="col-3"><img src="./images/1° da Cidade Lider.png" alt=""></div>
+                                 <h1 class="col-9">10% desconto  ingresso na Arquibancada Setor H</h1>
+                                 <div class="col-3"><img src="./images/1° da Cidade Lider.png" alt=""></div>
                               </div>
                               <div class="Info rounded-bottom d-flex align-items-center justify-content-between w-100 absolute" style="background-image: url('./images/SetorH_footer.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
-                                <div class="quanty">
-                                  <span class="title-gradient p-0 m-0">10 <br> $LIFE</span>
-                                  <div class="circle"></div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between gap-2 px-2">
-                                  <span class="text-black"></span>
-                                  <div class="col-1"></div>
-                                </div>
+                                 <div class="quanty">
+                                    <span class="title-gradient p-0 m-0">10 <br> $LIFE</span>
+                                    <div class="circle"></div>
+                                 </div>
+                                 <div class="d-flex align-items-center justify-content-between gap-2 px-2">
+                                    <span class="text-black"></span>
+                                    <div class="col-1"></div>
+                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <!-- Item 02 -->
-                          <div class="item rounded overflow-hidden">
-                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/setor11.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
-                              <div class="d-flex align-items-center justify-content-between gap-1 p-3 h-100">
-                                <h1 class="col-9">Ganhe 1 ingresso na Arquibancada Especial Setor 11</h1>
-                                <div class="col-3"><img src="./images/Imperador do Ipiranga.png" alt=""></div>
-                              </div>
-                              <div class="Info rounded-bottom d-flex align-items-center justify-content-between w-100 absolute" style="background-color: #C4C4C4">
-                                <div class="quanty">
-                                  <span class="congelado p-0 m-0">10 <br> $LIFE</span>
-                                  <div class="circle"></div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between gap-2 px-2">
-                                  <span class="text-black">Desbloqueio em 10 dias</span>
-                                  <div class="col-1"><img class="img-fluid" src="./images/icon_tokens_disponiveis_black.png" alt=""></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                           </div>
                         </div>
-                      </div>
-                      <!-- Vantagens Owl -->
-
-
-
-                      <!-- Recompensas Owl -->
-                      <div class="owl-slider p-0">
-                        <div class="mt-2 d-flex gap-3  align-items-center justify-content-between">
-                          <h3>Recompensas</h3>
-                          <p class="title-gradient p-0 m-0"><a href="#">Ver todas</a></p>
-                        </div>
-                        <div id="OwlRecompensas" class="owl-carousel">
-                          <!-- Item 01 -->
-                          <div class="item rounded overflow-hidden">
-                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/RainhadeBateria.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                        <!-- Item 02 -->
+                        <div class="item rounded overflow-hidden">
+                           <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/setor11.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
                               <div class="d-flex align-items-center justify-content-between gap-1 p-3 h-100">
-                                <h1 class="col-9">Ganhe 1 foto com a Rainha de Bateria Amanda Martins</h1>
-                                <div class="col-3"><img src="./images/1° da Cidade Lider.png" alt=""></div>
+                                 <h1 class="col-9">Ganhe 1 ingresso na Arquibancada Especial Setor 11</h1>
+                                 <div class="col-3"><img src="./images/Imperador do Ipiranga.png" alt=""></div>
+                              </div>
+                              <div class="Info congelado rounded-bottom d-flex align-items-center justify-content-between w-100 absolute encerrado">
+                                 <div class="quanty">
+                                    <span class="p-0 m-0">10 <br> $LIFE</span>
+                                    <div class="circle"></div>
+                                 </div>
+                                 <div class="d-flex align-items-center justify-content-between gap-2 px-2">
+                                    <span class="text-black">Desbloqueio em 10 dias</span>
+                                    <div class="col-1"><img class="img-fluid" src="./images/icon_tokens_disponiveis_black.png" alt=""></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Vantagens Owl -->
+                  <!-- Recompensas Owl -->
+                  <div class="owl-slider p-0">
+                     <div class="mt-2 d-flex gap-3  align-items-center justify-content-between">
+                        <h3>Recompensas</h3>
+                        <p class="title-gradient p-0 m-0"><a href="#">Ver todas</a></p>
+                     </div>
+                     <div id="OwlRecompensas" class="owl-carousel">
+                        <!-- Item 01 -->
+                        <div class="item rounded overflow-hidden">
+                           <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/RainhadeBateria.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                              <div class="d-flex align-items-center justify-content-between gap-1 p-3 h-100">
+                                 <h1 class="col-9">Ganhe 1 foto com a Rainha de Bateria Amanda Martins</h1>
+                                 <div class="col-3"><img src="./images/1° da Cidade Lider.png" alt=""></div>
                               </div>
                               <div class="Info rounded-bottom d-flex align-items-center justify-content-between w-100 absolute" style="background-image: url('./images/SetorH_footer.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
-                                <div class="quanty">
-                                  <span class="title-gradient p-0 m-0">50 <br> $LIFE</span>
-                                  <div class="circle"></div>
-                                </div>
-                                <div class="w-100 d-flex px-4">
-                                  <span class="text-white">+ Ranking</span>
-                                </div>
+                                 <div class="quanty">
+                                    <span class="title-gradient p-0 m-0">50 <br> $LIFE</span>
+                                    <div class="circle"></div>
+                                 </div>
+                                 <div class="w-100 d-flex px-4">
+                                    <span class="text-white">+ Ranking</span>
+                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <!-- Item 02 -->
-                          <div class="item rounded overflow-hidden">
-                            <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
+                           </div>
+                        </div>
+                        <!-- Item 02 -->
+                        <div class="item rounded overflow-hidden">
+                           <div class="w-100 d-flex flex-column" style="min-height: 152px;background-image: url('./images/enquetes_box_bg.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
                               <div class="d-flex align-items-center justify-content-between gap-1 p-3 h-100">
-                                <h1 class="col-9">Vivencie o carnaval 2022 no camarote</h1>
-                                <div class="col-3"><img src="./images/Dragões da Real.png" alt=""></div>
+                                 <h1 class="col-9">Vivencie o carnaval 2022 no camarote</h1>
+                                 <div class="col-3"><img src="./images/Dragões da Real.png" alt=""></div>
                               </div>
                               <div class="Info rounded-bottom d-flex align-items-center justify-content-between w-100 absolute" style="background-image: url('./images/FooterRed.png');background-size: cover;background-repeat: no-repeat;background-position: center;">
-                                <div class="quanty">
-                                  <span class="title-gradient p-0 m-0">50 <br> $LIFE</span>
-                                  <div class="circle"></div>
-                                </div>
-                                <div class="w-100 d-flex px-4">
-                                  <span class="text-white">+ Ranking</span>
-                                </div>
+                                 <div class="quanty">
+                                    <span class="title-gradient p-0 m-0">50 <br> $LIFE</span>
+                                    <div class="circle"></div>
+                                 </div>
+                                 <div class="w-100 d-flex px-4">
+                                    <span class="text-white">+ Ranking</span>
+                                 </div>
                               </div>
-                            </div>
-                          </div>
+                           </div>
                         </div>
-                      </div>
-                      <!-- Recompensas Owl -->
-
-
-
-
+                     </div>
                   </div>
-                  <!-- Tab2 -->
-              </div>
+                  <!-- Recompensas Owl -->
+               </div>
+               <!-- Tab2 -->
             </div>
-            <!-- Tabs -->
-
-
-
-
-
-
-<style>
-  .dashboard #OndeQuandoTabs button.active:after {
-    display: none;
-  }
-</style>
-
-      
-
-
-  </div>
-  <!-- Dashboard -->
-
-  </div>
+         </div>
+         <!-- Tabs -->
+         <style>
+            .dashboard #OndeQuandoTabs button.active:after {
+            display: none;
+            }
+         </style>
+      </div>
+      <!-- Dashboard -->
+   </div>
 </div>
-
 <!-- Abrir/Fechar o menu lateral JS -->
 <script src="./js/nav.js"></script>
-
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
 <!-- Owl Carousel -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
 <script>
-  jQuery("#OwlCategorias").owlCarousel({
-  margin: 20,
-  loop: true,
-  responsiveClass: true,
-  nav: false,
-  autoplay: false,
-  responsive: {
-    0: {
-      items: 4
-    },
-    600: {
-      items: 3
-    },
-    1024: {
-      items: 4
-    },
-    1366: {
-      items: 4
-    }
-  }
-});
+   jQuery("#OwlCategorias").owlCarousel({
+   margin: 20,
+   loop: true,
+   responsiveClass: true,
+   nav: false,
+   autoplay: false,
+   responsive: {
+     0: {
+       items: 4
+     },
+     600: {
+       items: 3
+     },
+     1024: {
+       items: 4
+     },
+     1366: {
+       items: 4
+     }
+   }
+   });
 </script>
 <script>
-  jQuery("#OwlEnquetes").owlCarousel({
-  margin: 20,
-  loop: true,
-  responsiveClass: true,
-  nav: false,
-  autoplay: false,
-  responsive: {
-    0: {
-      items: 1.15
-    },
-    600: {
-      items: 3
-    },
-    1024: {
-      items: 4
-    },
-    1366: {
-      items: 4
-    }
-  }
-});
+   jQuery("#OwlEnquetes").owlCarousel({
+   margin: 20,
+   loop: true,
+   responsiveClass: true,
+   nav: false,
+   autoplay: false,
+   responsive: {
+     0: {
+       items: 1.15
+     },
+     600: {
+       items: 3
+     },
+     1024: {
+       items: 4
+     },
+     1366: {
+       items: 4
+     }
+   }
+   });
 </script>
 <script>
-  jQuery("#OwlVantagens").owlCarousel({
-  margin: 20,
-  loop: true,
-  responsiveClass: true,
-  nav: false,
-  autoplay: false,
-  responsive: {
-    0: {
-      items: 1.15
-    },
-    600: {
-      items: 3
-    },
-    1024: {
-      items: 4
-    },
-    1366: {
-      items: 4
-    }
-  }
-});
+   jQuery("#OwlVantagens").owlCarousel({
+   margin: 20,
+   loop: true,
+   responsiveClass: true,
+   nav: false,
+   autoplay: false,
+   responsive: {
+     0: {
+       items: 1.15
+     },
+     600: {
+       items: 3
+     },
+     1024: {
+       items: 4
+     },
+     1366: {
+       items: 4
+     }
+   }
+   });
 </script>
 <script>
-  jQuery("#OwlRecompensas").owlCarousel({
-  margin: 20,
-  loop: true,
-  responsiveClass: true,
-  nav: false,
-  autoplay: false,
-  responsive: {
-    0: {
-      items: 1.15
-    },
-    600: {
-      items: 3
-    },
-    1024: {
-      items: 4
-    },
-    1366: {
-      items: 4
-    }
-  }
-});
+   jQuery("#OwlRecompensas").owlCarousel({
+   margin: 20,
+   loop: true,
+   responsiveClass: true,
+   nav: false,
+   autoplay: false,
+   responsive: {
+     0: {
+       items: 1.15
+     },
+     600: {
+       items: 3
+     },
+     1024: {
+       items: 4
+     },
+     1366: {
+       items: 4
+     }
+   }
+   });
 </script>
-
-
-
-
-
-
-
 
 <!-- ------------------------------------ -->
 <footer>

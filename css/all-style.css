@@ -63,6 +63,14 @@ input[type=number]:focus,
   outline: 0;
 }
 
+
+.accordion-flush .accordion-item .accordion-button {
+    box-shadow: inset 0 0px 0 #ddd;
+    outline: 0; 
+}
+
+
+
 /* COLORS */
 .gradient-life{
     background: var(--linear-gradient);
@@ -123,6 +131,44 @@ input[type=number]:focus,
     letter-spacing: 2px;
     font-size: 12px;
 }
+
+
+.btn-BtnClose {
+    width: 12px;
+    height: 12px;
+    background-image: url('../images/close.png');
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-Return {
+    width: 21px;
+    height: 21px;
+    background-image: url('../images/return.png');
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-Search {
+    width: 23px;
+    height: 23px;
+    background-image: url('../images/search_white.png');
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    border: none;
+    background-color: transparent;
+}
+
 .btn-outline-life:hover{
     color: var(--cor-cinza);
 }
@@ -932,7 +978,7 @@ input[type="radio"]:checked::before {
 .dashboard .TokensDisponiveis h2 {
     font-size: 22px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.005em;
     text-align: left;
@@ -942,7 +988,7 @@ input[type="radio"]:checked::before {
 .dashboard .TokensDisponiveis h2 span {
     font-size: 12px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 11px;
     letter-spacing: -0.005em;
     text-align: left;
@@ -1083,13 +1129,23 @@ input[type="radio"]:checked::before {
     background-color: var(--cor-cinza-escuro);
 }
 
-.dashboard #OndeQuandoTabs .tab-content p {
+.dashboard #OndeQuandoTabs .tab-content p, #OwlHistorico .tab-content p {
     font-style: normal;
     font-weight: 400;
     line-height: 15px;
     letter-spacing: -0.005em;
     text-align: center;
 }
+
+
+a.vertodos {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    text-align: center;
+}
+
 
 .dashboard #OndeQuandoTabs .tab-content input {
     font-style: normal;
@@ -1110,12 +1166,21 @@ input[type="radio"]:checked::before {
     z-index: 2;
 }
 
+.encerrado {
+    background-color: #C4C4C4;
+
+}
+
+.encerrado span {
+    color: var(--cor-cinza-escuro) !important;
+}
+
 #OwlEnquetes .calendario{
     max-width: 32px;
 }
 
 
-#OwlEnquetes h1, #OwlRecompensas h1, #OwlVantagens h1 {
+#OwlEnquetes h1, #OwlRecompensas h1, #OwlVantagens h1, #OwlHistorico h1 {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -1128,7 +1193,7 @@ input[type="radio"]:checked::before {
     overflow: hidden;
 }
 
-#OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p {
+#OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p, #OwlHistorico p {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -1138,7 +1203,7 @@ input[type="radio"]:checked::before {
 }
 
 
-#OwlEnquetes span, #OwlRecompensas span, #OwlVantagens span {
+#OwlEnquetes span, #OwlRecompensas span, #OwlVantagens span, #OwlHistorico span {
     font-style: normal;
     font-weight: 600;
     font-size: 11px;
@@ -1149,7 +1214,7 @@ input[type="radio"]:checked::before {
 }
 
 
-#OwlEnquetes .Info, #OwlRecompensas .Info, #OwlVantagens .Info {
+#OwlEnquetes .Info, #OwlRecompensas .Info, #OwlVantagens .Info, #OwlHistorico .Info {
     position: absolute;
     bottom: 0;
 }
@@ -1207,7 +1272,7 @@ input[type="radio"]:checked::before {
     color: var(--cor-cinza);   
 }
 
-#OwlVantagens .Info .quanty span, #OwlRecompensas .Info .quanty span{
+#OwlVantagens .Info .quanty span, #OwlRecompensas .Info .quanty span, #OwlHistorico span{
     z-index: 1;
     position: relative;
     font-style: normal;
@@ -1219,12 +1284,16 @@ input[type="radio"]:checked::before {
     display: block;
 }
 
-#OwlVantagens .Info .quanty span.congelado, #OwlRecompensas .Info .quanty span.congelado{
-    color: var(--cor-cinza);
+#OwlVantagens .Info.congelado .quanty span, #OwlRecompensas .Info.congelado .quanty span, #OwlHistorico .Info.congelado .quanty span {
+    color: var(--cor-preto);
     opacity: 0.5;
 }
 
-#OwlVantagens .Info .circle, #OwlRecompensas .Info .circle{
+#OwlVantagens .Info.congelado .text span, #OwlRecompensas .Info.congelado .text span, #OwlHistorico .Info.congelado .text span {
+    color: var(--cor-preto) !important;
+}
+
+#OwlVantagens .Info .circle, #OwlRecompensas .Info .circle, #OwlHistorico .Info .circle{
     width: 66px;
     height: 66px;
     position: absolute;
@@ -1234,20 +1303,20 @@ input[type="radio"]:checked::before {
     left: -8px;
 }
 
-#OwlEnquetes .owl-item, #OwlRecompensas .owl-item, #OwlVantagens .owl-item {
+#OwlEnquetes .owl-item, #OwlRecompensas .owl-item, #OwlVantagens .owl-item, #OwlHistorico .owl-item {
     border-radius: 8px;
     overflow: hidden;
 }
 
 
 
-#OwlVantagens .quanty, #OwlRecompensas .quanty{
+#OwlVantagens .quanty, #OwlRecompensas .quanty, #OwlHistorico .quanty{
     padding-bottom: 10px;
     padding-left: 6px;    
 }
 
 
-#OwlVantagens span.text-black, #OwlRecompensas span.text-black{
+#OwlVantagens span.text-black, #OwlRecompensas span.text-black, #OwlHistorico span.text-black{
     margin: 0;
     font-style: normal;
     font-weight: 700;
@@ -1439,7 +1508,6 @@ input[type="radio"]:checked::before {
     color: #FFFFFF;
 }
 
-
 .chamado textarea {
     padding-top: 10px;
     text-align: left;
@@ -1449,7 +1517,475 @@ input[type="radio"]:checked::before {
 }
 
 
+.chamado .info h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.005em;
+}
 
+.chamado .info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.chat-box .sender .time {
+    text-align: right;
+}
+
+.chat-box .sender .box {
+    background: #202020 !important;
+    letter-spacing: 1px;
+}
+
+.chat-box .reciever .box {
+    letter-spacing: 1px;
+}
+
+
+/* Perguntas Frequentes */
+
+.perguntasfrequentes .accordion-button::after {
+    background-image: url('../images/icon_mais.png');
+}
+
+.perguntasfrequentes .accordion-item, .perguntasfrequentes .accordion-button {
+    background-color: transparent !important;
+    color: #fff;  
+    border-color: #303030;
+}
+
+.perguntasfrequentes .accordion-body {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: -0.005em;
+}
+
+
+/* Perguntas Frequentes */
+
+.detalhesdoperfil h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    margin: 0;
+    padding: 0;
+}
+
+.detalhesdoperfil h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: -0.005em;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enquetes - lista */
+
+.enqueteslista {
+
+}
+
+.enqueteslista .headerBG {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 170px;
+    left: 0;
+    top: 0;
+    background-image: url('../images/enquetes_lista_header.png');
+}
+
+.enqueteslista  h4 {
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32.1081px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+.enqueteslista h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    color: var(--cor-branco);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.enqueteslista .calendario {
+    max-width: 32px;
+}
+
+
+.enqueteslista span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: -0.005em;
+    color: var(--cor-branco);
+    padding-top: 5px;
+}
+
+
+.enqueteslista .Info {
+    position: absolute;
+    bottom: 0;
+}
+
+
+.enqueteslista .box {
+    background-color: #303030;
+    min-height: 152px
+}
+
+
+.enqueteslista h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    color: #969696;
+}
+
+
+.enquetedetalhes .headerBG {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 170px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #1E4E8A 0%, #E8C146 100%);
+}
+
+
+.enquetedetalhes .avatar {
+    width: 102px;
+    height: 102px;
+}
+
+.enquetedetalhes .avatar img{
+    max-width: 102px;
+    max-height: 102px;
+    position: absolute;
+    bottom: -70px;
+    border: 8px solid var(--cor-cinza-medio);
+    border-radius: 200px;
+}
+
+.enquetedetalhes h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+.enquetedetalhes h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+.enquetedetalhes p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+.enquetedetalhes .btn-data {
+    background-color: var(--cor-azul);
+    border-radius: 10px;
+}
+.enquetedetalhes .btn-token {
+    background-color: var(--cor-violeta);
+    border-radius: 10px;
+}
+
+.enquetedetalhes .btn-votado {
+    background-color: transparent;
+    border: 2px solid var(--cor-verde);
+    border-radius: 10px;
+}
+
+.enquetedetalhes .data , .enquetedetalhes .tokens, .enquetedetalhes .votado {
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-top: 4px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.enquetedetalhes .lifequanty {
+    position: absolute;
+    content: "";
+    width: 73px;
+    height: 73px;
+    background-color: red;
+    bottom: -115px;
+    right: -20px;
+    border: 4px solid var(--cor-cinza-escuro);
+    border-radius: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+.enquetedetalhes .lifequanty span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+
+
+.enquetedetalhes .votelist p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    color: var(--cor-branco);
+    text-align: left;
+}
+
+
+.enquetedetalhes .votelist .box {
+    border-right: 10px solid;
+}
+
+.enquetedetalhes .votelist .box input[type="checkbox"]:before {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: var(--cor-cinza-escuro);
+    border: 1px solid #4c4c4c;
+    border-radius: 2px;
+}
+
+.enquetedetalhes .votelist .box input[type="checkbox"]:after {
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border-radius: 2px;
+  }
+
+  .enquetedetalhes  .votelist .box input[type="checkbox"]:checked:after {
+    background: var(--cor-cinza-escuro);
+    background-image: url('../images/checked_gre.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .enquetedetalhes .votelist .box input[type="checkbox"]:disabled:after {
+    -webkit-filter: opacity(0.4);
+  }
+
+
+.enquetedetalhes .votos h1 {
+    text-align: left;
+}
+
+
+
+  
+
+
+/* Escolas */
+
+.escolas .headerBG {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 170px;
+    left: 0;
+    top: 0;
+    background-image: url('../images/escolas_bg_header.png');
+}
+
+
+.escolas  h4 {
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32.1081px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+
+
+
+
+
+
+
+
+.escoladetalhe .avatar {
+    width: 115px;
+    height: 115px;
+}
+
+.escoladetalhe .avatar img{
+    max-width: 115px;
+    max-height: 115px;
+    position: absolute;
+    bottom: 30px;
+    border: 8px solid var(--cor-cinza-medio);
+    border-radius: 200px;
+}
+
+.escoladetalhe .headerBG {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 249px;
+    left: 0;
+    top: 0;
+    background-image: url('../images/escola_header_bg.png');
+}
+
+.escoladetalhe h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.005em;;
+}
+
+.escoladetalhe .botoes button{
+    background-color: var(--cor-cinza);
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.005em;
+    position: relative;
+    min-height: 57px;
+    border-radius: 8px;
+}
+
+
+.escoladetalhe .botoes button.favoritar  img {
+    max-width: 22px;
+}
+
+.escoladetalhe .botoes button.notificar img  {
+    max-width: 18px;
+}
+
+
+
+.escoladetalhe p {
+    font-style: normal;
+    font-weight: 400;
+
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+
+/* Notícias*/
+.noticias {
+    
+}
+
+.noticias h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: -0.005em;
+    color: var(--cor-branco);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.noticias .thumb {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 152px;
+    position: relative;
+}
+
+.noticias .thumb .title {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Meus Lifes */
+
+.meuslifes .title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    color: var(--cor-cinza);
+}
+
+.lifesmoeda {
+    position: absolute;
+    right: 0;
+    min-height: 193px;
+}
 
 
 
