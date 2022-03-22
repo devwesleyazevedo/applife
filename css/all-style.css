@@ -19,6 +19,10 @@ body{
     --modal-over: #4343ef42;
 }
 
+.rounded {
+    border-radius: 8px !important;
+}
+
 input[type="radio"]::before {
     box-shadow: inset 1em 1em #08d291 !important;
 }
@@ -762,6 +766,19 @@ input[type="radio"]:checked::before {
     text-decoration: none;
 }
 
+/*headerBG h4 default */
+
+.headerBG {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 170px;
+    left: 0;
+    top: 0;
+    background-image: url('../images/enquetes_lista_header.png');
+}
+
 /* MENU LEFT */
 
 
@@ -1180,7 +1197,7 @@ a.vertodos {
 }
 
 
-#OwlEnquetes h1, #OwlRecompensas h1, #OwlVantagens h1, #OwlHistorico h1 {
+#OwlEnquetes h1, #OwlRecompensas h1, #OwlVantagens h1, #OwlHistorico h1, .vantagenslista h1 {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -1193,7 +1210,7 @@ a.vertodos {
     overflow: hidden;
 }
 
-#OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p, #OwlHistorico p {
+#OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p, #OwlHistorico p, .vantagenslista p {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -1203,7 +1220,7 @@ a.vertodos {
 }
 
 
-#OwlEnquetes span, #OwlRecompensas span, #OwlVantagens span, #OwlHistorico span {
+#OwlEnquetes span, #OwlRecompensas span, #OwlVantagens span, #OwlHistorico span, .vantagenslista span {
     font-style: normal;
     font-weight: 600;
     font-size: 11px;
@@ -1214,7 +1231,7 @@ a.vertodos {
 }
 
 
-#OwlEnquetes .Info, #OwlRecompensas .Info, #OwlVantagens .Info, #OwlHistorico .Info {
+#OwlEnquetes .Info, #OwlRecompensas .Info, #OwlVantagens .Info, #OwlHistorico .Info, .vantagenslista .Info {
     position: absolute;
     bottom: 0;
 }
@@ -1272,7 +1289,7 @@ a.vertodos {
     color: var(--cor-cinza);   
 }
 
-#OwlVantagens .Info .quanty span, #OwlRecompensas .Info .quanty span, #OwlHistorico span{
+#OwlVantagens .Info .quanty span, #OwlRecompensas .Info .quanty span, #OwlHistorico span, .vantagenslista span{
     z-index: 1;
     position: relative;
     font-style: normal;
@@ -1284,16 +1301,16 @@ a.vertodos {
     display: block;
 }
 
-#OwlVantagens .Info.congelado .quanty span, #OwlRecompensas .Info.congelado .quanty span, #OwlHistorico .Info.congelado .quanty span {
+#OwlVantagens .Info.congelado .quanty span, #OwlRecompensas .Info.congelado .quanty span, #OwlHistorico .Info.congelado .quanty span, .vantagenslista .Info.congelado .quanty span {
     color: var(--cor-preto);
     opacity: 0.5;
 }
 
-#OwlVantagens .Info.congelado .text span, #OwlRecompensas .Info.congelado .text span, #OwlHistorico .Info.congelado .text span {
+#OwlVantagens .Info.congelado .text span, #OwlRecompensas .Info.congelado .text span, #OwlHistorico .Info.congelado .text span, .vantagenslista .Info.congelado .text span {
     color: var(--cor-preto) !important;
 }
 
-#OwlVantagens .Info .circle, #OwlRecompensas .Info .circle, #OwlHistorico .Info .circle{
+#OwlVantagens .Info .circle, #OwlRecompensas .Info .circle, #OwlHistorico .Info .circle {
     width: 66px;
     height: 66px;
     position: absolute;
@@ -1303,20 +1320,37 @@ a.vertodos {
     left: -8px;
 }
 
-#OwlEnquetes .owl-item, #OwlRecompensas .owl-item, #OwlVantagens .owl-item, #OwlHistorico .owl-item {
+
+.vantagenslista .Info .circle {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    background-color: var(--cor-branco);
+    border-radius: 200px;
+    bottom: -8px;
+    left: -9px;
+}
+
+
+
+#OwlEnquetes .owl-item, #OwlRecompensas .owl-item, #OwlVantagens .owl-item, #OwlHistorico .owl-item, .vantagenslista .owl-item {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.vantagenslista {
     border-radius: 8px;
     overflow: hidden;
 }
 
 
-
-#OwlVantagens .quanty, #OwlRecompensas .quanty, #OwlHistorico .quanty{
+#OwlVantagens .quanty, #OwlRecompensas .quanty, #OwlHistorico .quanty, .vantagenslista .quanty{
     padding-bottom: 10px;
     padding-left: 6px;    
 }
 
 
-#OwlVantagens span.text-black, #OwlRecompensas span.text-black, #OwlHistorico span.text-black{
+#OwlVantagens span.text-black, #OwlRecompensas span.text-black, #OwlHistorico span.text-black, .vantagenslista span.text-black{
     margin: 0;
     font-style: normal;
     font-weight: 700;
@@ -1325,6 +1359,19 @@ a.vertodos {
     letter-spacing: -0.005em;
     padding-top: 2px;
 }
+
+.vantagenslista span.text-black {
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.vantagenslista span.text-black strong {
+    width: 100%;
+    display: block;
+    font-weight: 600;
+}
+
 
 #Cat h2 {
     font-style: normal;
@@ -1593,6 +1640,29 @@ a.vertodos {
 .enqueteslista {
 
 }
+
+.enqueteslista .circle {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    background-color: var(--cor-branco);
+    border-radius: 200px;
+    bottom: -8px;
+    left: -9px;
+}
+
+.enqueteslista .circle span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.005em;
+    color: #000;
+    text-align: center;
+    display: block;
+}
+
+
 
 .enqueteslista .headerBG {
     background-size: cover;
@@ -1961,15 +2031,6 @@ a.vertodos {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Meus Lifes */
 
 .meuslifes .title{
@@ -1986,6 +2047,263 @@ a.vertodos {
     right: 0;
     min-height: 193px;
 }
+
+
+
+
+
+
+/* Favoritos */
+
+.favoritos .headerBG {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 170px;
+    left: 0;
+    top: 0;
+    background-image: url('../images/enquetes_lista_header.png');
+}
+
+.favoritos  h4 {
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32.1081px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+
+/* Notificações */
+.notificacoes {
+
+}
+
+
+.notificacoes button {
+
+}
+
+
+
+.notificacoes .content {
+    background-color: var(--cor-cinza-medio);
+    border-radius: 8px;
+}
+
+.notificacoes .btn-BtnClose {
+    right: 15px;
+    top: 15px;
+}
+
+.notificacoes .content h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    margin: 0;
+    padding-right: 15px;
+}
+
+.notificacoes .content span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    margin: 0;
+}
+
+
+.notificacoes .content p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.005em;
+    margin: 0;
+}
+
+.notificacoes .tkcongelados {
+    background-color: #00E584;
+    position: relative;
+}
+
+
+.notificacoes .tkcongelados h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+}
+
+.notificacoes .tkcongelados h1 span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+    margin-right: 5px;
+}
+
+.notificacoes .tkcongelados h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 11px;
+    letter-spacing: -0.005em;
+}
+
+.notificacoes .lifecoin {
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+/* Vantagens */
+
+.vantagenslista h4 {
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32.1081px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+
+
+.vantagenslista h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    color: #969696;
+}
+
+
+.vantagemdetalhes .headerBG {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 170px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #1E4E8A 0%, #E8C146 100%);
+    background-size: cover;
+}
+
+
+.vantagemdetalhes .avatar {
+    width: 102px;
+    height: 102px;
+}
+
+.vantagemdetalhes .avatar img {
+    max-width: 102px;
+    max-height: 102px;
+    position: absolute;
+    bottom: -70px;
+    border: 8px solid #1c1c1c;
+    border-radius: 200px;
+}
+
+
+.vantagemdetalhes .lifequanty {
+    position: absolute;
+    content: "";
+    width: 73px;
+    height: 73px;
+    background-color: red;
+    bottom: -115px;
+    right: -20px;
+    border: 4px solid var(--cor-cinza-escuro);
+    border-radius: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+.vantagemdetalhes .lifequanty span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+
+.vantagemdetalhes .btn-data {
+    background-color: var(--cor-azul);
+    border-radius: 10px;
+}
+
+
+.vantagemdetalhes .btn-token {
+    background-color: var(--cor-violeta);
+    border-radius: 10px;
+}
+
+
+
+.vantagemdetalhes h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+.vantagemdetalhes p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+.vantagemdetalhes .data, .vantagemdetalhes .tokens, .vantagemdetalhes .votado {
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-top: 4px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.vantagemdetalhes a {
+    text-decoration: none;
+}
+
+
+.vantagemdetalhes .btn-votado {
+    background-color: transparent;
+    border: 2px solid var(--cor-verde);
+    border-radius: 10px;
+}
+
+
+.vantagemdetalhes .btn-disponiveis {
+    background: linear-gradient(90deg, #1E4E8A 0%, #E8C146 100%);
+    border-radius: 10px;
+}
+
 
 
 
