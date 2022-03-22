@@ -1197,7 +1197,7 @@ a.vertodos {
 }
 
 
-#OwlEnquetes h1, #OwlRecompensas h1, #OwlVantagens h1, #OwlHistorico h1, .vantagenslista h1 {
+#OwlEnquetes h1, #OwlRecompensas h1, #OwlVantagens h1, #OwlHistorico h1, .vantagenslista h1, .recompensas h1{
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -1210,7 +1210,7 @@ a.vertodos {
     overflow: hidden;
 }
 
-#OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p, #OwlHistorico p, .vantagenslista p {
+#OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p, #OwlHistorico p, .vantagenslista p, .recompensas  p {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -1220,7 +1220,7 @@ a.vertodos {
 }
 
 
-#OwlEnquetes span, #OwlRecompensas span, #OwlVantagens span, #OwlHistorico span, .vantagenslista span {
+#OwlEnquetes span, #OwlRecompensas span, #OwlVantagens span, #OwlHistorico span, .vantagenslista span, .recompensas span {
     font-style: normal;
     font-weight: 600;
     font-size: 11px;
@@ -1231,7 +1231,7 @@ a.vertodos {
 }
 
 
-#OwlEnquetes .Info, #OwlRecompensas .Info, #OwlVantagens .Info, #OwlHistorico .Info, .vantagenslista .Info {
+#OwlEnquetes .Info, #OwlRecompensas .Info, #OwlVantagens .Info, #OwlHistorico .Info, .vantagenslista .Info, .recompensas  .Info{
     position: absolute;
     bottom: 0;
 }
@@ -1289,7 +1289,7 @@ a.vertodos {
     color: var(--cor-cinza);   
 }
 
-#OwlVantagens .Info .quanty span, #OwlRecompensas .Info .quanty span, #OwlHistorico span, .vantagenslista span{
+#OwlVantagens .Info .quanty span, #OwlRecompensas .Info .quanty span, #OwlHistorico span, .vantagenslista span, .recompensas span{
     z-index: 1;
     position: relative;
     font-style: normal;
@@ -1301,12 +1301,12 @@ a.vertodos {
     display: block;
 }
 
-#OwlVantagens .Info.congelado .quanty span, #OwlRecompensas .Info.congelado .quanty span, #OwlHistorico .Info.congelado .quanty span, .vantagenslista .Info.congelado .quanty span {
+#OwlVantagens .Info.congelado .quanty span, #OwlRecompensas .Info.congelado .quanty span, #OwlHistorico .Info.congelado .quanty span, .vantagenslista .Info.congelado .quanty span, .recompensas .Info.congelado .quanty span {
     color: var(--cor-preto);
     opacity: 0.5;
 }
 
-#OwlVantagens .Info.congelado .text span, #OwlRecompensas .Info.congelado .text span, #OwlHistorico .Info.congelado .text span, .vantagenslista .Info.congelado .text span {
+#OwlVantagens .Info.congelado .text span, #OwlRecompensas .Info.congelado .text span, #OwlHistorico .Info.congelado .text span, .vantagenslista .Info.congelado .text span, .recompensas .Info.congelado .text span{
     color: var(--cor-preto) !important;
 }
 
@@ -1332,25 +1332,24 @@ a.vertodos {
 }
 
 
-
 #OwlEnquetes .owl-item, #OwlRecompensas .owl-item, #OwlVantagens .owl-item, #OwlHistorico .owl-item, .vantagenslista .owl-item {
     border-radius: 8px;
     overflow: hidden;
 }
 
-.vantagenslista {
+.vantagenslista, .recompensas {
     border-radius: 8px;
     overflow: hidden;
 }
 
 
-#OwlVantagens .quanty, #OwlRecompensas .quanty, #OwlHistorico .quanty, .vantagenslista .quanty{
+#OwlVantagens .quanty, #OwlRecompensas .quanty, #OwlHistorico .quanty, .vantagenslista .quanty, .recompensas .quanty{
     padding-bottom: 10px;
     padding-left: 6px;    
 }
 
 
-#OwlVantagens span.text-black, #OwlRecompensas span.text-black, #OwlHistorico span.text-black, .vantagenslista span.text-black{
+#OwlVantagens span.text-black, #OwlRecompensas span.text-black, #OwlHistorico span.text-black, .vantagenslista span.text-black, .recompensas span.text-black{
     margin: 0;
     font-style: normal;
     font-weight: 700;
@@ -1360,13 +1359,13 @@ a.vertodos {
     padding-top: 2px;
 }
 
-.vantagenslista span.text-black {
+.vantagenslista span.text-black, .recompensas span.text-black{
     text-align: left;
     margin-left: 15px;
     font-weight: 600;
 }
 
-.vantagenslista span.text-black strong {
+.vantagenslista span.text-black strong, .recompensas span.text-black strong {
     width: 100%;
     display: block;
     font-weight: 600;
@@ -2303,6 +2302,74 @@ a.vertodos {
     background: linear-gradient(90deg, #1E4E8A 0%, #E8C146 100%);
     border-radius: 10px;
 }
+
+
+/* Recompensas */
+
+
+
+
+.recompensas .headerBG {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 170px;
+    left: 0;
+    top: 0;
+    background-image: url('../images/recompensa_lista.png');
+}
+
+.recompensas h4 {
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32.1081px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+
+
+.recompensas .Info .circle {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    background-color: var(--cor-branco);
+    border-radius: 200px;
+    bottom: -8px;
+    left: -9px;
+}
+
+
+.recompensas span.text-white {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: -0.005em;
+    color: var(--cor-branco);
+    padding-top: 5px;
+}
+
+.recompensas h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    color: #969696;
+}
+
+.recompensas .Overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+}
+
 
 
 
