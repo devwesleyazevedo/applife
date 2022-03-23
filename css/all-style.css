@@ -3,7 +3,6 @@ body{
     background-color: #1d1d1d;
     color: var(--cor-cinza);
 }
-
 :root {
     --cor-violeta: #9E65EF;
     --cor-azul: #4443F0;
@@ -16,17 +15,15 @@ body{
     --cor-branco: #FFF;
     --cor-preto: #000;
     --linear-gradient: linear-gradient(90deg, var(--cor-violeta) 0%, var(--cor-azul) 49.72%, var(--cor-verde) 100%);
+    --linear-gradient2: linear-gradient(90deg, #1E4E8A 0%, #E8C146 100%);
     --modal-over: #4343ef42;
 }
-
 .rounded {
     border-radius: 8px !important;
 }
-
 input[type="radio"]::before {
     box-shadow: inset 1em 1em #08d291 !important;
 }
-
 h5.toptitulo {
     font-size: 18px;
     font-style: normal;
@@ -34,7 +31,6 @@ h5.toptitulo {
     line-height: 20px;
     letter-spacing: -0.005em;
 }
-
 h1.titulo {
     font-size: 32px;
     font-style: normal;
@@ -42,7 +38,6 @@ h1.titulo {
     line-height: 42px;
     letter-spacing: -0.005em;
 }
-
 h6.subtitulo {
     font-size: 12px;
     font-style: normal;
@@ -50,53 +45,31 @@ h6.subtitulo {
     line-height: 13px;
     letter-spacing: -0.005em;
 }
-
-textarea:focus, 
-textarea.form-control:focus, 
-input.form-control:focus, 
-input[type=text]:focus, 
-input[type=password]:focus, 
-input[type=email]:focus, 
-input[type=number]:focus, 
-[type=text].form-control:focus, 
-[type=password].form-control:focus, 
-[type=email].form-control:focus, 
-[type=tel].form-control:focus, 
-[contenteditable].form-control:focus {
-  box-shadow: inset 0 0px 0 #ddd;
-  outline: 0;
+textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
+    box-shadow: inset 0 0px 0 #ddd;
+    outline: 0;
 }
-
-
 .accordion-flush .accordion-item .accordion-button {
     box-shadow: inset 0 0px 0 #ddd;
-    outline: 0; 
+    outline: 0;
 }
-
-
-
 /* COLORS */
 .gradient-life{
     background: var(--linear-gradient);
 }
-
 .txt-gray{
     color: var(--cor-cinza);
 }
 .bg-gray{
     background-color: var(--cor-cinza);
 }
-
 .txt-light{
     color: var(--cor-branco);
 }
-
 .txt-gradient-life{
     color: var(--linear-gradient);
 }
-
 /* STRUCTURE */
-
 .va-middle {
     position: absolute;
     top: 50%;
@@ -108,7 +81,6 @@ input[type=number]:focus,
     transform: translateY( -50% );
     z-index: 2;
 }
-
 .btn-gradiente-life{
     background: var(--linear-gradient);
     border: 0;
@@ -123,7 +95,6 @@ input[type=number]:focus,
 .btn-gradiente-life:hover{
     color: var(--cor-branco);
 }
-
 .btn-outline-life{
     background: transparent;
     border: 1px solid var(--cor-cinza);
@@ -135,8 +106,6 @@ input[type=number]:focus,
     letter-spacing: 2px;
     font-size: 12px;
 }
-
-
 .btn-BtnClose {
     width: 12px;
     height: 12px;
@@ -148,7 +117,6 @@ input[type=number]:focus,
     border: none;
     background-color: transparent;
 }
-
 .btn-Return {
     width: 21px;
     height: 21px;
@@ -160,7 +128,6 @@ input[type=number]:focus,
     border: none;
     background-color: transparent;
 }
-
 .btn-Search {
     width: 23px;
     height: 23px;
@@ -172,11 +139,9 @@ input[type=number]:focus,
     border: none;
     background-color: transparent;
 }
-
 .btn-outline-life:hover{
     color: var(--cor-cinza);
 }
-
 .title-gradient{
     font-weight: bold;
     margin: 25px 0px;
@@ -188,7 +153,6 @@ input[type=number]:focus,
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
-
 .input-life{
     background-color: transparent;
     color: var(--cor-cinza);
@@ -204,23 +168,19 @@ input[type=number]:focus,
     letter-spacing: 0.205em;
     text-align: center;
 }
-
 .input-validation {
     border: none;
     border-bottom: 1px solid var(--cor-cinza);
     border-radius: 0;
 }
-
 .form-label{
     font-size: 13px;
     color: var(--cor-cinza);
 }
-
 .checkbox-life {
     background: var(--linear-gradient);
     position: relative;
 }
-
 .checkbox-life:after {
     content: "";
     position: absolute;
@@ -237,7 +197,6 @@ input[type=number]:focus,
     margin-right: auto;
     border-radius: 4px;
 }
-
 .checkbox-life:checked:before {
     content: "";
     position: absolute;
@@ -258,18 +217,15 @@ input[type=number]:focus,
     border-radius: 4px;
     z-index: 1;
 }
-
 .checkbox-life:checked {
     background: var(--linear-gradient);
     border: none;
 }
-
 .checkbox-life:checked[type=checkbox] {
     background-image: none;
     background: var(--linear-gradient);
     position: relative;
 }
-
 /* input radio LIFE */
 input[type="radio"] {
     -webkit-appearance: none;
@@ -301,7 +257,6 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
     transform: scale(1);
 }
-
 .form-control:focus {
     color: var(--cor-cinza);
     background-color: transparent;
@@ -309,7 +264,6 @@ input[type="radio"]:checked::before {
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(58, 58, 58, 0.25);
 }
-
 .cont-middle {
     position: absolute;
     top: 45%;
@@ -320,13 +274,11 @@ input[type="radio"]:checked::before {
     -moz-transform: translateY( -50% );
     transform: translateY( -50% );
 }
-
 .cont {
     margin: auto;
     width: 90%;
     text-align: center;
 }
-
 #tabs .interaction .BtnIcon_favorite {
     width: 21px;
     height: 19px;
@@ -336,7 +288,6 @@ input[type="radio"]:checked::before {
     background-repeat: no-repeat;
     cursor: pointer;
 }
-
 #tabs .interaction .BtnIcon_notification {
     width: 21px;
     height: 19px;
@@ -346,38 +297,29 @@ input[type="radio"]:checked::before {
     background-repeat: no-repeat;
     cursor: pointer;
 }
-
 #tabs .interaction .BtnIcon_notification.active {
     background-image: url('../images/icon_sino_active.png');
 }
-
 #tabs .interaction .BtnIcon_favorite.active {
     background-image: url('../images/icon_coracao_active.png');
 }
-
 #tabs button{
     padding: 13px 14px;
     background-color: transparent;
     border: 1px solid var(--cor-cinza);
     border-radius: 5px;
 }
-
 #tabs button {
     font-size: 13px;
 }
-
-
 #tabs button.active {
     background: var(--linear-gradient);
     border-color: transparent;
 }
-
-
 #tabs input {
     background-color: var(--cor-preto);
     color: var(--cor-cinza);
 }
-
 #tabs .tab-pane p {
     font-size: 12px;
     font-style: normal;
@@ -389,7 +331,6 @@ input[type="radio"]:checked::before {
     margin: 0;
     padding: 0;
 }
-
 .pular {
     color: var(--cor-cinza);
     font-size: 14px;
@@ -398,24 +339,20 @@ input[type="radio"]:checked::before {
     line-height: 15px;
     letter-spacing: -0.005em;
     text-align: center;
-
 }
-
 /* Página - Apresentação */
 #img-logo-slogan{
     width: 250px;
     max-width: 90%;
     margin-bottom: 50px;
 }
-
 #btns-bottom{
-    position: absolute; 
-    bottom: 10%; 
-    left: 0; 
-    text-align: center; 
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    text-align: center;
     width: 100%;
 }
-
 /* Página - Cadastro */
 #termos p {
     color: var(--cor-cinza);
@@ -426,15 +363,12 @@ input[type="radio"]:checked::before {
     letter-spacing: -0.005em;
     margin-left: 20px !important;
 }
-
 #termos p span {
     font-weight: normal;
 }
-
 .sub-text{
-        font-size: 10px;
+    font-size: 10px;
 }
-
 .PasswordlengthBG {
     opacity: 0.3;
     -webkit-transition: opacity 2s ease;
@@ -443,7 +377,6 @@ input[type="radio"]:checked::before {
     -o-transition: opacity 2s ease;
     transition: opacity 2s ease;
 }
-
 .PasswordlengthBG.active {
     background: linear-gradient(90deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%) !important;
     opacity: 1;
@@ -453,24 +386,19 @@ input[type="radio"]:checked::before {
     -o-transition: opacity 2s ease;
     transition: opacity 2s ease;
 }
-
-
 /* Página - Login */
-
 #logo-bottom{
-    position: absolute; 
-    bottom: 10%; 
-    left: 0; 
-    text-align: center; 
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    text-align: center;
     width: 100%;
     z-index: 2;
 }
-
 #logo-bottom > img{
     width: 100px;
     max-width: 80%;
 }
-
 .LoginAvatarCircle{
     background-image: var(--linear-gradient);
     width: 126px;
@@ -478,27 +406,21 @@ input[type="radio"]:checked::before {
     border-radius: 200px;
     padding: 3px;
 }
-
 .LoginAvatar {
     background-color: #fff;
     border-radius: 200px;
     border: 5px solid black;
 }
-
 /* Página - Autenticação SMS */
-
 #resend-cod{
     border: 0;
     background-color: transparent;
     padding: 0;
     opacity: 0.2;
 }
-
 #resend-cod:hover{
     color: var(--cor-cinza);
 }
-
-
 .input-resend-cod{
     border: 0;
     border-bottom: 1px solid var(--cor-cinza);
@@ -511,36 +433,28 @@ input[type="radio"]:checked::before {
     font-weight: 400;
 }
 .input-resend-cod:focus{
-   box-shadow: 0 0 0 0.25rem rgb(58 58 58 / 0%)!important;
+    box-shadow: 0 0 0 0.25rem rgb(58 58 58 / 0%)!important;
 }
-
-.input-resend-cod::-webkit-inner-spin-button, 
-.input-resend-cod::-webkit-outer-spin-button { 
+.input-resend-cod::-webkit-inner-spin-button, .input-resend-cod::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin: 0; 
+    margin: 0;
 }
-
 #timer{
     height: 20px;
 }
-
 /* Modal - Default */
 .modal-backdrop {
     background-color: var(--modal-over) !important;
 }
-
 /* Modal - Notificações Gerais */
-
 #ModalNotificacoes .modal-header, #ModalNotificacoes .modal-footer {
     border: none;
 }
-
 #ModalNotificacoes .modal-content {
     background-color: var(--cor-preto);
 }
-
 .RadiusBorderGradient {
     width: 100%;
     position: relative;
@@ -552,14 +466,11 @@ input[type="radio"]:checked::before {
     background-clip: content-box, border-box;
     overflow: hidden;
 }
-
 #ModalNotificacoes .modal-footer {
     background-color: var(--cor-preto);
     margin-bottom: -1px;
 }
-
 /* Modal - Agradecimento */
-
 #ModalAgradecimento .bgmodal {
     background-image: url('../images/modal_agradecimento.png');
     background-position: center;
@@ -567,26 +478,20 @@ input[type="radio"]:checked::before {
     background-size: cover;
     background-color: transparent;
 }
-
 #ModalAgradecimento .modal-header, #ModalAgradecimento .modal-footer {
     border: none;
 }
-
 #ModalAgradecimento .modal-content {
     border: none;
     background-color: transparent;
     border-radius: 8px;
     overflow: hidden;
 }
-
 #ModalAgradecimento .modal-footer {
     background-color: var(--cor-preto);
     margin-bottom: -1px;
 }
-
-
 /* Modal - Recompensa */
-
 #ModalRecompensa h2 {
     font-size: 79px;
     font-style: normal;
@@ -595,7 +500,6 @@ input[type="radio"]:checked::before {
     letter-spacing: -0.005em;
     text-align: center;
 }
-
 #ModalRecompensa .bgmodal {
     background-image: url('../images/modal_recompensa.png');
     background-position: center;
@@ -603,29 +507,23 @@ input[type="radio"]:checked::before {
     background-size: cover;
     background-color: transparent;
 }
-
 #ModalRecompensa .modal-header, #ModalRecompensa .modal-footer {
     border: none;
 }
-
 #ModalRecompensa .modal-content {
     border: none;
     background-color: transparent;
     border-radius: 8px;
     overflow: hidden;
 }
-
 #ModalRecompensa .modal-footer {
     background-color: var(--cor-preto);
     margin-bottom: -1px;
 }
-
 /* Modal - Termos e Condições / Política de Privacidade*/
-
 #ModalTermosePolitica .modal-header, #ModalTermosePolitica .modal-footer {
     border: none;
 }
-
 #ModalTermosePolitica .modal-content {
     background-image: url('../images/termos_politica_bg.png');
     background-position: center;
@@ -634,19 +532,14 @@ input[type="radio"]:checked::before {
     border-radius: 8px;
     background-color: transparent;
 }
-
 #ModalTermosePolitica .modal-body {
     max-height: 50vh;
 }
-
 #ModalTermosePolitica .modal-footer {
     background-color: var(--cor-preto);
     margin-bottom: -1px;
 }
-
-
 /* Modal Congelamento */
-
 #ModalCongelamento .bgmodal {
     background-image: url('../images/modal_congelamento.png');
     background-position: center;
@@ -654,32 +547,26 @@ input[type="radio"]:checked::before {
     background-size: cover;
     background-color: transparent;
 }
-
 #ModalCongelamento .modal-header, #ModalCongelamento .modal-footer {
     border: none;
 }
-
 #ModalCongelamento .modal-content {
     border: none;
     background-color: transparent;
     border-radius: 8px;
     overflow: hidden;
 }
-
 #ModalCongelamento .modal-footer {
     background-color: var(--cor-preto);
     margin-bottom: -1px;
 }
-
-
 #ModalCongelamento h1 {
     font-size: 79px;
     font-style: normal;
     font-weight: 700;
     line-height: 0.8;
-    letter-spacing: -0.005em; 
+    letter-spacing: -0.005em;
 }
-
 #ModalCongelamento h2 {
     font-size: 36px;
     font-style: normal;
@@ -687,7 +574,6 @@ input[type="radio"]:checked::before {
     line-height: 1;
     letter-spacing: -0.005em;
 }
-
 #ModalCongelamento p {
     font-size: 16px;
     font-style: normal;
@@ -696,9 +582,7 @@ input[type="radio"]:checked::before {
     letter-spacing: -0.005em;
     text-align: center;
 }
-
 /* Modal Congelado */
-
 #ModalCongelado .bgmodal {
     background-image: url('../images/modal_congelado.png');
     background-position: center;
@@ -706,31 +590,26 @@ input[type="radio"]:checked::before {
     background-size: cover;
     background-color: transparent;
 }
-
 #ModalCongelado .modal-header, #ModalCongelado .modal-footer {
     border: none;
 }
-
 #ModalCongelado .modal-content {
     border: none;
     background-color: transparent;
     border-radius: 8px;
     overflow: hidden;
 }
-
 #ModalCongelado .modal-footer {
     background-color: var(--cor-preto);
     margin-bottom: -1px;
 }
-
 #ModalCongelado h1 {
     font-size: 79px;
     font-style: normal;
     font-weight: 700;
     line-height: 0.8;
-    letter-spacing: -0.005em; 
+    letter-spacing: -0.005em;
 }
-
 #ModalCongelado h2 {
     font-size: 36px;
     font-style: normal;
@@ -738,7 +617,6 @@ input[type="radio"]:checked::before {
     line-height: 1;
     letter-spacing: -0.005em;
 }
-
 #ModalCongelado p {
     font-size: 16px;
     font-style: normal;
@@ -747,27 +625,21 @@ input[type="radio"]:checked::before {
     letter-spacing: -0.005em;
     text-align: center;
 }
-
 /* Modal NFT */
-
 #ModalNFT .modal-content {
     border: none;
     background-color: var(--cor-preto);
     border-radius: 8px;
     overflow: hidden;
 }
-
 #ModalNFT .modal-header, #ModalNFT .modal-footer {
     border: none;
 }
-
 #ModalNFT .modal-header a {
     color: var(--cor-cinza);
     text-decoration: none;
 }
-
 /*headerBG h4 default */
-
 .headerBG {
     background-size: cover;
     background-position: center;
@@ -778,15 +650,11 @@ input[type="radio"]:checked::before {
     top: 0;
     background-image: url('../images/enquetes_lista_header.png');
 }
-
 /* MENU LEFT */
-
-
 #mainNav {
     z-index: 9999;
     position: absolute;
 }
-
 .HeaderUser {
     max-height: 147px;
     background-image: url('../images/header_user_bg.png');
@@ -794,13 +662,11 @@ input[type="radio"]:checked::before {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 .HeaderUser p {
     margin: 0;
     padding: 0;
 }
-
-.HeaderUser p  {
+.HeaderUser p {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -808,7 +674,6 @@ input[type="radio"]:checked::before {
     letter-spacing: -0.005em;
     text-align: left;
 }
-
 .HeaderUser p span{
     font-size: 12px;
     font-style: normal;
@@ -817,7 +682,6 @@ input[type="radio"]:checked::before {
     letter-spacing: -0.005em;
     text-align: left;
 }
-
 .AvatarCircle{
     background-image: var(--linear-gradient);
     width: 95px;
@@ -825,12 +689,10 @@ input[type="radio"]:checked::before {
     border-radius: 200px;
     padding: 3px;
 }
-
 .useravatar {
     background-color: #fff;
     border-radius: 200px;
 }
-
 .border_menu {
     width: 6px;
     height: 100%;
@@ -838,8 +700,7 @@ input[type="radio"]:checked::before {
     top: 0;
     right: 0;
     background: linear-gradient(360deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
-  }
-
+}
 .sidenav {
     height: 100%;
     width: 325px;
@@ -852,7 +713,6 @@ input[type="radio"]:checked::before {
     transition: 0.5s;
     margin-left: 0px;
 }
-
 .sidenav ul li a {
     font-size: 12px;
     font-style: normal;
@@ -862,11 +722,9 @@ input[type="radio"]:checked::before {
     text-align: left;
     flex: 1;
 }
-
 .sidenav a:hover {
     color: #f1f1f1;
 }
-
 .sidenav .closebtn {
     width: 34px;
     height: 100px;
@@ -882,7 +740,6 @@ input[type="radio"]:checked::before {
     font-size: 14px;
     color: #fff;
 }
-
 .sidenav .beta {
     font-style: normal;
     font-weight: normal;
@@ -891,7 +748,6 @@ input[type="radio"]:checked::before {
     position: absolute;
     bottom: 8vh;
 }
-
 .BtnMenu {
     width: 34px;
     background-color: transparent;
@@ -900,44 +756,41 @@ input[type="radio"]:checked::before {
     display: flex;
     padding: 0;
     margin-top: 3px;
-  }
-  .BtnMenu .line {
+}
+.BtnMenu .line {
     fill: none;
     stroke: white;
     stroke-width: 10;
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .BtnMenu .line1 {
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.BtnMenu .line1 {
     stroke-dasharray: 60 207;
     stroke-width: 10;
-  }
-  .BtnMenu .line2 {
+}
+.BtnMenu .line2 {
     stroke-dasharray: 60 60;
     stroke-width: 10;
-  }
-  .BtnMenu .line3 {
+}
+.BtnMenu .line3 {
     stroke-dasharray: 60 207;
     stroke-width: 10;
-  }
-  .BtnMenu.opened .line1 {
+}
+.BtnMenu.opened .line1 {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 10;
-  }
-  .BtnMenu.opened .line2 {
+}
+.BtnMenu.opened .line2 {
     stroke-dasharray: 1 60;
     stroke-dashoffset: -30;
     stroke-width: 10;
-  }
-  .BtnMenu.opened .line3 {
+}
+.BtnMenu.opened .line3 {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 10;
-  }
-
+}
 /* MENU FOOTER */
-
 #MenuFooter {
     padding: 18px 15px;
     background-color: var(--cor-preto);
@@ -945,7 +798,6 @@ input[type="radio"]:checked::before {
     bottom: 0;
     z-index: 9999;
 }
-
 #MenuFooter ul li a {
     font-size: 10px;
     font-style: normal;
@@ -956,21 +808,16 @@ input[type="radio"]:checked::before {
     text-decoration: none;
     color: var(--cor-cinza);
 }
-
 #MenuFooter .icon img {
     max-height: 24px;
     height: 100vh;
 }
-
-
 /* Dashboard */
-
 .dashboard {
     margin: 0;
     padding: 0;
     padding-bottom: 80px;
 }
-
 .dashboard .TokensDisponiveis h1 {
     font-size: 40px;
     font-style: normal;
@@ -979,8 +826,6 @@ input[type="radio"]:checked::before {
     letter-spacing: -0.005em;
     text-align: left;
 }
-
-
 .dashboard .TokensDisponiveis h1 span {
     font-size: 18px;
     font-style: normal;
@@ -990,8 +835,6 @@ input[type="radio"]:checked::before {
     text-align: left;
     margin: 0;
 }
-
-
 .dashboard .TokensDisponiveis h2 {
     font-size: 22px;
     font-style: normal;
@@ -1001,7 +844,6 @@ input[type="radio"]:checked::before {
     text-align: left;
     margin: 0;
 }
-
 .dashboard .TokensDisponiveis h2 span {
     font-size: 12px;
     font-style: normal;
@@ -1010,7 +852,6 @@ input[type="radio"]:checked::before {
     letter-spacing: -0.005em;
     text-align: left;
 }
-
 .dashboard .TokensDisponiveis h6 {
     font-size: 10px;
     font-style: normal;
@@ -1020,7 +861,6 @@ input[type="radio"]:checked::before {
     text-align: left;
     margin: 0;
 }
-
 .dashboard .TokensDisponiveis button {
     border: 1px solid var(--cor-branco);
     border-radius: 5px;
@@ -1032,20 +872,16 @@ input[type="radio"]:checked::before {
     text-align: center;
     color: var(--cor-branco);
     padding-top: 8px;
-
 }
-
 .dashboard .ondequeromedivertir {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
 }
-
 .dashboard .ondequeromedivertir .avatar img {
     margin-bottom: -20px;
     max-width: 70px;
 }
-
 .dashboard .ondequeromedivertir p {
     font-size: 12px;
     font-style: normal;
@@ -1056,27 +892,20 @@ input[type="radio"]:checked::before {
     margin: 0;
     color: var(--cor-cinza);
 }
-
 .dashboard #OndeQuandoTabs {
-
 }
-
 .dashboard #OndeQuandoTabs .nav {
     flex-wrap: initial;
 }
-
 .dashboard #OndeQuandoTabs ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
-
 .dashboard #OndeQuandoTabs ul li {
     border-radius: 5px 5px 0px 0px;
     overflow: hidden;
 }
-
 .dashboard #OndeQuandoTabs ul li {
     border: none;
     background-size: cover;
@@ -1087,31 +916,24 @@ input[type="radio"]:checked::before {
     max-height: 54px;
     overflow: hidden;
 }
-
 .dashboard #OndeQuandoTabs li.tab1 {
     background-image: url('../images/tab_onde_bg.png');
 }
 .dashboard #OndeQuandoTabs li.tab2 {
     background-image: url('../images/tab_como_bg.png');
 }
-
-
 .dashboard #OndeQuandoTabs button {
     background: transparent;
     border: none;
 }
-
-.dashboard #OndeQuandoTabs button.active  {
+.dashboard #OndeQuandoTabs button.active {
     background-color: var(--cor-cinza-escuro);
     margin-top: 10px;
     max-height: 70px;
 }
-
 .dashboard #OndeQuandoTabs ul li button.active p {
     margin-top: 0 !important;
 }
-
-
 .dashboard #OndeQuandoTabs ul li button p {
     margin: 0;
     padding: 0;
@@ -1124,7 +946,6 @@ input[type="radio"]:checked::before {
     z-index: 3;
     position: relative;
 }
-
 .dashboard #OndeQuandoTabs ul li button:before{
     content: "";
     position: absolute;
@@ -1141,11 +962,9 @@ input[type="radio"]:checked::before {
     margin-top: auto;
     margin-bottom: auto;
 }
-
 .dashboard #OndeQuandoTabs .tab-content {
     background-color: var(--cor-cinza-escuro);
 }
-
 .dashboard #OndeQuandoTabs .tab-content p, #OwlHistorico .tab-content p {
     font-style: normal;
     font-weight: 400;
@@ -1153,8 +972,6 @@ input[type="radio"]:checked::before {
     letter-spacing: -0.005em;
     text-align: center;
 }
-
-
 a.vertodos {
     font-style: normal;
     font-weight: 400;
@@ -1162,8 +979,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     text-align: center;
 }
-
-
 .dashboard #OndeQuandoTabs .tab-content input {
     font-style: normal;
     font-weight: normal;
@@ -1171,7 +986,6 @@ a.vertodos {
     color: var(--cor-cinza);
     outline: 0;
 }
-
 .dashboard #OndeQuandoTabs button.active:after {
     content:"";
     position: absolute;
@@ -1182,35 +996,28 @@ a.vertodos {
     bottom: 0;
     z-index: 2;
 }
-
 .encerrado {
     background-color: #C4C4C4;
-
 }
-
 .encerrado span {
     color: var(--cor-cinza-escuro) !important;
 }
-
 #OwlEnquetes .calendario{
     max-width: 32px;
 }
-
-
 #OwlEnquetes h1, #OwlRecompensas h1, #OwlVantagens h1, #OwlHistorico h1, .vantagenslista h1, .recompensas h1{
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 17px;
-    letter-spacing: -0.005em; 
+    letter-spacing: -0.005em;
     color: var(--cor-branco);
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
-#OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p, #OwlHistorico p, .vantagenslista p, .recompensas  p {
+#OwlEnquetes p, #OwlRecompensas p, #OwlVantagens p, #OwlHistorico p, .vantagenslista p, .recompensas p {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -1218,8 +1025,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: #C4C4C4;
 }
-
-
 #OwlEnquetes span, #OwlRecompensas span, #OwlVantagens span, #OwlHistorico span, .vantagenslista span, .recompensas span {
     font-style: normal;
     font-weight: 600;
@@ -1229,13 +1034,10 @@ a.vertodos {
     color: var(--cor-branco);
     padding-top: 5px;
 }
-
-
-#OwlEnquetes .Info, #OwlRecompensas .Info, #OwlVantagens .Info, #OwlHistorico .Info, .vantagenslista .Info, .recompensas  .Info{
+#OwlEnquetes .Info, #OwlRecompensas .Info, #OwlVantagens .Info, #OwlHistorico .Info, .vantagenslista .Info, .recompensas .Info{
     position: absolute;
     bottom: 0;
 }
-
 #OwlCategorias p {
     font-style: normal;
     font-weight: normal;
@@ -1244,11 +1046,9 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
 #OwlCategorias .rounded-circle {
     position: relative;
 }
-
 #OwlCategorias .item .ItemOverlay {
     width: 100%;
     height: 100%;
@@ -1258,8 +1058,6 @@ a.vertodos {
     left: 0;
     opacity: 0.8;
 }
-
-
 #OwlCategorias .item .ItemOverlay span {
     font-style: normal;
     font-weight: normal;
@@ -1269,8 +1067,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: var(--cor-cinza);
 }
-
-
 .owl-slider h3 {
     font-style: normal;
     font-weight: 700;
@@ -1279,16 +1075,14 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: var(--cor-cinza);
 }
-
 .owl-slider .textescolha {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 15px;
     letter-spacing: -0.005em;
-    color: var(--cor-cinza);   
+    color: var(--cor-cinza);
 }
-
 #OwlVantagens .Info .quanty span, #OwlRecompensas .Info .quanty span, #OwlHistorico span, .vantagenslista span, .recompensas span{
     z-index: 1;
     position: relative;
@@ -1300,16 +1094,13 @@ a.vertodos {
     letter-spacing: -0.005em;
     display: block;
 }
-
 #OwlVantagens .Info.congelado .quanty span, #OwlRecompensas .Info.congelado .quanty span, #OwlHistorico .Info.congelado .quanty span, .vantagenslista .Info.congelado .quanty span, .recompensas .Info.congelado .quanty span {
     color: var(--cor-preto);
     opacity: 0.5;
 }
-
 #OwlVantagens .Info.congelado .text span, #OwlRecompensas .Info.congelado .text span, #OwlHistorico .Info.congelado .text span, .vantagenslista .Info.congelado .text span, .recompensas .Info.congelado .text span{
     color: var(--cor-preto) !important;
 }
-
 #OwlVantagens .Info .circle, #OwlRecompensas .Info .circle, #OwlHistorico .Info .circle {
     width: 66px;
     height: 66px;
@@ -1319,8 +1110,6 @@ a.vertodos {
     bottom: -8px;
     left: -8px;
 }
-
-
 .vantagenslista .Info .circle {
     width: 66px;
     height: 66px;
@@ -1330,25 +1119,18 @@ a.vertodos {
     bottom: -8px;
     left: -9px;
 }
-
-
 #OwlEnquetes .owl-item, #OwlRecompensas .owl-item, #OwlVantagens .owl-item, #OwlHistorico .owl-item, .vantagenslista .owl-item {
     border-radius: 8px;
     overflow: hidden;
 }
-
 .vantagenslista, .recompensas {
     border-radius: 8px;
     overflow: hidden;
 }
-
-
 #OwlVantagens .quanty, #OwlRecompensas .quanty, #OwlHistorico .quanty, .vantagenslista .quanty, .recompensas .quanty{
     padding-bottom: 10px;
-    padding-left: 6px;    
+    padding-left: 6px;
 }
-
-
 #OwlVantagens span.text-black, #OwlRecompensas span.text-black, #OwlHistorico span.text-black, .vantagenslista span.text-black, .recompensas span.text-black{
     margin: 0;
     font-style: normal;
@@ -1358,20 +1140,16 @@ a.vertodos {
     letter-spacing: -0.005em;
     padding-top: 2px;
 }
-
 .vantagenslista span.text-black, .recompensas span.text-black{
     text-align: left;
     margin-left: 15px;
     font-weight: 600;
 }
-
 .vantagenslista span.text-black strong, .recompensas span.text-black strong {
     width: 100%;
     display: block;
     font-weight: 600;
 }
-
-
 #Cat h2 {
     font-style: normal;
     font-weight: 700;
@@ -1380,11 +1158,7 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: #969696;
 }
-
-
-
 /* User Menu Header */
-
 #EditUserMenu .headerBGUsers {
     background-size: cover;
     background-position: center;
@@ -1394,9 +1168,7 @@ a.vertodos {
     left: 0;
     top: 0;
 }
-
 /* Editar nome de usuário */
-
 #editarnome p.text {
     font-style: normal;
     font-weight: 400;
@@ -1405,10 +1177,7 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: #969696;
 }
-
 /* Editar Perfil */
-
-
 .editarperfil a {
     text-decoration: none;
     color: var(--cor-cinza);
@@ -1417,8 +1186,7 @@ a.vertodos {
     line-height: 13px;
     letter-spacing: -0.005em;
 }
-
-.editarperfil .mais  {
+.editarperfil .mais {
     width: 23px;
     height: 23px;
     position: absolute;
@@ -1428,10 +1196,7 @@ a.vertodos {
     margin-top: auto;
     margin-bottom: auto;
 }
-
-
 /* Configurações */
-
 .configuracoes a {
     text-decoration: none;
     color: var(--cor-cinza);
@@ -1440,8 +1205,7 @@ a.vertodos {
     line-height: 13px;
     letter-spacing: -0.005em;
 }
-
-.configuracoes .mais  {
+.configuracoes .mais {
     width: 23px;
     height: 23px;
     position: absolute;
@@ -1451,38 +1215,29 @@ a.vertodos {
     margin-top: auto;
     margin-bottom: auto;
 }
-
 .configuracoes .idioma {
     font-size: 13px;
     text-align: right;
     flex: 1;
 }
-
-
 /* Fale Conosco */
-
 .faleconosco .input {
     border-radius: 8px;
     overflow: hidden;
     padding: 4px 8px;
 }
-
 .faleconosco .concluido {
     background-color: var(--cor-verde);
 }
-
 .faleconosco .andamento {
     background-color:var(--cor-azul);
 }
-
 .faleconosco .cancelado {
     background-color:var(--cor-vermelho);
 }
-
 .faleconosco .box {
     background-color: var(--cor-cinza-medio);
 }
-
 .faleconosco p {
     font-style: normal;
     font-weight: 400;
@@ -1491,7 +1246,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     margin: 2px 0;
 }
-
 .faleconosco .InfoStatus .data{
     font-style: normal;
     font-weight: 700;
@@ -1499,7 +1253,6 @@ a.vertodos {
     line-height: 13px;
     letter-spacing: -0.005em;
 }
-
 .faleconosco .InfoStatus .status {
     font-style: normal;
     font-weight: 700;
@@ -1508,35 +1261,24 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: #FFFFFF;
 }
-
-
-
-
 /* Chamado */
-
 .chamado .input {
     border-radius: 8px;
     overflow: hidden;
     padding: 4px 8px;
 }
-
 .chamado .concluido {
     background-color: var(--cor-verde);
 }
-
 .chamado .andamento {
     background-color:var(--cor-azul);
 }
-
 .chamado .cancelado {
     background-color:var(--cor-vermelho);
 }
-
 .chamado .box {
     background-color: var(--cor-cinza-medio);
 }
-
-
 .chamado .InfoStatus .data{
     font-style: normal;
     font-weight: 700;
@@ -1544,7 +1286,6 @@ a.vertodos {
     line-height: 13px;
     letter-spacing: -0.005em;
 }
-
 .chamado .InfoStatus .status {
     font-style: normal;
     font-weight: 700;
@@ -1553,7 +1294,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: #FFFFFF;
 }
-
 .chamado textarea {
     padding-top: 10px;
     text-align: left;
@@ -1561,58 +1301,44 @@ a.vertodos {
     color: var(--cor-cinza);
     background-color: transparent;
 }
-
-
 .chamado .info h3 {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     letter-spacing: -0.005em;
 }
-
 .chamado .info p {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
 }
-
 .chat-box .sender .time {
     text-align: right;
 }
-
 .chat-box .sender .box {
     background: #202020 !important;
     letter-spacing: 1px;
 }
-
 .chat-box .reciever .box {
     letter-spacing: 1px;
 }
-
-
 /* Perguntas Frequentes */
-
 .perguntasfrequentes .accordion-button::after {
     background-image: url('../images/icon_mais.png');
 }
-
 .perguntasfrequentes .accordion-item, .perguntasfrequentes .accordion-button {
     background-color: transparent !important;
-    color: #fff;  
+    color: #fff;
     border-color: #303030;
 }
-
 .perguntasfrequentes .accordion-body {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: -0.005em;
 }
-
-
 /* Perguntas Frequentes */
-
 .detalhesdoperfil h3 {
     font-style: normal;
     font-weight: 700;
@@ -1623,7 +1349,6 @@ a.vertodos {
     margin: 0;
     padding: 0;
 }
-
 .detalhesdoperfil h6 {
     font-style: normal;
     font-weight: 400;
@@ -1633,13 +1358,9 @@ a.vertodos {
     margin: 0;
     padding: 0;
 }
-
 /* Enquetes - lista */
-
 .enqueteslista {
-
 }
-
 .enqueteslista .circle {
     width: 66px;
     height: 66px;
@@ -1649,7 +1370,6 @@ a.vertodos {
     bottom: -8px;
     left: -9px;
 }
-
 .enqueteslista .circle span {
     font-style: normal;
     font-weight: 700;
@@ -1660,9 +1380,6 @@ a.vertodos {
     text-align: center;
     display: block;
 }
-
-
-
 .enqueteslista .headerBG {
     background-size: cover;
     background-position: center;
@@ -1673,8 +1390,7 @@ a.vertodos {
     top: 0;
     background-image: url('../images/enquetes_lista_header.png');
 }
-
-.enqueteslista  h4 {
+.enqueteslista h4 {
     font-weight: bold;
     font-style: normal;
     font-weight: 700;
@@ -1683,7 +1399,6 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
 .enqueteslista h1 {
     font-style: normal;
     font-weight: 600;
@@ -1696,12 +1411,9 @@ a.vertodos {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
 .enqueteslista .calendario {
     max-width: 32px;
 }
-
-
 .enqueteslista span {
     font-style: normal;
     font-weight: 600;
@@ -1711,20 +1423,14 @@ a.vertodos {
     color: var(--cor-branco);
     padding-top: 5px;
 }
-
-
 .enqueteslista .Info {
     position: absolute;
     bottom: 0;
 }
-
-
 .enqueteslista .box {
     background-color: #303030;
-    min-height: 152px
+    min-height: 152px 
 }
-
-
 .enqueteslista h2 {
     font-style: normal;
     font-weight: 700;
@@ -1733,8 +1439,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: #969696;
 }
-
-
 .enquetedetalhes .headerBG {
     background-size: cover;
     background-position: center;
@@ -1743,15 +1447,12 @@ a.vertodos {
     height: 170px;
     left: 0;
     top: 0;
-    background: linear-gradient(90deg, #1E4E8A 0%, #E8C146 100%);
+    background: var(--linear-gradient2);
 }
-
-
 .enquetedetalhes .avatar {
     width: 102px;
     height: 102px;
 }
-
 .enquetedetalhes .avatar img{
     max-width: 102px;
     max-height: 102px;
@@ -1760,7 +1461,6 @@ a.vertodos {
     border: 8px solid var(--cor-cinza-medio);
     border-radius: 200px;
 }
-
 .enquetedetalhes h1 {
     font-style: normal;
     font-weight: 800;
@@ -1769,7 +1469,6 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
 .enquetedetalhes h3 {
     font-style: normal;
     font-weight: 600;
@@ -1778,7 +1477,6 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
 .enquetedetalhes p {
     font-style: normal;
     font-weight: 400;
@@ -1787,7 +1485,6 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
 .enquetedetalhes .btn-data {
     background-color: var(--cor-azul);
     border-radius: 10px;
@@ -1796,13 +1493,11 @@ a.vertodos {
     background-color: var(--cor-violeta);
     border-radius: 10px;
 }
-
 .enquetedetalhes .btn-votado {
     background-color: transparent;
     border: 2px solid var(--cor-verde);
     border-radius: 10px;
 }
-
 .enquetedetalhes .data , .enquetedetalhes .tokens, .enquetedetalhes .votado {
     font-style: normal;
     font-weight: 600;
@@ -1811,7 +1506,6 @@ a.vertodos {
     font-size: 13px;
     text-align: center;
 }
-
 .enquetedetalhes .lifequanty {
     position: absolute;
     content: "";
@@ -1825,7 +1519,6 @@ a.vertodos {
     padding: 0;
     margin: 0;
 }
-
 .enquetedetalhes .lifequanty span {
     font-style: normal;
     font-weight: 700;
@@ -1835,8 +1528,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: #FFFFFF;
 }
-
-
 .enquetedetalhes .votelist p {
     margin: 0;
     font-style: normal;
@@ -1847,12 +1538,9 @@ a.vertodos {
     color: var(--cor-branco);
     text-align: left;
 }
-
-
 .enquetedetalhes .votelist .box {
     border-right: 10px solid;
 }
-
 .enquetedetalhes .votelist .box input[type="checkbox"]:before {
     position: relative;
     display: block;
@@ -1863,7 +1551,6 @@ a.vertodos {
     border: 1px solid #4c4c4c;
     border-radius: 2px;
 }
-
 .enquetedetalhes .votelist .box input[type="checkbox"]:after {
     position: absolute;
     display: block;
@@ -1873,32 +1560,21 @@ a.vertodos {
     height: 100%;
     content: "";
     border-radius: 2px;
-  }
-
-  .enquetedetalhes  .votelist .box input[type="checkbox"]:checked:after {
+}
+.enquetedetalhes .votelist .box input[type="checkbox"]:checked:after {
     background: var(--cor-cinza-escuro);
     background-image: url('../images/checked_gre.png');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  
-  .enquetedetalhes .votelist .box input[type="checkbox"]:disabled:after {
+}
+.enquetedetalhes .votelist .box input[type="checkbox"]:disabled:after {
     -webkit-filter: opacity(0.4);
-  }
-
-
+}
 .enquetedetalhes .votos h1 {
     text-align: left;
 }
-
-
-
-  
-
-
 /* Escolas */
-
 .escolas .headerBG {
     background-size: cover;
     background-position: center;
@@ -1909,9 +1585,7 @@ a.vertodos {
     top: 0;
     background-image: url('../images/escolas_bg_header.png');
 }
-
-
-.escolas  h4 {
+.escolas h4 {
     font-weight: bold;
     font-style: normal;
     font-weight: 700;
@@ -1920,20 +1594,10 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
-
-
-
-
-
-
-
-
 .escoladetalhe .avatar {
     width: 115px;
     height: 115px;
 }
-
 .escoladetalhe .avatar img{
     max-width: 115px;
     max-height: 115px;
@@ -1942,7 +1606,6 @@ a.vertodos {
     border: 8px solid var(--cor-cinza-medio);
     border-radius: 200px;
 }
-
 .escoladetalhe .headerBG {
     background-size: cover;
     background-position: center;
@@ -1953,16 +1616,15 @@ a.vertodos {
     top: 0;
     background-image: url('../images/escola_header_bg.png');
 }
-
 .escoladetalhe h4 {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     text-align: center;
-    letter-spacing: -0.005em;;
+    letter-spacing: -0.005em;
+   ;
 }
-
 .escoladetalhe .botoes button{
     background-color: var(--cor-cinza);
     border: none;
@@ -1975,32 +1637,21 @@ a.vertodos {
     min-height: 57px;
     border-radius: 8px;
 }
-
-
-.escoladetalhe .botoes button.favoritar  img {
+.escoladetalhe .botoes button.favoritar img {
     max-width: 22px;
 }
-
-.escoladetalhe .botoes button.notificar img  {
+.escoladetalhe .botoes button.notificar img {
     max-width: 18px;
 }
-
-
-
 .escoladetalhe p {
     font-style: normal;
     font-weight: 400;
-
     text-align: center;
     letter-spacing: -0.005em;
 }
-
-
 /* Notícias*/
 .noticias {
-    
 }
-
 .noticias h5 {
     font-style: normal;
     font-weight: 600;
@@ -2013,7 +1664,6 @@ a.vertodos {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
 .noticias .thumb {
     background-position: center;
     background-repeat: no-repeat;
@@ -2021,17 +1671,12 @@ a.vertodos {
     min-height: 152px;
     position: relative;
 }
-
 .noticias .thumb .title {
     position: absolute;
     bottom: 15px;
     left: 15px;
 }
-
-
-
 /* Meus Lifes */
-
 .meuslifes .title{
     font-style: normal;
     font-weight: 700;
@@ -2040,20 +1685,12 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: var(--cor-cinza);
 }
-
 .lifesmoeda {
     position: absolute;
     right: 0;
     min-height: 193px;
 }
-
-
-
-
-
-
 /* Favoritos */
-
 .favoritos .headerBG {
     background-size: cover;
     background-position: center;
@@ -2064,8 +1701,7 @@ a.vertodos {
     top: 0;
     background-image: url('../images/enquetes_lista_header.png');
 }
-
-.favoritos  h4 {
+.favoritos h4 {
     font-weight: bold;
     font-style: normal;
     font-weight: 700;
@@ -2074,30 +1710,19 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
-
 /* Notificações */
 .notificacoes {
-
 }
-
-
 .notificacoes button {
-
 }
-
-
-
 .notificacoes .content {
     background-color: var(--cor-cinza-medio);
     border-radius: 8px;
 }
-
 .notificacoes .btn-BtnClose {
     right: 15px;
     top: 15px;
 }
-
 .notificacoes .content h3 {
     font-style: normal;
     font-weight: 700;
@@ -2107,7 +1732,6 @@ a.vertodos {
     margin: 0;
     padding-right: 15px;
 }
-
 .notificacoes .content span {
     font-style: normal;
     font-weight: 500;
@@ -2116,8 +1740,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     margin: 0;
 }
-
-
 .notificacoes .content p {
     font-style: normal;
     font-weight: 500;
@@ -2126,13 +1748,10 @@ a.vertodos {
     letter-spacing: -0.005em;
     margin: 0;
 }
-
 .notificacoes .tkcongelados {
     background-color: #00E584;
     position: relative;
 }
-
-
 .notificacoes .tkcongelados h1 {
     font-style: normal;
     font-weight: 700;
@@ -2142,7 +1761,6 @@ a.vertodos {
     align-items: center;
     letter-spacing: -0.005em;
 }
-
 .notificacoes .tkcongelados h1 span{
     font-style: normal;
     font-weight: 700;
@@ -2153,7 +1771,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     margin-right: 5px;
 }
-
 .notificacoes .tkcongelados h4 {
     font-style: normal;
     font-weight: 700;
@@ -2161,17 +1778,11 @@ a.vertodos {
     line-height: 11px;
     letter-spacing: -0.005em;
 }
-
 .notificacoes .lifecoin {
     position: absolute;
     right: 0;
 }
-
-
-
-
 /* Vantagens */
-
 .vantagenslista h4 {
     font-weight: bold;
     font-style: normal;
@@ -2181,9 +1792,6 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
-
-
 .vantagenslista h2 {
     font-style: normal;
     font-weight: 700;
@@ -2192,8 +1800,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: #969696;
 }
-
-
 .vantagemdetalhes .headerBG {
     background-size: cover;
     background-position: center;
@@ -2202,16 +1808,13 @@ a.vertodos {
     height: 170px;
     left: 0;
     top: 0;
-    background: linear-gradient(90deg, #1E4E8A 0%, #E8C146 100%);
+    background: var(--linear-gradient2);
     background-size: cover;
 }
-
-
 .vantagemdetalhes .avatar {
     width: 102px;
     height: 102px;
 }
-
 .vantagemdetalhes .avatar img {
     max-width: 102px;
     max-height: 102px;
@@ -2220,8 +1823,6 @@ a.vertodos {
     border: 8px solid #1c1c1c;
     border-radius: 200px;
 }
-
-
 .vantagemdetalhes .lifequanty {
     position: absolute;
     content: "";
@@ -2235,7 +1836,6 @@ a.vertodos {
     padding: 0;
     margin: 0;
 }
-
 .vantagemdetalhes .lifequanty span {
     font-style: normal;
     font-weight: 700;
@@ -2245,20 +1845,14 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: #FFFFFF;
 }
-
 .vantagemdetalhes .btn-data {
     background-color: var(--cor-azul);
     border-radius: 10px;
 }
-
-
 .vantagemdetalhes .btn-token {
     background-color: var(--cor-violeta);
     border-radius: 10px;
 }
-
-
-
 .vantagemdetalhes h1 {
     font-style: normal;
     font-weight: 800;
@@ -2267,7 +1861,6 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
 .vantagemdetalhes p {
     font-style: normal;
     font-weight: 400;
@@ -2276,7 +1869,6 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
 .vantagemdetalhes .data, .vantagemdetalhes .tokens, .vantagemdetalhes .votado {
     font-style: normal;
     font-weight: 600;
@@ -2285,30 +1877,19 @@ a.vertodos {
     font-size: 13px;
     text-align: center;
 }
-
 .vantagemdetalhes a {
     text-decoration: none;
 }
-
-
 .vantagemdetalhes .btn-votado {
     background-color: transparent;
     border: 2px solid var(--cor-verde);
     border-radius: 10px;
 }
-
-
 .vantagemdetalhes .btn-disponiveis {
-    background: linear-gradient(90deg, #1E4E8A 0%, #E8C146 100%);
+    background: var(--linear-gradient2);
     border-radius: 10px;
 }
-
-
 /* Recompensas */
-
-
-
-
 .recompensas .headerBG {
     background-size: cover;
     background-position: center;
@@ -2319,7 +1900,6 @@ a.vertodos {
     top: 0;
     background-image: url('../images/recompensa_lista.png');
 }
-
 .recompensas h4 {
     font-weight: bold;
     font-style: normal;
@@ -2329,9 +1909,6 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
-
-
-
 .recompensas .Info .circle {
     width: 66px;
     height: 66px;
@@ -2341,8 +1918,6 @@ a.vertodos {
     bottom: -8px;
     left: -9px;
 }
-
-
 .recompensas span.text-white {
     font-style: normal;
     font-weight: 600;
@@ -2352,7 +1927,6 @@ a.vertodos {
     color: var(--cor-branco);
     padding-top: 5px;
 }
-
 .recompensas h2 {
     font-style: normal;
     font-weight: 700;
@@ -2361,7 +1935,6 @@ a.vertodos {
     letter-spacing: -0.005em;
     color: #969696;
 }
-
 .recompensas .Overlay {
     width: 100%;
     height: 100%;
@@ -2369,22 +1942,169 @@ a.vertodos {
     opacity: 0.6;
     position: absolute;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.recompensadetalhe .headerBG {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 170px;
+    left: 0;
+    top: 0;
+    background: var(--linear-gradient2);
+    background-size: cover;
+}
+.recompensadetalhe .avatar {
+    width: 102px;
+    height: 102px;
+}
+.recompensadetalhe .avatar img {
+    max-width: 102px;
+    max-height: 102px;
+    position: absolute;
+    bottom: -70px;
+    border: 8px solid #1c1c1c;
+    border-radius: 200px;
+}
+.recompensadetalhe .lifequanty {
+    position: absolute;
+    content: "";
+    width: 73px;
+    height: 73px;
+    background-color: red;
+    bottom: -115px;
+    right: -20px;
+    border: 4px solid var(--cor-cinza-escuro);
+    border-radius: 200px;
+    padding: 0;
+    margin: 0;
+}
+.recompensadetalhe .lifequanty span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+.recompensadetalhe .btn-data {
+    background-color: var(--cor-azul);
+    border-radius: 10px;
+}
+.recompensadetalhe .btn-token {
+    background-color: var(--cor-violeta);
+    border-radius: 10px;
+}
+.recompensadetalhe h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+.recompensadetalhe p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+.recompensadetalhe .data, .recompensadetalhe .tokens, .recompensadetalhe .votado {
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-top: 4px;
+    font-size: 13px;
+    text-align: center;
+}
+.recompensadetalhe a {
+    text-decoration: none;
+}
+.recompensadetalhe .btn-votado {
+    background-color: transparent;
+    border: 2px solid var(--cor-verde);
+    border-radius: 10px;
+}
+.recompensadetalhe .btn-disponiveis {
+    background: var(--linear-gradient2);
+    border-radius: 10px;
+}
+.recompensadetalhe .lifequanty {
+    background: var(--linear-gradient2);
+}
+.recompensadetalhe .Overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+}
+.dashboard.recompensadetalhe #OndeQuandoTabs ul li button p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    z-index: 3;
+    position: relative;
+}
+.recompensadetalhe .ranking .content {
+    background-color: #c4c4c47a;
+    background-image: url('../images/ranking_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 8px;
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
+    text-align: right;
+    letter-spacing: -0.005em;
+}
+.recompensadetalhe .ranking .content.primeirolugar {
+    background-image: url('../images/ranking_bg_primeirolugar.png');
+}
+.recompensadetalhe .ranking .content .useravatar{
+    width: 25px;
+    height: 25px;
+    border-radius: 200px;
+    background-color: var(--cor-branco);
+}
+.recompensadetalhe .ranking .allcontent{
+    background-color: #0000008c;
+    padding: 10px;
+    border-radius: 8px;
+}
+.ranking, .ranking-por-partifipacao {
+    z-index: 2;
+}
+#TAB1 .bgcolor, #TAB2 .bgcolor {
+    width: 100%;
+    height: 318px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+#TAB1 .bgcolor {
+    background-color: var(--cor-violeta);
+}
+#TAB2 .bgcolor {
+    background-color: var(--cor-verde);
+}
+.dashboard.recompensadetalhe #OndeQuandoTabs button#tab-1.active:after {
+    background-color: var(--cor-violeta);
+}
+.dashboard.recompensadetalhe #OndeQuandoTabs button#tab-2.active:after {
+    background-color: var(--cor-verde);
+}
 /* MEDIA QUERY */
-
 @media only screen and (max-width: 768px) {
     body:after {
         content:"";
@@ -2401,8 +2121,7 @@ a.vertodos {
         background-image: url('../images/bg-black-life-token.png');
         background-size: cover;
         background-repeat: no-repeat;
-}
-
+   }
     .bg-simbolo:after {
         content:"";
         position: absolute;
@@ -2416,19 +2135,15 @@ a.vertodos {
         bottom: 0;
         left: 0;
         z-index: 1;
-    }
-
+   }
     .container{
         width: 90%;
         max-width: 90%;
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-
-    
+   }
     .modal-dialog {
         width: 100vh;
         max-width: 85%;
-    }
-
+   }
 }
