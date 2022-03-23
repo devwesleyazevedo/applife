@@ -2104,6 +2104,41 @@ a.vertodos {
 .dashboard.recompensadetalhe #OndeQuandoTabs button#tab-2.active:after {
     background-color: var(--cor-verde);
 }
+
+
+/* Colecionáveis */
+
+.colecionaveis {
+    position: relative;
+}
+
+.NFT {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.colecionaveis .cardNFT {
+    min-height: 239px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.colecionaveis .cardNFT h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: -0.005em;
+    position: absolute;
+    bottom: 0;
+}
+
+.colecionaveis .cardNFT h1 p {
+    margin: 0;
+}
+
 /* MEDIA QUERY */
 @media only screen and (max-width: 768px) {
     body:after {
