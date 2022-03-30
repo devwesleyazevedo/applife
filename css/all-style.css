@@ -1623,7 +1623,11 @@ a.vertodos {
     line-height: 33px;
     text-align: center;
     letter-spacing: -0.005em;
-   ;
+    min-height: 66px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .escoladetalhe .botoes button{
     background-color: var(--cor-cinza);
