@@ -1069,6 +1069,14 @@ a.vertodos {
     text-align: center;
     letter-spacing: -0.005em;
 }
+#OwlCategorias.owl-carousel .owl-item .rounded-circle  {
+    width: 64px;
+    height: 64px;
+}
+#OwlCategorias.owl-carousel .owl-item .rounded-circle > div {
+    background-size: cover;
+    background-position: center;
+}
 #OwlCategorias .rounded-circle {
     position: relative;
 }
