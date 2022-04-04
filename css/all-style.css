@@ -1652,7 +1652,7 @@ a.vertodos {
 }
 .escoladetalhe .headerBG {
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     position: absolute;
     height: 249px;
