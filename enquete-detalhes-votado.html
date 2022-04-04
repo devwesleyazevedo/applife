@@ -89,7 +89,63 @@
                 <button class="btn btn-gradiente-life w-100 mt-3" onclick="">Votar</button>
             </form>
                 <div class="votos py-4">
-                    <h1>Distribuição dos votos</h1>
+                    <h1 class="text-white text-center">Distribuição dos votos</h1>
+
+
+
+
+
+
+
+                    <div class="" id="VotoGrafico"></div>
+                    <!-- partial -->
+                    <script src='https://code.highcharts.com/highcharts.js'></script>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                        var colors = ['#9E65EF', '#4443F0', '#56ACDE', '#00E584'];
+                        var chart1 = new Highcharts.Chart({
+                            chart: {
+                            marginTop : 0,
+                            marginBottom : 90,
+                            marginRight: 0,
+                            marginLeft: 0,
+                            type: 'pie',
+                            renderTo: 'VotoGrafico'
+                            },
+                            title: {
+                                text: '<div style="fill: #fff;"><div class="title">40</div> <br> <div class="description">usuários votaram</div></div>',
+                                align: 'center',
+                                verticalAlign: 'middle',
+                                margin: 0,
+                                floating: false,
+                                y: 0,
+                                x: -10,
+                                style: {
+                                    color: '#fff',
+                                }  
+                            },
+                            plotOptions: {
+                            pie: {
+                                innerSize: '80%',
+                                colors: colors
+                            },
+                            colors:colors,
+                            },
+                            series: [{
+                            data: [
+                                ['<strong>15%</strong><br> Amanda <br> Martins', 15],
+                                ['<strong>35%</strong><br> Sabrina <br> Sato', 35],
+                                ['<strong>25%</strong><br> Glória <br> Groove', 25],
+                                ['<strong>25%</strong><br> Paolla <br> Oliveira', 25],
+                            ]
+                            }]
+                        });
+                        });
+                    </script>
+
+
+
+
                 </div>
             </div>
         </div>

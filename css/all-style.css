@@ -1618,6 +1618,43 @@ a.vertodos {
 .enquetedetalhes .votos h1 {
     text-align: left;
 }
+#VotoGrafico .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+#VotoGrafico .description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+#VotoGrafico .highcharts-credits {
+    display: none !important;
+}
+#VotoGrafico .highcharts-background {
+    fill: transparent;
+}
+#VotoGrafico .highcharts-point {
+    stroke: #000;
+    stroke-width: 8px;
+}
+#VotoGrafico .highcharts-label.highcharts-data-label text, 
+#VotoGrafico .highcharts-label.highcharts-data-label text tspan 
+{
+    fill: #fff !important;
+    stroke: none !important;
+    color: #fff !important;
+    background: #fff !important;
+    font-weight: normal !important;
+}
 /* Escolas */
 .escolas .headerBG {
     background-size: cover;
