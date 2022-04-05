@@ -1579,16 +1579,24 @@ a.vertodos {
 }
 
 .enquetedetalhes .votelist .foto {
-    min-width: 110px;
-    min-height: 58px;
+    max-width: 110px;
+    max-height: 58px;
+    width: 100vh;
+    height: 100vh;
     background-color: #202020;
-    border-top-right-radius: 26px;
-    border-bottom-right-radius: 11px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 0px;
     background-image: url('../images/not_img.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+
+
+
+
 
 .enquetedetalhes .votelist .box {
     border-right: 10px solid;
