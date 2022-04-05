@@ -1592,12 +1592,6 @@ a.vertodos {
     background-position: center;
 }
 
-
-
-
-
-
-
 .enquetedetalhes .votelist .box {
     border-right: 10px solid;
 }
@@ -2069,21 +2063,19 @@ a.vertodos {
 .recompensadetalhe .lifequanty {
     position: absolute;
     content: "";
-    width: 73px;
-    height: 73px;
+    width: 47px;
+    height: 47px;
     background-color: red;
-    bottom: -115px;
-    right: -20px;
-    border: 4px solid var(--cor-cinza-escuro);
+    bottom: -82px;
+    right: -12px;
+    border: 3px solid var(--cor-cinza-escuro);
     border-radius: 200px;
-    padding: 0;
-    margin: 0;
 }
 .recompensadetalhe .lifequanty span {
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 14px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
     text-align: center;
     letter-spacing: -0.005em;
     color: #FFFFFF;
@@ -2093,9 +2085,22 @@ a.vertodos {
     border-radius: 10px;
 }
 .recompensadetalhe .btn-token {
-    background-color: var(--cor-violeta);
+    background-color: var(--cor-cinza);
     border-radius: 10px;
 }
+
+
+.recompensadetalhe .fixedBTN {
+    width: 100%;
+    position: fixed;
+    z-index: 99999999;
+    bottom: 0;
+    background: var(--cor-preto);
+    left: 0;
+    padding: 15px 25px;
+}
+
+
 .recompensadetalhe h1 {
     font-style: normal;
     font-weight: 600;
@@ -2117,7 +2122,7 @@ a.vertodos {
     font-weight: 600;
     letter-spacing: -0.005em;
     margin-top: 4px;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
 }
 .recompensadetalhe a {
