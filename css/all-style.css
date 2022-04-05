@@ -1016,8 +1016,16 @@ a.vertodos {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    padding-right: 5px;
 }
 
+.ImgCircleBox {
+    width: 68.86px;
+    height: 68.86px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .bg-vantagem {
     width: 100%;
