@@ -894,6 +894,8 @@ input[type="radio"]:checked::before {
     color: var(--cor-cinza);
 }
 .dashboard #OndeQuandoTabs {
+    position: relative;
+    z-index: 1;
 }
 .dashboard #OndeQuandoTabs .nav {
     flex-wrap: initial;
@@ -1083,6 +1085,17 @@ a.vertodos {
     line-height: 11px;
     text-align: center;
     letter-spacing: -0.005em;
+}
+#OwlCategorias.aftercat:before {
+    content: "";
+    position: absolute;
+    background-image: url('../images/bg_pixels.png');
+    background-size: cover;
+    width: 100%;
+    transform: scale(1.2);
+    height: 100%;
+    bottom: -37%;
+    opacity: 0.3;
 }
 #OwlCategorias.owl-carousel .owl-item .rounded-circle  {
     width: 64px;
