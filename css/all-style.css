@@ -6,6 +6,7 @@ body{
 :root {
     --cor-violeta: #9E65EF;
     --cor-azul: #4443F0;
+    --cor-azul-medio: #1E4E8A;
     --cor-azulclaro: #02C2F4;
     --cor-verde: #00E584;
     --cor-cinza: #969696;
@@ -1005,6 +1006,12 @@ a.vertodos {
 #OwlEnquetes .calendario{
     max-width: 32px;
 }
+.CardBGOverlayColor {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+}
 #OwlEnquetes h1, #OwlRecompensas h1, #OwlVantagens h1, #OwlHistorico h1, .vantagenslista h1, .recompensas h1{
     font-style: normal;
     font-weight: 600;
@@ -1363,19 +1370,57 @@ a.vertodos {
     letter-spacing: 1px;
 }
 /* Perguntas Frequentes */
-.perguntasfrequentes .accordion-button::after {
-    background-image: url('../images/icon_mais.png');
-}
-.perguntasfrequentes .accordion-item, .perguntasfrequentes .accordion-button {
+.perguntasfrequentes .accordion {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
     background-color: transparent !important;
     color: #fff;
-    border-color: #303030;
 }
-.perguntasfrequentes .accordion-body {
+.perguntasfrequentes .active, .perguntasfrequentes .accordion:hover {
+    background-color: #ccc;
+}
+.perguntasfrequentes .panel {
+    overflow: hidden;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: -0.005em;
+    opacity: 0;
+    height: 0;
+    transition: opacity .5s;
+}
+.perguntasfrequentes .active .panel {
+    opacity: 1;
+    height: auto;
+    transition: opacity .8s;
+}
+.accordion h6 {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    color: #969696;
+}
+.accordion h6:after {
+    content: "";
+    background-image: url('../images/icon_mais.png');
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    right: 0;
+    transition: .5s;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.accordion.active h6:after {
+    background-image: url('../images/icon_menos.png');
+    transition: .5s;
 }
 /* Perguntas Frequentes */
 .detalhesdoperfil h3 {
@@ -2184,8 +2229,6 @@ a.vertodos {
     background-color: var(--cor-branco);
 }
 .recompensadetalhe .ranking .allcontent{
-    background-color: #0000008c;
-    padding: 10px;
     border-radius: 8px;
 }
 .ranking, .ranking-por-partifipacao {
@@ -2210,14 +2253,10 @@ a.vertodos {
 .dashboard.recompensadetalhe #OndeQuandoTabs button#tab-2.active:after {
     background-color: var(--cor-verde);
 }
-
-
 /* Colecionáveis */
-
 .colecionaveis {
     position: relative;
 }
-
 .NFT {
     display: grid;
     grid-template-columns: 1fr 1fr;
