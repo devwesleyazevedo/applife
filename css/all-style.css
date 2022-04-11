@@ -959,7 +959,7 @@ input[type="radio"]:checked::before {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 3;
-    right: 10px;
+    right: 16px;
     top: 0;
     bottom: 0;
     margin-top: auto;
