@@ -689,18 +689,31 @@ input[type="radio"]:checked::before {
     height: 95px;
     border-radius: 200px;
     padding: 3px;
+    border: 4px solid black;
 }
 .useravatar {
     background-color: #fff;
     border-radius: 200px;
 }
 .border_menu {
-    width: 6px;
+    width: 30px;
     height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
-    background: linear-gradient(360deg, #9E65EF 0%, #4443F0 49.72%, #00E584 100%);
+    right: -7.55%;
+    background-image: url('../images/menu_leftBG.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.border_menu:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 17%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--cor-violeta);
 }
 .sidenav {
     height: 100%;
@@ -727,19 +740,17 @@ input[type="radio"]:checked::before {
     color: #f1f1f1;
 }
 .sidenav .closebtn {
-    width: 34px;
-    height: 79px;
     position: absolute;
-    top: 0;
-    right: -24px;
-    background-image: url('../images/side-navbar-menu_button.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 10;
+    top: 2.1rem;
+    right: -22px;
     border: none;
+    z-index: 10;
     font-size: 14px;
     color: #fff;
+}
+.sidenav svg {
+    width: auto;
+    height: auto;
 }
 .sidenav .beta {
     font-style: normal;
@@ -753,11 +764,8 @@ input[type="radio"]:checked::before {
     width: 22px;
     background-color: transparent;
     border: none;
-    cursor: pointer;
     display: flex;
     padding: 0;
-    margin-top: 3px;
-    margin-left: 2px;
 }
 .BtnMenu .line {
     fill: none;
