@@ -1,6 +1,6 @@
 body{
     font-family :'Artegra Sans', Arial, Helvetica, sans-serif!important;
-    background-color: #1d1d1d;
+    background-color: var(--cor-cinza-escuro);
     color: var(--cor-cinza);
 }
 :root {
@@ -2324,6 +2324,9 @@ a.vertodos {
         background-size: cover;
         background-repeat: no-repeat;
    }
+    body.home:after {
+    display: none;
+    }
     .bg-simbolo:after {
         content:"";
         position: absolute;
@@ -2338,6 +2341,7 @@ a.vertodos {
         left: 0;
         z-index: 1;
    }
+   
     .container{
         width: 90%;
         max-width: 90%;
