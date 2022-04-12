@@ -305,7 +305,7 @@ input[type="radio"]:checked::before {
     background-image: url('../images/icon_coracao_active.png');
 }
 #tabs button{
-    padding: 13px 14px;
+    padding: 7px 11px;
     background-color: transparent;
     border: 1px solid var(--cor-cinza);
     border-radius: 5px;
@@ -315,10 +315,10 @@ input[type="radio"]:checked::before {
 }
 #tabs button.active {
     background: var(--linear-gradient);
-    border-color: transparent;
+    border-color: #0000009e;
 }
-#tabs input {
-    background-color: var(--cor-preto);
+#tabs button {
+    background-color: transparent;
     color: var(--cor-cinza);
 }
 #tabs .tab-pane p {
@@ -331,6 +331,18 @@ input[type="radio"]:checked::before {
     color: var(--cor-cinza);
     margin: 0;
     padding: 0;
+}
+
+.searchform {
+    background-color: var(--cor-preto);
+}
+.searchform input {
+    background-color: var(--cor-preto);
+    color: var(--cor-cinza);
+    border: none;
+}
+.searchform button {
+    border: none !important;
 }
 .pular {
     color: var(--cor-cinza);
