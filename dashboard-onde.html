@@ -26,8 +26,8 @@ header {
 
 header .LoginAvatarCircle{
     background-image: var(--linear-gradient);
-    width: 58px;
-    height: 58px;
+    width: 38px;
+    height: 38px;
     border-radius: 200px;
 }
 
@@ -57,14 +57,14 @@ header .col-2 {
 	<header>
     <div class="container p-0">
       <div class="row">
-        <div class="d-flex align-items-center px-2">
-          <div class="col-3">
+        <div class="d-flex align-items-center px-2 gap-2 align-items-center justify-content-center">
+          <div class="col-2">
             <div class="LoginAvatarCircle mx-auto">
               <div class="LoginAvatar"></div>
             </div>
           </div>
-          <p class="col-8">Olá, Usuário</p>
-          <div class="col-1">
+          <p class="col-8 pt-1">Olá, Usuário</p>
+          <div class="col-1 d-flex align-items-center justify-content-end">
             <a href=""><img src="./images/search.png" class="img-fluid" alt=""></a>
           </div>
         </div>
@@ -139,34 +139,94 @@ header .col-2 {
 <div class="container">
    <div class="row">
       <!-- Dashboard -->
-      <div class="dashboard mt-2">
+      <div class="dashboard">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
          <!-- Tokens Disponíveis -->
          <div class="TokensDisponiveis">
             <div class="w-100 d-flex align-items-center justify-content-between gap-3 p-3 text-white rounded-top" style="background-color: #4343EF;">
-               <div class="d-flex flex-column gap-3">
+               <div class="d-flex flex-column gap-2">
                   <div class="d-flex align-items-center justify-content-between gap-2">
-                     <h6 class="col">Tokens Disponíveis</h6>
-                     <div class="col-2">
+                     <h6 class="col m-0 p-0">Tokens Disponíveis</h6>
+                     <div class="col-2" id="MostrarEsconderQuanty">
                         <img class="img-fluid" src="./images/olho_icon.png" alt="">
                      </div>
                   </div>
-                  <h1 class="titulo"><span>$LIFE</span> 10</h1>
+                  <h1 class="titulo m-0 p-0 d-flex align-items-center gap-2"><span class="pt-1">$LIFE</span> <div id="quanty1" class="EsconderQuanty transition"></div></h1>
                </div>
                <div>
                   <img class="img-fluid" src="./images/life_bg_tokens.png" alt="">
                </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between gap-2 text-white p-3 rounded-bottom"  style="background-color: #969696;">
-               <h2 class="col-6"><span>Congelados $LIFE</span> 40</h2>
-               <div class="d-flex align-items-center gap-2 justify-content-between col-6 px-2">
-                  <button class="btn col">Histórico</button>
-                  <a class="d-flex align-items-center justify-content-center">
-                  <img class="img-fluid" src="./images/icon_tokens_disponiveis.png" alt="">
+            <div class="d-flex align-items-center justify-content-between gap-2 text-white px-3 py-2 rounded-bottom"  style="background-color: #969696;">
+               <h2 class="w-100 d-flex align-items-center gap-2"><span class="pt-1">Congelados $LIFE</span><div id="quanty2" class="EsconderQuanty"></div></h2>
+               <div class="d-flex align-items-center gap-2 justify-content-center col-4">
+                  <button class="btn w-100">Histórico</button>
+                  <a class="w-100 d-flex align-items-center justify-content-center">
+                     <img class="img-fluid" src="./images/icon_tokens_disponiveis.png" alt="">
                   </a>
                </div>
             </div>
          </div>
+         
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script type="text/javascript">
+         $(document).ready(function(){
+            function QuantyValue() {
+               var box        = document.getElementById("box");
+               var quanty1    = document.getElementById("quanty1");
+               var quanty2    = document.getElementById("quanty2");
+               var condition1 = quanty1.classList.contains("MostrarQuanty");
+               var condition2 = quanty2.classList.contains("MostrarQuanty");
+               if(condition1 && condition2){
+                  quanty1.classList.add("EsconderQuanty");
+                  quanty1.classList.add("EsconderQuanty");
+                  quanty2.classList.remove("MostrarQuanty");
+                  quanty2.classList.add("EsconderQuanty");
+                  var TokensDisponiveis = $("#quanty1").html("xxx");
+                  var TokensCongelados  = $("#quanty2").html("xxx");
+               } 
+               else {
+                  quanty1.classList.add("MostrarQuanty");
+                  quanty1.classList.remove("EsconderQuanty");
+                  quanty2.classList.add("MostrarQuanty");
+                  quanty2.classList.remove("EsconderQuanty");
+                  // Valor Padrão dos Tokens Disponíveis & Tokens Congelados
+                  var TokensDisponiveis = $("#quanty1").html("10");
+                  var TokensCongelados  = $("#quanty2").html("40");
+               } 
+            };
+            QuantyValue();
+            $("#MostrarEsconderQuanty").click(function() {
+               QuantyValue();
+            });
+         })
+         </script>
          <!-- Tokens Disponíveis -->
+
+
+         
+
+
+
+
          <div id="Cat" class="mt-2 d-flex align-items-center justify-content-between gap-2 py-3">
             <h2>Categorias</h2>
             <div class="d-flex align-items-center justify-content-start gap-4">
