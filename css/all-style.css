@@ -2,6 +2,7 @@ body{
     font-family :'Artegra Sans', Arial, Helvetica, sans-serif!important;
     background-color: var(--cor-cinza-escuro);
     color: var(--cor-cinza);
+    overflow-y: hidden;
 }
 :root {
     --cor-violeta: #9E65EF;
@@ -49,6 +50,9 @@ h6.subtitulo {
 textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
     box-shadow: inset 0 0px 0 #ddd;
     outline: 0;
+}
+li {
+    list-style: none;
 }
 .accordion-flush .accordion-item .accordion-button {
     box-shadow: inset 0 0px 0 #ddd;
@@ -770,7 +774,7 @@ input[type="radio"]:checked::before {
     font-size: 8px;
     line-height: 9px;
     position: absolute;
-    bottom: 8vh;
+    bottom: 15vh;
 }
 .BtnMenu {
     width: 22px;
@@ -814,11 +818,10 @@ input[type="radio"]:checked::before {
 }
 /* MENU FOOTER */
 #MenuFooter {
-    padding: 18px 15px;
     background-color: var(--cor-preto);
     border-top: 1px solid #ffffff25;
     bottom: 0;
-    z-index: 9999;
+    z-index: 999999;
 }
 #MenuFooter ul li a {
     font-size: 10px;
@@ -1765,12 +1768,12 @@ a.vertodos {
     letter-spacing: -0.005em;
 }
 .escoladetalhe .avatar {
-    width: 115px;
-    height: 115px;
+    width: 135px;
+    height: 135px;
 }
 .escoladetalhe .avatar img{
-    max-width: 115px;
-    max-height: 115px;
+    max-width: 135px;
+    max-height: 135px;
     position: absolute;
     bottom: 30px;
     border: 8px solid var(--cor-cinza-medio);
@@ -1788,7 +1791,7 @@ a.vertodos {
 }
 .escoladetalhe h4 {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
     line-height: 33px;
     text-align: center;
@@ -1805,10 +1808,9 @@ a.vertodos {
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 14px;
     letter-spacing: -0.005em;
     position: relative;
-    min-height: 57px;
+    min-height: 40px;
     border-radius: 8px;
 }
 .escoladetalhe .botoes button.favoritar img {
@@ -1822,6 +1824,7 @@ a.vertodos {
     font-weight: 400;
     text-align: center;
     letter-spacing: -0.005em;
+    font-size: 13px;
 }
 /* Notícias*/
 .noticias {
@@ -1917,7 +1920,7 @@ a.vertodos {
 .notificacoes .content p {
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 19px;
     letter-spacing: -0.005em;
     margin: 0;
