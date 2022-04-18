@@ -284,6 +284,29 @@ input[type="radio"]:checked::before {
     width: 90%;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+}
+
+#tabs .owl-dots {
+    display: none !important;
+}
+
 #tabs .interaction .BtnIcon_favorite {
     width: 21px;
     height: 19px;

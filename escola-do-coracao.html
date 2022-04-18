@@ -26,72 +26,181 @@
                 <h1 class="text-center titulo text-white mt-4">Entretenimento <br> do coração</h1>
                 <h6 class="text-center subtitulo">Tenha tudo sobre seu favorito em primeira mão. Saiba primeiro sobre enquetes, vantagens e recompensas.</h6>
             </div>
+
             <!-- Tabs -->
-            <div class="mt-5 w-100" id="tabs">
-                <ul class="mb-3 nav d-flex gap-3 align-items-center justify-content-between" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation"> <button class="active nav-link text-white" id="first-tab" data-bs-toggle="tab" data-bs-target="#carnaval" type="button" role="tab" aria-controls="carnaval" aria-selected="true">Carnaval</button> </li>
-                    <li class="nav-item" role="presentation"> <button class="nav-link text-white" id="profile-tab" data-bs-toggle="tab" data-bs-target="#musica" type="button" role="tab" aria-controls="musica" aria-selected="false">Música</button> </li>
-                    <li class="nav-item" role="presentation"> <button class="nav-link text-white" id="messages-tab" data-bs-toggle="tab" data-bs-target="#teatro" type="button" role="tab" aria-controls="teatro" aria-selected="false">Teatro</button> </li>
-                    <li class="nav-item" role="presentation"> <button class="nav-link text-white" id="settings-tab" data-bs-toggle="tab" data-bs-target="#cinema" type="button" role="tab" aria-controls="cinema" aria-selected="false">Cinema</button> </li>
-                </ul>
-                <div class="tab-content">
-                    <!-- Tab1 -->
-                    <div class="tab-pane active" id="carnaval" role="tabpanel" aria-labelledby="first-tab">
-                        <div class="w-100 d-flex gap-2 searchform rounded py-1 px-2 mb-4">
-                            <button type="button" class="">
-                                <img src="./images/search_cinza.png" alt="">
-                            </button>
-                            <div class="form-outline w-100">
-                              <input type="search" id="" class="form-control" placeholder="Pesquisar"/>
-                            </div>
+            <div id="tabs">
+                <div class="tab owl-carousel teste mb-3 mt-4">
+                    <button class="w-100 tablinks active text-white" onclick="openCity(event, 'carnaval')">Carnaval</button>
+                    <button class="w-100 tablinks text-white" onclick="openCity(event, 'musica')">Música</button>
+                    <button class="w-100 tablinks text-white" onclick="openCity(event, 'teatro')">Teatro</button>
+                    <button class="w-100 tablinks text-white" onclick="openCity(event, 'cinema')">Cinema</button>
+                </div>
+
+                <!-- Tab1 -->
+                <div id="carnaval" class="tabcontent" style="display: block;">
+                   <div class="tab-pane active" role="tabpanel" aria-labelledby="first-tab">
+                    <div class="w-100 d-flex gap-2 searchform rounded py-1 px-2 mb-4">
+                        <button type="button" class="">
+                            <img src="./images/search_cinza.png" alt="">
+                        </button>
+                        <div class="form-outline w-100">
+                          <input type="search" id="" class="form-control" placeholder="Pesquisar"/>
                         </div>
-                        <div class="w-100 d-flex align-items-center justify-content-center gap-3 mt-2 mb-2">
-                            <div class="w-25">
-                                <img class="img-fluid" src="./images/1° da Cidade Lider.png" alt="">
-                            </div>
-                            <p class="w-100">1° da Cidade Lider</p>
-                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
-                                <buttom class="BtnIcon_favorite active"></buttom >
-                                <buttom class="BtnIcon_notification"></buttom >
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
-                            <div class="w-25">
-                                <img class="img-fluid" src="./images/Acadêmicos do Tatuapé.png" alt="">
-                            </div>
-                            <p class="w-100">Acadêmicos do Tatuapé</p>
-                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
-                                <buttom class="BtnIcon_favorite"></buttom >
-                                <buttom class="BtnIcon_notification"></buttom >
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
-                            <div class="w-25">
-                                <img class="img-fluid" src="./images/Acadêmicos do Tucuruvi.png" alt="">
-                            </div>
-                            <p class="w-100">Acadêmicos do Tucuruvi</p>
-                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
-                                <buttom class="BtnIcon_favorite"></buttom >
-                                <buttom class="BtnIcon_notification"></buttom >
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
-                            <div class="w-25">
-                                <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
-                            </div>
-                            <p class="w-100">Águia de Ouro</p>
-                            <div class="interaction d-flex align-items-center justify-content-center gap-3">
-                                <buttom class="BtnIcon_favorite"></buttom >
-                                <buttom class="BtnIcon_notification"></buttom >
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-gradiente-life w-100 mt-4">Pronto</a>
                     </div>
-                    <!-- Tab2 -->
-                    <div class="tab-pane" id="musica" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3 mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/1° da Cidade Lider.png" alt="">
+                        </div>
+                        <p class="w-100">1° da Cidade Lider</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite active"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/Acadêmicos do Tatuapé.png" alt="">
+                        </div>
+                        <p class="w-100">Acadêmicos do Tatuapé</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/Acadêmicos do Tucuruvi.png" alt="">
+                        </div>
+                        <p class="w-100">Acadêmicos do Tucuruvi</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
+                        </div>
+                        <p class="w-100">Águia de Ouro</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <hr>
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
+                        </div>
+                        <p class="w-100">Águia de Ouro</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
+                        </div>
+                        <p class="w-100">Águia de Ouro</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
+                        </div>
+                        <p class="w-100">Águia de Ouro</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
+                        </div>
+                        <p class="w-100">Águia de Ouro</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
+                        </div>
+                        <p class="w-100">Águia de Ouro</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
+                        </div>
+                        <p class="w-100">Águia de Ouro</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="w-100 d-flex align-items-center justify-content-center gap-3  mt-2 mb-2">
+                        <div class="w-25">
+                            <img class="img-fluid" src="./images/Águia de Ouro.png" alt="">
+                        </div>
+                        <p class="w-100">Águia de Ouro</p>
+                        <div class="interaction d-flex align-items-center justify-content-center gap-3">
+                            <buttom class="BtnIcon_favorite"></buttom >
+                            <buttom class="BtnIcon_notification"></buttom >
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+                </div>
+
+                <!-- Tab2 -->
+                <div id="musica" class="tabcontent">
+                    <div class="tab-pane" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="w-100 d-flex gap-2 searchform rounded py-1 px-2 mb-4">
                             <button type="button" class="">
                                 <img src="./images/search_cinza.png" alt="">
@@ -142,10 +251,12 @@
                                 <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
-                        <a href="" class="btn btn-gradiente-life w-100 mt-4">Pronto</a>
                     </div>
-                    <!-- Tab3 -->
-                    <div class="tab-pane" id="teatro" role="tabpanel" aria-labelledby="messages-tab">
+                </div>
+
+                <!-- Tab3 -->
+                <div id="teatro" class="tabcontent">
+                    <div class="tab-pane"  role="tabpanel" aria-labelledby="messages-tab">
                         <div class="w-100 d-flex gap-2 searchform rounded py-1 px-2 mb-4">
                             <button type="button" class="">
                                 <img src="./images/search_cinza.png" alt="">
@@ -196,10 +307,12 @@
                                 <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
-                        <a href="" class="btn btn-gradiente-life w-100 mt-4">Pronto</a>
                     </div>
-                    <!-- Tab4 -->
-                    <div class="tab-pane" id="cinema" role="tabpanel" aria-labelledby="settings-tab">
+                </div>
+
+                <!-- Tab4 -->
+                <div id="cinema" class="tabcontent">
+                    <div class="tab-pane" role="tabpanel" aria-labelledby="settings-tab">
                         <div class="w-100 d-flex gap-2 searchform rounded py-1 px-2 mb-4">
                             <button type="button" class="">
                                 <img src="./images/search_cinza.png" alt="">
@@ -250,14 +363,64 @@
                                 <buttom class="BtnIcon_notification"></buttom >
                             </div>
                         </div>
-                        <a href="" class="btn btn-gradiente-life w-100 mt-4">Pronto</a>
                     </div>
                 </div>
+                <a href="" class="btn btn-gradiente-life w-100 mt-5">Pronto</a>
             </div>
-            <!-- Tabs -->
         </div>
     </div>
 </div>
+
+
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+</script>
+
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+<!-- Owl Carousel -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script>
+  jQuery(".teste").owlCarousel({
+  margin: 10,
+  loop: false,
+  responsiveClass: true,
+  nav: false,
+  autoplay: false,
+  responsive: {
+    0: {
+      items: 4
+    },
+    600: {
+      items: 3
+    },
+    1024: {
+      items: 4
+    },
+    1366: {
+      items: 4
+    }
+  }
+});
+</script>
+
+
+
+
 
 <!-- ------------------------------------ -->
 <footer></footer>
