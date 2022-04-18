@@ -2,7 +2,7 @@ body{
     font-family :'Artegra Sans', Arial, Helvetica, sans-serif!important;
     background-color: var(--cor-cinza-escuro);
     color: var(--cor-cinza);
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 :root {
     --cor-violeta: #9E65EF;
@@ -284,19 +284,6 @@ input[type="radio"]:checked::before {
     width: 90%;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Style the tab content */
 .tabcontent {
@@ -2313,36 +2300,87 @@ a.vertodos {
 .dashboard.recompensadetalhe #OndeQuandoTabs button#tab-2.active:after {
     background-color: var(--cor-verde);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Colecionáveis */
 .colecionaveis {
     position: relative;
 }
-.NFT {
+
+.NftGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.colecionaveis .cardNFT {
-    min-height: 239px;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.cardNFT {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--cor-preto);
 }
 
-.colecionaveis .cardNFT h1 {
+.NFTfooter {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 122px;
+    position: relative;
+    margin-top: -26px;
+}
+
+.NFTfooter .content  {
+    position: absolute;
+    bottom: 4px;
+}
+
+.NFTfooter h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 13px;
     letter-spacing: -0.005em;
-    position: absolute;
-    bottom: 0;
+    left: 15px;
 }
 
-.colecionaveis .cardNFT h1 p {
+.NFTfooter p {
     margin: 0;
+    display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+overflow: hidden;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 768px) {
